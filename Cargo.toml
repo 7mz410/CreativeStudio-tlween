@@ -9,6 +9,10 @@ edition = "2024"
 license = "MIT OR Apache-2.0"
 rust-version = "1.95"
 
+[patch.crates-io]
+# ShibShib: egui with a right-to-left switch for the Arabic interface (shibshib/RTL.md).
+egui = { path = "vendor/egui" }
+
 [workspace.dependencies]
 # internal
 photocraft-geom = { path = "crates/geom" }

@@ -19,6 +19,20 @@ SITE = 'https://shibshib.art'
 KEEP = ('Default PhotoCraft Size', 'PhotoCraft Studio CMYK', 'the PhotoCraft authors')
 
 # Exact replacements, applied before the general rename (and kept idempotent: skipped once done).
+RTL_RULES = [
+    # Upstream's README moved to docs/UPSTREAM-README.md (ours is the fork's).
+    ('crates/ui-egui/src/state.rs', '        let readme = include_str!("../../../README.md");', '        let readme = include_str!("../../../docs/UPSTREAM-README.md");'),
+    ('Cargo.toml', '[workspace.dependencies]', '[patch.crates-io]\n# ShibShib: egui with a right-to-left switch for the Arabic interface (shibshib/RTL.md).\negui = { path = "vendor/egui" }\n\n[workspace.dependencies]'),
+    ('crates/ui-egui/Cargo.toml', '[dependencies]\n', '[dependencies]\nunicode-bidi = "0.3.18"\n'),
+    ('crates/ui-egui/src/i18n/mod.rs', 'mod catalog;\n', '/// ShibShib: Arabic in visual order for egui.\npub(crate) mod bidi;\nmod catalog;\n'),
+    ('crates/ui-egui/src/i18n/mod.rs', '        self.catalog.get_or_init(|| Catalog::parse(&self.text()))', '        // ShibShib: right-to-left catalogs are stored in visual order (bidi.rs).\n        self.catalog.get_or_init(|| if bidi::RTL_CODES.contains(&self.code) { Catalog::parse(&bidi::visual_catalog(&self.text())) } else { Catalog::parse(&self.text()) })'),
+    ('crates/ui-egui/src/lib.rs', '        let ctx = ui.ctx().clone();\n        i18n::set_current(i18n::Lang::from_pref(&self.session.prefs().interface.language));\n', '        let ctx = ui.ctx().clone();\n        i18n::set_current(i18n::Lang::from_pref(&self.session.prefs().interface.language));\n        // ShibShib: Arabic lays the interface out right to left (vendor/egui). The switch is\n        // process-wide, so unit tests, which run in parallel, leave it off (tests/rtl.rs covers it).\n        #[cfg(not(test))]\n        egui::set_rtl(i18n::bidi::RTL_CODES.contains(&i18n::current().code()));\n'),
+    ('crates/ui-egui/src/panels.rs', 'egui::Panel::left("toolbar")', '(if egui::is_rtl() { egui::Panel::right("toolbar") } else { egui::Panel::left("toolbar") })'),
+    ('crates/ui-egui/src/panels.rs', 'egui::Panel::right("rail")', '(if egui::is_rtl() { egui::Panel::left("rail") } else { egui::Panel::right("rail") })'),
+    ('crates/ui-egui/src/panels.rs', 'let mut panel = egui::Panel::right("dock")', 'let mut panel = (if egui::is_rtl() { egui::Panel::left("dock") } else { egui::Panel::right("dock") })'),
+    ('crates/ui-egui/src/theme.rs', '    // Named weights fall back to the default stack for missing glyphs.\n', '    // ShibShib: Arabic glyphs (IBM Plex Sans Arabic, OFL) after the default stack.\n    if let Some(arabic) = add(&mut fonts, "Plex Arabic", include_bytes!("../../../assets/fonts/IBMPlexSansArabic-Regular.ttf")) {\n        fonts.families.entry(FontFamily::Proportional).or_default().push(arabic);\n    }\n    // Named weights fall back to the default stack for missing glyphs.\n'),
+]
+
 SPECIFIC = {
     # No ShibShib Discord yet: drop upstream's community button and the ArtCraft website link.
     'crates/ui-egui/src/canvas.rs': [
@@ -101,8 +115,20 @@ def RUST_FILES():
     return sorted((ROOT / 'crates/ui-egui/src').rglob('*.rs')) + sorted((ROOT / 'apps/photocraft/src').rglob('*.rs'))
 
 
+def apply_rtl_rules() -> list:
+    changed = []
+    for rel, a, b in RTL_RULES:
+        path = ROOT / rel
+        src = path.read_text(encoding='utf-8')
+        if b not in src and a in src:
+            path.write_text(src.replace(a, b), encoding='utf-8')
+            changed.append(path)
+    return changed
+
+
 def main():
-    changed = [p for p in RUST_FILES() if rebrand_rust(p)]
+    changed = apply_rtl_rules()
+    changed += [p for p in RUST_FILES() if rebrand_rust(p)]
     changed += [p for p in sorted((ROOT / 'crates/ui-egui/src/i18n').glob('*.tsv')) if rebrand_locale(p)]
     web = ROOT / 'apps/photocraft-web/index.html'
     html = web.read_text(encoding='utf-8')

@@ -23,3 +23,6 @@ Builds made with craft-fonts (CRAFT_FONTS_DIR; all official releases) also embed
 https://github.com/storytold/craft-fonts/blob/main/ATTRIBUTION.md (today BIZ UDPGothic, Shippori Mincho and
 BIZ UDMincho; not the web build), under the SIL Open Font License 1.1. Their licence texts
 ship with the package as OFL-<family>.txt.
+
+IBM Plex Sans Arabic (assets/fonts/IBMPlexSansArabic-*.ttf), the Arabic UI font added by ShibShib,
+is licensed under the SIL Open Font License 1.1 (assets/fonts/OFL-IBMPlexSansArabic.txt).

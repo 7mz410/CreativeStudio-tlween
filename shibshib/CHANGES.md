@@ -9,3 +9,7 @@ this list.
 - App icon: the ShibShib tlween tile (`assets/app-icon/`).
 - Removed upstream's ArtCraft brand assets (`docs/brand/`), as their brand terms require of forks.
 - README and NOTICE: the fork, its credits and the ShibShib suite.
+- Right-to-left interface for Arabic: the patched egui from ShibShib rsm in `vendor/egui`
+  (`shibshib/RTL.md`); the tool bar, rail and dock change sides; `crates/ui-egui/tests/rtl.rs`.
+- Arabic groundwork: IBM Plex Sans Arabic (OFL) as the Arabic UI font and
+  `crates/ui-egui/src/i18n/bidi.rs` (Arabic catalogs in visual order for egui).

@@ -18,6 +18,8 @@
 //! - [`trn`]: plural-aware (`{n}` is filled in). [`fmt`]: fill `{name}` placeholders after [`tr`];
 //!   translators may reorder placeholders freely.
 
+/// ShibShib: Arabic in visual order for egui.
+pub(crate) mod bidi;
 mod catalog;
 mod system;
 
@@ -157,7 +159,8 @@ impl LangInfo {
     }
 
     fn catalog(&self) -> &Catalog {
-        self.catalog.get_or_init(|| Catalog::parse(&self.text()))
+        // ShibShib: right-to-left catalogs are stored in visual order (bidi.rs).
+        self.catalog.get_or_init(|| if bidi::RTL_CODES.contains(&self.code) { Catalog::parse(&bidi::visual_catalog(&self.text())) } else { Catalog::parse(&self.text()) })
     }
 }
 

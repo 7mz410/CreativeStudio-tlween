@@ -966,3 +966,483 @@
 	Dots	النقاط
 	Drag a rectangle around the object	اسحب مستطيلاً حول العنصر
 	Drag on the image to add a constraint; Shift for horizontal/vertical; right-click to delete.	اسحب على الصورة لإضافة قيد؛ Shift للأفقي/العمودي؛ النقر بالزر الأيمن للحذف.
+	Drag to move the active shape's path or the Work Path	اسحب لتحريك مسار الشكل النشط أو مسار العمل
+	Click: select anchor · Drag: move anchor, handle or segment · {shift}-click: add · {alt}-click: whole subpath	نقر: تحديد نقطة ربط · سحب: تحريك نقطة الربط أو المقبض أو المقطع · {shift}-نقر: إضافة · {alt}-نقر: المسار الفرعي كله
+	Draw with the Pen tool (P) or make a work path from a selection.	ارسم بأداة القلم (P) أو أنشئ مسار عمل من تحديد.
+	Drop an image or PSD anywhere to open it.	أفلت صورة أو ملف PSD في أي مكان لفتحه.
+	Duplicate Layers…	تكرار الطبقات…
+	Duplicate style	تكرار النمط
+	Edit Toolbar…	تعديل شريط الأدوات…
+	Edit in Quick Mask Mode  (Q)	التحرير في وضع القناع السريع  (Q)
+	Edit in Standard Mode  (Q)	التحرير في الوضع القياسي  (Q)
+	Effects	التأثيرات
+	Embed Color Profile	تضمين ملف تعريف الألوان
+	Embedded Profile Mismatch	عدم تطابق الملف التعريفي المضمّن
+	Enable airbrush-style build-up effects	تفعيل تأثيرات التراكم بأسلوب البخاخ
+	Enhance Edge	تحسين الحافة
+	Entire Font	الخط كاملاً
+	Exact	مطابق
+	Expansion:	التمدد:
+	Export Presets	تصدير الإعدادات المسبقة
+	Export selected measurements (CSV)	تصدير القياسات المحددة (CSV)
+	Exposure	التعريض
+	Exposure and Gamma	التعريض وغاما
+	Exposure:	التعريض:
+	Eyedropper	القطّارة
+	Factor:	المعامل:
+	Faux Bold	عريض مصطنع
+	Faux Italic	مائل مصطنع
+	Feather	تنعيم الحواف
+	Fewer Points	نقاط أقل
+	File Settings	إعدادات الملف
+	Fill	التعبئة
+	Fill:	التعبئة:
+	Filter for adjustment layers	تصفية طبقات التعديل
+	Filter for pixel layers	تصفية طبقات البكسل
+	Filter for shape layers	تصفية طبقات الأشكال
+	Filter for smart objects	تصفية الكائنات الذكية
+	Filter for type layers	تصفية طبقات النص
+	Filter:	الفلتر:
+	Finger Painting	الرسم بالإصبع
+	Fisheye	عين السمكة
+	Fit	ملاءمة
+	Fit Screen	ملاءمة الشاشة
+	Fill Screen	ملء الشاشة
+	Fit in View	ملاءمة العرض
+	Fixed	ثابت
+	Fixed Ratio	نسبة ثابتة
+	Fixed Size	حجم ثابت
+	Flip	قلب
+	Flip X	قلب X
+	Flip X Jitter	تذبذب قلب X
+	Flip Y	قلب Y
+	Flip Y Jitter	تذبذب قلب Y
+	Flow	التدفق
+	Flow Jitter	تذبذب التدفق
+	Focal Length	البعد البؤري
+	Font	الخط
+	Font Size:	حجم الخط:
+	Font size	حجم الخط
+	Foreground	المقدمة
+	Foreground to Background	المقدمة إلى الخلفية
+	Foreground/Background Jitter	تذبذب المقدمة/الخلفية
+	Format	الصيغة
+	Frame from Layers…	إطار من الطبقات…
+	Free	حرّ
+	Full Spherical	كروي كامل
+	Fuzziness:	الضبابية:
+	GPU	GPU
+	Gamma Correction	تصحيح غاما
+	Gamma:	غاما:
+	Global	عام
+	Glow Color	لون التوهج
+	Gradient Map	خريطة التدرّج
+	Grain	الحبيبات
+	Gray	رمادي
+	Gray Gamma 2.2	رمادي غاما 2.2
+	Green	أخضر
+	Group	مجموعة
+	Hardness	الصلابة
+	Heart	قلب
+	Height	الارتفاع
+	Height:	الارتفاع:
+	Hide Auto Slices	إخفاء الشرائح التلقائية
+	Hide Properties	إخفاء الخصائص
+	Highlight Compression	ضغط الإضاءات
+	Highlight Priority	أولوية الإضاءات
+	Highlights	الإضاءات
+	Home	الرئيسية
+	Horizontal scale	التحجيم الأفقي
+	Hue	التدرّج اللوني
+	Hue Jitter	تذبذب التدرّج اللوني
+	Hue/Saturation	التدرّج اللوني/التشبّع
+	Hyphenate	الوصل بشرطة
+	Ignore	تجاهل
+	Ignore All	تجاهل الكل
+	Image Size	حجم الصورة
+	Import Brushes…	استيراد فُرش…
+	Import brushes (.abr)	استيراد فُرش (.abr)
+	Import Presets	استيراد الإعدادات المسبقة
+	Imported	مستورد
+	Indent First	مسافة السطر الأول
+	Indent Left	المسافة البادئة اليسرى
+	Indent Right	المسافة البادئة اليمنى
+	Indent first line	مسافة بادئة للسطر الأول
+	Indent left margin	مسافة بادئة للهامش الأيسر
+	Indent right margin	مسافة بادئة للهامش الأيمن
+	Input:	الإدخال:
+	Inside	داخل
+	Interlaced	متداخل
+	Interpolation:	الاستيفاء:
+	Intersect with selection  ({key})	التقاطع مع التحديد  ({key})
+	Invert All	عكس الكل
+	Invert has no settings.	العكس ليس له إعدادات.
+	Italic	مائل
+	Join us on Discord	انضم إلينا على Discord
+	Justify all	ضبط الكل
+	Justify last centered	ضبط مع توسيط الأخير
+	Justify last left	ضبط مع محاذاة الأخير لليسار
+	Justify last right	ضبط مع محاذاة الأخير لليمين
+	Kerning	تقنين المسافة
+	Keyboard Shortcuts	اختصارات لوحة المفاتيح
+	Keyboard Shortcuts and Menus	اختصارات لوحة المفاتيح والقوائم
+	Kind	النوع
+	Label Size	حجم التسمية
+	Labels	التسميات
+	Lanczos (sharp)	Lanczos (حاد)
+	Landscape	أفقي
+	Last Document State	آخر حالة للمستند
+	Layout	التخطيط
+	Leading	تباعد الأسطر
+	Leading (set to the font size × auto-leading when Auto)	تباعد الأسطر (حجم الخط × التباعد التلقائي عند الوضع التلقائي)
+	Leave as is (don't color manage)	الإبقاء كما هو (بدون إدارة ألوان)
+	Left	اليسار
+	Left align text	محاذاة النص لليسار
+	Length:	الطول:
+	Level	المستوى
+	Levels	المستويات
+	Lighten	تفتيح
+	Lightness	الإضاءة
+	Lights	الدرجات الفاتحة
+	Limits:	الحدود:
+	Linear Gradient	تدرّج خطي
+	Link layers	ربط الطبقات
+	Link width and height	ربط العرض والارتفاع
+	Liquify is not open	التسييل غير مفتوح
+	Load	تحميل
+	Load 3D LUT…	تحميل 3D LUT…
+	Load channel as selection	تحميل القناة كتحديد
+	Load…	تحميل…
+	Localized Color Clusters	مجموعات ألوان موضعية
+	Lock	قفل
+	Lock all	قفل الكل
+	Lock image pixels	قفل بكسلات الصورة
+	Lock layer	قفل الطبقة
+	Lock position	قفل الموضع
+	Lock transparent pixels	قفل البكسلات الشفافة
+	Lock:	القفل:
+	Logical Length:	الطول المنطقي:
+	Logical Units:	الوحدات المنطقية:
+	Luminance	النصوع
+	Luminance Detail	تفاصيل النصوع
+	Magenta	أرجواني
+	Magenta  ·  Green	أرجواني  ·  أخضر
+	Maintain aspect ratio	الحفاظ على نسبة الأبعاد
+	Marker Size	حجم العلامة
+	Mask All	تقنيع الكل
+	Mask Options	خيارات القناع
+	Masking	التقنيع
+	Master	الرئيسي
+	Matte	مطفأ
+	Median:	الوسيط:
+	Menus	القوائم
+	Mesh Size	حجم الشبكة
+	Metadata	البيانات الوصفية
+	Metrics	القياسات
+	Midpoint	نقطة المنتصف
+	Midtones	الدرجات المتوسطة
+	Midtones from:	الدرجات المتوسطة من:
+	Midtones to:	الدرجات المتوسطة إلى:
+	Minimum Depth	أدنى عمق
+	Minimum Diameter	أدنى قطر
+	Minimum Roundness	أدنى استدارة
+	Mode:	الوضع:
+	Monochrome	أحادي اللون
+	More Points	نقاط أكثر
+	Move effect layer down	تحريك طبقة التأثير للأسفل
+	Move effect layer up	تحريك طبقة التأثير للأعلى
+	Move to	نقل إلى
+	Name	الاسم
+	Name:	الاسم:
+	Nearest Neighbor	الجار الأقرب
+	Nearest Neighbor (hard edges)	الجار الأقرب (حواف حادة)
+	New Size	الحجم الجديد
+	New document…	مستند جديد…
+	New effect layer	طبقة تأثير جديدة
+	New selection	تحديد جديد
+	Next frame	الإطار التالي
+	Next note	الملاحظة التالية
+	No Color	بلا لون
+	No Color Management	بدون إدارة ألوان
+	No Dither	بدون تنقيط
+	No author	بلا مؤلف
+	No character style	بلا نمط حرف
+	No document	لا مستند
+	No matching commands	لا أوامر مطابقة
+	No presets for the current tool.	لا إعدادات مسبقة للأداة الحالية.
+	No presets of this type.	لا إعدادات مسبقة من هذا النوع.
+	No properties	لا خصائص
+	No tool presets.	لا إعدادات أدوات مسبقة.
+	Noise Reduction	تقليل الضوضاء
+	Normal	عادي
+	Not in Dictionary:	غير موجود في القاموس:
+	OK	موافق
+	Offset	الإزاحة
+	Only Web Colors	ألوان الويب فقط
+	Opacity	العتامة
+	Opacity Jitter	تذبذب العتامة
+	Opacity:	العتامة:
+	Open a document to define variables.	افتح مستنداً لتعريف المتغيرات.
+	Open a document to select a colour range.	افتح مستنداً لتحديد نطاق لون.
+	Open a document to use the timeline.	افتح مستنداً لاستخدام الخط الزمني.
+	Optical	بصري
+	Optimized	محسّن
+	Option-click to define a source point to clone from	Option-نقر لتعريف نقطة مصدر للاستنساخ منها
+	Original	الأصل
+	Output Channel:	قناة الإخراج:
+	Output Levels:	مستويات الإخراج:
+	Output:	الإخراج:
+	Outside	خارج
+	Overlay Color	لون التراكب
+	Overlay Opacity	عتامة التراكب
+	Overlay: Rule of Thirds	التراكب: قاعدة الأثلاث
+	Override Pressure	تجاوز الضغط
+	Override Rotation	تجاوز التدوير
+	Override Tilt	تجاوز الإمالة
+	PRESET DETAILS	تفاصيل الإعداد المسبق
+	PSD	PSD
+	Paint Overlay	تراكب الرسم
+	Panel locations are saved in the workspace. Keyboard shortcuts, menus and toolbar are optional.	تُحفظ مواقع اللوحات في مساحة العمل. اختصارات لوحة المفاتيح والقوائم وشريط الأدوات اختيارية.
+	Paper	الورق
+	Path	المسار
+	Pattern	النقش
+	Pattern Size	حجم النقش
+	Pause	إيقاف مؤقت
+	Percent	النسبة المئوية
+	Perceptual	إدراكي
+	Perspective Warp is not active	التواء المنظور غير نشط
+	Perspective Warp: draw planes along the image's perspective, then switch to Warp	التواء المنظور: ارسم مستويات على طول منظور الصورة، ثم انتقل إلى الالتواء
+	Photo Filter	فلتر الصورة
+	ShibShib tlween	شبشب تلوين
+	ShibShib tlween Manages Colors	شبشب تلوين يدير الألوان
+	ShibShib tlween — an open-source, native image editor written in Rust.	شبشب تلوين — محرر صور أصلي ومفتوح المصدر مكتوب بلغة Rust.
+	Pin Depth:	عمق الدبوس:
+	Pixel Length:	طول البكسل:
+	Pixels/Centimeter	بكسل/سنتيمتر
+	Pixels/Inch	بكسل/إنش
+	Pixels:	البكسلات:
+	Play	تشغيل
+	Play selection	تشغيل التحديد
+	Portrait	عمودي
+	Position	الموضع
+	Position and Size	الموضع والحجم
+	Posterize	تقليل الدرجات
+	Preserve Details	الحفاظ على التفاصيل
+	Preserve Luminosity	الحفاظ على النصوع
+	Preset	الإعداد المسبق
+	Preset Type	نوع الإعداد المسبق
+	Preset:	الإعداد المسبق:
+	Presets:	الإعدادات المسبقة:
+	Press keys…	اضغط المفاتيح…
+	Pressure	الضغط
+	Pressure for Opacity	الضغط للعتامة
+	Pressure for Size	الضغط للحجم
+	Prevent auto-nesting in and out of Artboards and Frames	منع التداخل التلقائي داخل لوحات الرسم والإطارات وخارجها
+	Preview	معاينة
+	Previous frame	الإطار السابق
+	Previous note	الملاحظة السابقة
+	Print	طباعة
+	Printer	الطابعة
+	Printer Manages Colors	الطابعة تدير الألوان
+	Printer Setup	إعداد الطابعة
+	Printing Marks	علامات الطباعة
+	Progressive	تدريجي
+	Promote	ترقية
+	Protect Detail	حماية التفاصيل
+	Protect Foreground Color	حماية لون المقدمة
+	Protect Tones	حماية الدرجات
+	Proximity Match	مطابقة الجوار
+	Pulled String Mode	وضع الخيط المشدود
+	Puppet Warp is not active	التواء الدمية غير نشط
+	Purity	النقاء
+	Quality	الجودة
+	Quick Actions	إجراءات سريعة
+	Quick Export As PNG	تصدير سريع بصيغة PNG
+	Radial Gradient	تدرّج شعاعي
+	Radius	نصف القطر
+	Radius:	نصف القطر:
+	Range:	النطاق:
+	Rate	المعدل
+	Recently Used	المستخدمة مؤخراً
+	Reconstruct	إعادة البناء
+	Record ● a sequence of edits, then play ▶ it on any document.	سجّل ● سلسلة تعديلات، ثم شغّلها ▶ على أي مستند.
+	Red	أحمر
+	Redefine style by current selection	إعادة تعريف النمط بالتحديد الحالي
+	Reflected Gradient	تدرّج منعكس
+	Registration Marks	علامات التسجيل
+	Regular	عادي
+	Relative	نسبي
+	Relative Colorimetric	لوني نسبي
+	Remove	إزالة
+	Remove All Pins	إزالة كل الدبابيس
+	Remove Background	إزالة الخلفية
+	Remove Planes	إزالة المستويات
+	Remove Tool	أداة الإزالة
+	Remove stop	إزالة نقطة التوقف
+	Remove variable	إزالة المتغير
+	Rename	إعادة تسمية
+	Rename Group…	إعادة تسمية المجموعة…
+	Rename Layer…	إعادة تسمية الطبقة…
+	Rename Tool Preset…	إعادة تسمية إعداد الأداة المسبق…
+	Rename…	إعادة تسمية…
+	Resample	إعادة أخذ العينات
+	Reset All to Defaults	إعادة الكل إلى الافتراضي
+	Import Shortcuts…	استيراد الاختصارات…
+	Load a keyboard shortcut set saved as .kys	تحميل مجموعة اختصارات محفوظة بصيغة .kys
+	Imported {n} shortcuts from {file}. Click OK to keep them.	استُورد {n} اختصاراً من {file}. انقر موافق للاحتفاظ بها.
+	{n} commands are not in ShibShib tlween.	{n} أمراً غير موجود في شبشب تلوين.
+	Keyboard shortcuts imported	استُوردت اختصارات لوحة المفاتيح
+	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	مجموعة اختصاراتك {set} مستخدمة هنا: {n} اختصاراً يختلف عن الافتراضي. تحرير › اختصارات لوحة المفاتيح يعرضها؛ وإعادة الكل إلى الافتراضي تتراجع عن ذلك.
+	Import keyboard shortcuts?	استيراد اختصارات لوحة المفاتيح؟
+	ShibShib tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from ShibShib tlween's. Import it?	وجد شبشب تلوين مجموعة اختصاراتك {set} من محرر صور آخر على هذا الجهاز: {n} من اختصاراتها تختلف عن اختصارات شبشب تلوين. استيرادها؟
+	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	تحرير › اختصارات لوحة المفاتيح › إعادة الكل إلى الافتراضي يتراجع عن الاستيراد.
+	Don't Import	عدم الاستيراد
+	The keyboard shortcut set was not imported: {error}	لم تُستورد مجموعة الاختصارات: {error}
+	Reset Section	إعادة ضبط القسم
+	Reset Transform	إعادة ضبط التحويل
+	Reset to defaults	إعادة إلى الافتراضي
+	Resolution	الدقة
+	Resolution:	الدقة:
+	Restore All	استعادة الكل
+	Restore Defaults	استعادة الافتراضيات
+	Restrictive (Web)	مقيّد (ويب)
+	Right	اليمين
+	Right align text	محاذاة النص لليمين
+	Rigid	صلب
+	Rotate:	التدوير:
+	Rotation	التدوير
+	Roughness	الخشونة
+	Roundness	الاستدارة
+	Roundness Jitter	تذبذب الاستدارة
+	Rulers & Grids	المساطر والشبكات
+	Sample All Layers	أخذ عينة من كل الطبقات
+	Sample:	العينة:
+	Sampling: Background Swatch	أخذ العينة: عينة الخلفية
+	Sampling: Continuous	أخذ العينة: مستمر
+	Sampling: Once	أخذ العينة: مرة واحدة
+	Saturate	تشبيع
+	Saturation	التشبّع
+	Saturation Jitter	تذبذب التشبّع
+	Save HTML and Images	حفظ HTML والصور
+	Save as PDF	حفظ كـ PDF
+	Save selection as channel	حفظ التحديد كقناة
+	Save…	حفظ…
+	Scale to Fit Media	التحجيم لملاءمة الوسيط
+	Scatter	التبعثر
+	Scratch disks	أقراص التخزين المؤقت
+	Search	بحث
+	Search commands	البحث في الأوامر
+	Search commands, tools and panels…	البحث في الأوامر والأدوات واللوحات…
+	Search fonts	البحث في الخطوط
+	Select All	تحديد الكل
+	Select Subject	تحديد الموضوع
+	Select a type layer or click into text to insert glyphs	حدد طبقة نص أو انقر داخل النص لإدراج حروف رسومية
+	Select text to apply a character style	حدد نصاً لتطبيق نمط حرف
+	Select:	التحديد:
+	Selections	التحديدات
+	Selective	انتقائي
+	Selective Color	اللون الانتقائي
+	Send the selected pin backward	إرجاع الدبوس المحدد للخلف
+	Set additional smoothing options	ضبط خيارات تنعيم إضافية
+	Set background color	تعيين لون الخلفية
+	Set foreground color	تعيين لون المقدمة
+	Set painting symmetry options	ضبط خيارات تماثل الرسم
+	Symmetry Off	التماثل متوقف
+	Set shape fill type	تعيين نوع تعبئة الشكل
+	Set shape stroke type	تعيين نوع حدود الشكل
+	Set the text color	تعيين لون النص
+	Shadows	الظلال
+	Shape:	الشكل:
+	Sharpening	زيادة الحدة
+	Shift	Shift
+	Shortcut removed.	أُزيل الاختصار.
+	Show All Menu Items	إظهار كل عناصر القوائم
+	Show Backdrop	إظهار الخلفية
+	Show Guides	إظهار الأدلة
+	Show Mask	إظهار القناع
+	Show Mesh	إظهار الشبكة
+	Show Overlay	إظهار التراكب
+	Show Transform Controls	إظهار عناصر التحويل
+	Show or hide the Notes panel	إظهار لوحة الملاحظات أو إخفاؤها
+	Show:	إظهار:
+	Sides	الأضلاع
+	Sides:	الأضلاع:
+	Size	الحجم
+	Size Jitter	تذبذب الحجم
+	Size:	الحجم:
+	Slice Options…	خيارات الشريحة…
+	Slices From Guides	شرائح من الأدلة
+	Slices are locked (View › Lock Slices)	الشرائح مقفلة (عرض › قفل الشرائح)
+	Small Caps	أحرف صغيرة كبيرة
+	Smoothing	التنعيم
+	Space After	المسافة بعد
+	Space Before	المسافة قبل
+	Spacing	التباعد
+	Spell check complete.	اكتمل التدقيق الإملائي.
+	Split:	التقسيم:
+	Star ratio	نسبة النجمة
+	Stop playing/recording	إيقاف التشغيل/التسجيل
+	Straighten	تقويم
+	Straighten Layer	تقويم الطبقة
+	Strength:	القوة:
+	Strikethrough	يتوسطه خط
+	Stroke	الحدود
+	Stroke Catch-up	لحاق الضربة
+	Stroke:	الحدود:
+	Location:	الموقع:
+	Style	النمط
+	Style Options	خيارات النمط
+	Style Options…	خيارات النمط…
+	Style: Normal	النمط: عادي
+	Subtract from Sample	الطرح من العينة
+	Subtract from selection  ({key})	الطرح من التحديد  ({key})
+	Suggestions:	الاقتراحات:
+	Swap colours (X)	تبديل الألوان (X)
+	Swaps height and width	يبدّل الارتفاع والعرض
+	Switch between free transform and warp modes	التبديل بين وضعي التحويل الحر والالتواء
+	Switch theme	تبديل السمة
+	Temperature	درجة الحرارة
+	Tetrahedral	رباعي الأوجه
+	Text Position:	موضع النص:
+	Texture	الملمس
+	Texture Each Tip	ملمس لكل رأس
+	Threshold	العتبة
+	Threshold Level	مستوى العتبة
+	Thumbnail size (smallest: list)	حجم الصور المصغّرة (الأصغر: قائمة)
+	Tilt X	إمالة X
+	Tilt Y	إمالة Y
+	Tint	الصبغة
+	Toggle count group visibility	تبديل ظهور مجموعة العدّ
+	Toggle text orientation	تبديل اتجاه النص
+	Tolerance	التسامح
+	Tolerance:	التسامح:
+	Tone:	الدرجة:
+	Toolbar	شريط الأدوات
+	Top	الأعلى
+	Total:	الإجمالي:
+	Tracking	التتبّع
+	Tracking (1/1000 em)	التتبّع (1/1000 em)
+	Transparency	الشفافية
+	Transparent	شفاف
+	Trilinear	ثلاثي خطي
+	Type Styles	أنماط النص
+	Type:	النوع:
+	Underline	تسطير
+	Untitled	بلا عنوان
+	Untitled-1	بلا عنوان-1
+	Update layer comp (visibility, position and appearance)	تحديث تركيبة الطبقات (الظهور والموضع والمظهر)
+	Use Default	استخدام الافتراضي
+	Use Legacy	استخدام القديم
+	Use Measurement Scale	استخدام مقياس القياس
+	Use the embedded profile (instead of the working space)	استخدام الملف التعريفي المضمّن (بدل مساحة العمل)
+	Variables bind a layer's visibility, text or pixels to a named data slot.	المتغيرات تربط ظهور الطبقة أو نصها أو بكسلاتها بخانة بيانات مسمّاة.
+	Vertical scale	التحجيم العمودي
+	Vibrance	الحيوية
+	View Options	خيارات العرض
+	Vignetting	تظليل الحواف
+	Violet, Orange	بنفسجي، برتقالي
+	Visibility	الظهور
+	Visible	ظاهر
+	Warp:	الالتواء:
+	Web Snap	التقاط الويب
+	Weight	الوزن

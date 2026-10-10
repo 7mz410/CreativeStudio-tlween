@@ -20,9 +20,24 @@ KEEP = ('Default PhotoCraft Size', 'PhotoCraft Studio CMYK', 'the PhotoCraft aut
 
 # Exact replacements, applied before the general rename (and kept idempotent: skipped once done).
 SPECIFIC = {
+    # No ShibShib Discord yet: drop upstream's community button and the ArtCraft website link.
+    'crates/ui-egui/src/canvas.rs': [
+        ('            crate::links::discord_button(app, ui, 190.0);\n            ui.add_space(10.0);\n', ''),
+    ],
+    'crates/ui-egui/src/dialogs.rs': [
+        ('                crate::links::discord_button(app, ui, 220.0);\n                ui.add_space(8.0);\n', ''),
+    ],
+    'crates/ui-egui/src/panels.rs': [
+        ('                    if ui.available_width() >= DISCORD_ROOM {', '                    if false && ui.available_width() >= DISCORD_ROOM {'),
+    ],
+    'crates/ui-egui/src/titlebar.rs': [
+        ('assert_eq!(has_discord, width > 1000.0, "Discord at {width}");', 'assert!(!has_discord, "ShibShib: no Discord button ({width})");'),
+    ],
     'crates/ui-egui/src/links.rs': [
         ('pub const APP_PAGE: &str = "https://getartcraft.com/apps/photocraft";', f'pub const APP_PAGE: &str = "{SITE}";'),
         ('pub const GITHUB: &str = "https://github.com/storytold/photocraft";', f'pub const GITHUB: &str = "{REPO}";'),
+        ('    let links = [(tl!("PhotoCraft website"), APP_PAGE), (tl!("GitHub"), GITHUB), (tl!("ArtCraft"), ARTCRAFT_WEBSITE)];',
+         '    let links = [(tl!("ShibShib Website"), APP_PAGE), (tl!("GitHub"), GITHUB)];'),
         ('pub const ISSUES: &str = "https://github.com/storytold/photocraft/issues";', f'pub const ISSUES: &str = "{REPO}/issues";'),
         ('            ("help.website", "https://getartcraft.com/apps/photocraft"),\n            ("help.github", "https://github.com/storytold/photocraft"),',
          f'            ("help.website", "{SITE}"),\n            ("help.github", "{REPO}"),'),
@@ -50,7 +65,7 @@ def rebrand_rust(path: Path) -> bool:
     src = path.read_text(encoding='utf-8')
     out = src
     for a, b in SPECIFIC.get(path.relative_to(ROOT).as_posix(), []):
-        if b not in out:
+        if not b or b not in out:
             out = out.replace(a, b)
     out = STRING.sub(lambda m: rename(m.group(0)), out)
     if out != src:

@@ -1,0 +1,160 @@
+	Font preview
+	Full size tip
+	Gamut warning color
+	Gamut warning opacity
+	Generator enabled
+	Gif
+	Glossy
+	Grid color
+	Grid colors
+	Grid size
+	Grid style
+	Grid unit
+	Gridline every
+	Guide color
+	Guide style
+	Guides, Grid & Slices
+	Gutter
+	History Log
+	History states
+	Ignore exif profile tag
+	Image interpolation
+	Image previews
+	Integrations
+	Interface
+	Jpeg quality
+	Jpg
+	Language
+	Large tabs
+	Legacy compositing
+	Light gray
+	Line
+	Lines
+	Lossless
+	Lowercase extension
+	Maximize psd compatibility
+	Medium gray
+	Memory usage mb
+	Low resolution previews
+	Missing glyph protection
+	Modern
+	Nearest neighbor
+	Never
+	Normal tip
+	Open as smart object
+	Open in camera raw
+	Open documents as tabs
+	Overscroll
+	Performance
+	Png
+	Point size
+	Precise
+	Preserve details
+	Print resolution
+	Pro
+	Pro medium
+	Pro photo
+	Quick export format
+	Quick export location
+	Recent file count
+	Recent files
+	Recent fonts
+	Recover on launch
+	Remember workspace changes
+	Resize image during place
+	Rotate view with trackpad
+	Same folder
+	Save in background
+	Scratch Disks
+	Screen
+	Screen resolution
+	Scrubby slider acceleration
+	Sessions only
+	Sharpen for
+	Show channels in color
+	Show crosshair in brush tip
+	Show extension panels
+	Show font names in english
+	Show menu colors
+	Show only crosshair while painting
+	Show slice numbers
+	Show tooltips
+	Show transformation values
+	Slice color
+	Smart guide color
+	Smart quotes
+	Snap vector tools and transforms to pixel grid
+	Srgb
+	Standard
+	Studio
+	Studio light
+	Adwaita
+	Adwaita dark
+	Subdivisions
+	System
+	Text engine
+	Text file
+	Tiny
+	Touch gestures
+	Transparency & Gamut
+	Type units
+	UI font size
+	UI scale
+	Units & Rulers
+	Use additional plugins folder
+	Use esc to commit
+	Use gpu
+	Use legacy free transform
+	Use shift key for tool switch
+	Vary round brush hardness on hud
+	Webp
+	World ready
+	Zoom clicked point to center
+	Zoom resizes windows
+	Zoom with scroll wheel
+	Zoom with trackpad pinch
+	Pass Through
+	Dissolve
+	Darker Color
+	Linear Dodge (Add)
+	Lighter Color
+	Soft Light
+	Hard Light
+	Vivid Light
+	Linear Light
+	Pin Light
+	Exclusion
+	Divide
+	Luminosity
+@plural	{n} sample|{n} samples
+	{added}, {removed} subtracted
+	Adjustment Preview
+	Airbrush: keeps depositing paint while the pointer rests.
+	Angle:
+	Blend If
+	Close Tab Group
+	Collapse
+	Collapse All Groups
+	Collapse Panel Group
+	Collapse group  ({key}-click: all groups)
+	Create new brush from the current settings
+	Create new brush from these settings
+	Update the current brush with these settings
+	Delete brush
+	Drag the arrow to set the angle, the dots to set the roundness
+	Expand
+	Expand Panel Group
+	Expand group  ({key}-click: all groups)
+	Fade steps
+	Hide the layer's effects  ({key}-click: all layers)
+	Import Brushes… (.abr)
+	Move Group Down
+	Move Group Up
+	Reset the brush to the defaults
+	Restore original size
+	Roundness:
+	Search Brushes
+	Show the layer's effects  ({key}-click: all layers)
+	Brush picker
+	Erase
+	Right click with painting tools

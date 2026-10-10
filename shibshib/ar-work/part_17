@@ -1,0 +1,160 @@
+	Magnetic Lasso Tool
+	Frequency
+	Use tablet pressure to change pen width
+	About
+	Contributors
+	Models
+	Sort
+	Username
+	Display name
+	Real name
+	Reverse the order
+	Grab bag
+	Table
+	Name (A–Z)
+	Merged PRs
+	Commits
+	Lines added
+	Lines deleted
+	Line delta
+	Binary assets added
+	Binary assets removed
+	First commit
+	First
+	Last commit
+	Last
+	Contributors: {contributors} · Commits: {commits}
+	No contributor data was built into this copy.
+	No model credits were built into this copy.
+	Company
+	Version
+	% of all commits
+	Lines +/−
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{binAdded} / −{binDeleted} binary assets, {first} – {last}
+	Create new swatch
+	New Swatch…
+	New Swatch Group…
+	Import Swatches…
+	Replace Swatches…
+	Export Swatches…
+	Export Swatches for Exchange…
+	Reset Swatches
+	Add to Swatches
+	Blend If:
+	Channels:
+	Knockout
+	Apply At Canvas Bounds
+	Color Picker (Text Color)
+	Color Picker (Fill Color)
+	Fill color
+	Color Picker (Stroke Color)
+	Stroke color
+	Pick screen color
+	Sample a pixel anywhere on the screen
+	Click to pick · Esc to cancel
+	Pick a screen pixel or press Esc to cancel
+	Scroll to zoom
+	Show/Hide All Panels
+	Show/Hide Panels
+	Could not open
+	{path}: the path is not valid Unicode; rename the file and open it again.
+	Contents:
+	Custom Pattern:
+	Foreground Color
+	Color…
+	50% Gray
+	{size} (was {old})
+	Cone
+	Cone (Inverted)
+	Domed
+	Domed (Inverted)
+	Diagonal (Descending)
+	Red Eye Tool
+	Pupil Size
+	Darken Amount
+	Click a red pupil to neutralize it
+	open source
+	…and {n} more
+	Eyedroppers:
+	Set Black Point
+	Set Neutral Gray Point
+	Set White Point
+	Unavailable in this color mode
+	Selection Preview:
+	Black Matte
+	White Matte
+	Seafoam
+	Indigo
+	Fuchsia
+	Violet
+	Large document: redrawing on the CPU
+	This redraw took {seconds} s on the CPU.
+	Edits that change the whole document, such as a layer's blend mode, opacity or visibility, redraw all of it.
+	Its layers don't fit the GPU memory budget. Raising Memory usage in Preferences › Performance raises the budget, up to a quarter of this computer's memory.
+	The GPU compositor wasn't used: {reason}
+fontWeight	Thin
+fontWeight	ExtraLight
+fontWeight	Light
+fontWeight	Regular
+fontWeight	Medium
+fontWeight	SemiBold
+fontWeight	Bold
+fontWeight	ExtraBold
+fontWeight	Black
+fontWeight	Italic
+	Pattern Stamp Tool
+	Impressionist
+	Rotate View Tool
+	Reset View
+	Drag around the centre to rotate the view  ·  Shift constrains to 15°
+	Dual Axis
+	Diagonal
+	Transform Symmetry
+	Point Sample
+	3 by 3 Average
+	5 by 5 Average
+	11 by 11 Average
+	31 by 31 Average
+	51 by 51 Average
+	101 by 101 Average
+	Sample Size:
+	All Layers No Adjustments
+	Current & Below No Adjustments
+	Show Sampling Ring
+	Out of gamut for printing: click for the nearest printable colour
+	Not a web colour: click for the nearest web colour
+	Color to Alpha…
+	Transparency Threshold
+	Opacity Threshold
+	Rasterize svg groups deeper than
+	0 turns this threshold off; SVG groups nested deeper than 100 levels are always rasterized.
+	Rule of Thirds
+	Triangle
+	Golden Ratio
+	Golden Spiral
+	Auto Show Overlay
+	Always Show Overlay
+	Never Show Overlay
+	Cycle Overlay
+	Cycle Orientation
+	Set the overlay options for the Crop tool
+	Alt-click went to the desktop, which moves windows with Alt-drag. Set its window-move key to Super, or latch Alt in Window › Modifier Keys.
+	Color Picker (Layer Style Color)
+	Auto Hide Notifications
+	Notification Duration (seconds)
+	Appearance Mode
+	Dark Theme
+	Light Theme
+	Pro Medium
+	Studio Light
+	Next Appearance Mode
+	Sync with system
+	Active
+	Color Picker (Solid Color)
+	Straighten the image by drawing a line on it
+	Set additional Crop options
+	Show Cropped Area
+	Enable Crop Shield
+	Match Canvas
+	Auto Adjust Opacity
+	Crop Shield color

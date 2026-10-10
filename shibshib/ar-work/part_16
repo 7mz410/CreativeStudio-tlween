@@ -1,0 +1,160 @@
+	Rise
+	Inflate
+	Twist
+	Squeeze
+	Add Pins
+	Delete Pins
+	Rotate Auto
+	Rotate Fixed
+	Create Plane
+	Edit Plane
+	Select Plane
+	Measure
+	Heal
+	Heal Off
+	Heal On
+	Heal Auto
+	Blend
+	Brush Size
+	Heal Color
+	Mask
+	Channel
+	Rectangle
+	Result
+	New Channel
+	Save Selection
+	Load Selection
+	Duplicate
+	Fast
+	Accurate
+	Add to
+	Subtract from
+	Intersect with
+	Capture Comp
+	No Layer Comps
+	Adobe PDF Presets…
+	3D…
+	Technology Previews…
+	Background from Layer
+	Add a mask  (from the selection; ⌥ inverts)
+	Add to selection  (⇧)
+	Airbrush: keeps painting while the pointer rests.
+	Click the first point or press ↵ to close · Esc cancels
+	Click to add a point · drag off or ⌘/Ctrl-click or Delete to remove
+	Click to apply, ⌥-click to clear overrides, double-click for Style Options
+	Click to zoom in  ·  ⌥-click to zoom out
+	Click: corner · Drag: smooth · Click first point: close · ↩ finish · Esc cancel
+	Commit Perspective Warp (↩)
+	Commit Puppet Warp (↩)
+	Commit any current edits (⌘↩)
+	Commit current crop operation  (↵)
+	Commit transform (↩)
+	Commit warp (↩)
+	Create a new layer  (⇧⌘N)
+	Custom pattern
+	General Brushes
+	Grid  (⌘')
+	Intersect with selection  (⇧⌥)
+	New document…     ⌘N
+	Open…     ⌘O
+	Rulers  (⌘R)
+	Search commands (⌘K)
+	Show Guides  (⌘;)
+	Subtract from selection  (⌥)
+	Uses the foreground and background colors.
+	↑↓ navigate   ↵ run   esc close
+	Adds grain to the soft edges of the brush tip.
+	Keeps the current texture when switching presets.
+	Watercolour look: lighter interior, darker rims.
+	Collapse group  (⌥-click: all groups)
+	Expand group  (⌥-click: all groups)
+	Hide the layer's effects  (⌥-click: all layers)
+	Show the layer's effects  (⌥-click: all layers)
+	New from Clipboard
+	Free Transform a Copy
+	Transform Again on a Copy
+	Select Layer Above
+	Select Layer Below
+	Select Top Layer
+	Select Bottom Layer
+	Add Layer Above to Selection
+	Add Layer Below to Selection
+	8 bit
+	Integer
+	16 bit
+	32 bit (float)
+	Floating point
+	Use Global Light
+	Native file drag-and-drop is unavailable
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.
+	To drop files, start ShibShib tlween under XWayland: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: ShibShib tlween then always starts under XWayland.
+	Edit › Paste
+	Use File › Open, or paste a copied image with {paste}.
+	Mixer Brush Tool
+	Invalid {mode} profile
+	Unnamed {mode} profile
+	Show bounding box when dragging layer
+	System title bar
+	Freeze Lasso: drag to freeze an area, Alt-drag to thaw it (L)
+	Rendering Mode
+	Automatic (recommended)
+	CPU / Compatibility
+	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.
+	Switched to CPU rendering
+	GPU acceleration could not continue. Your documents are unchanged.
+	ShibShib tlween is using the CPU image compositor. The window may still use your graphics adapter.
+	Retry GPU requires a restart. Save your work first.
+	Keep Using CPU
+	Retry GPU
+	GPU Backend
+	Details
+	Rendering mode
+	Shadow Clipping Warning (U)
+	Highlight Clipping Warning (O)
+	Show Lab Color Readouts
+	Show Vectorscope
+	Show Red at 3 o'clock
+	Show Skin Tone Indicator
+	Tone Histogram
+	Show Selected Region
+cameraRaw	Light
+	Camera Raw Filter ({layer})
+	Camera Raw ({name})
+cameraRaw	Lights
+cameraRaw	Darks
+cameraRaw	Blacks
+cameraRaw	Amount
+cameraRaw	Tint
+cameraRaw	Masking
+cameraRaw	Blending
+	Patch Tool
+	Patch:
+	Lasso around an area, then drag the selection
+	Now drag the selection onto another area
+	3 x 3
+	4 x 4
+	5 x 5
+	Grid:
+	Edit Type
+	New Style…
+	Style {name} saved
+	Create new style (from the selected type)
+	Create new style from the selected layer
+	Make Default
+	Reset to Default
+	Full-resolution preview unavailable
+	No patterns
+	Enable {name}
+	Hold Alt while drawing for straight segments
+	Drag or click polygon points · hold Alt during lasso for straight segments · {add} add · {sub} before drawing subtracts
+	Extend
+	Structure:
+	Content-Aware Move Tool
+	TIFF Options
+	Including layers will increase file size.
+	Discard Layers and Save a Copy
+	Don't show again
+	Save failed: {error}
+	Save cancelled
+	Couldn't place {name}: {error}

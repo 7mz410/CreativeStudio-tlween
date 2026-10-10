@@ -1,0 +1,160 @@
+	System Info…
+	System Info
+	More panels
+	More documents
+	These settings aren't available in ShibShib tlween yet.
+	Graphics
+	Reset GPU Backend
+	Applies at next launch.
+	Click to sample the foreground colour  ·  {key}-click for background
+	{key}-click to set the source
+	{key} to subtract
+	Clone source {n} ({key}-click with Clone Stamp to set)
+	Source: not set ({key}-click with Clone Stamp)
+	Pixel Layer
+	Type Layer
+	Shape Layer
+	Group Layer
+	Fill Layer
+	Smart Object Layer
+	Create Warped Text
+	Rasterize Smart Object
+	Rasterize Fill Content
+	Unlock: picking a preset replaces these settings
+	Lock: keep these settings when picking another preset
+	Diameter:
+	Hardness:
+	No brush presets
+	Toggle the Brush Settings panel  (F5)
+	Create new brush preset from the current settings
+	Brush Settings…  (F5): every option of this brush
+	Rename Brush…
+	Delete Brush
+	New Brush Preset…
+	Brush Preset Options
+	Group name
+	Brush name
+	Brush Name
+	Brush Stroke
+	Off: the speed of the pointer sets the spacing
+	Tilt Scale
+	Brush Projection
+	Apply the pen's tilt and rotation to the tip shape
+	Mixer Brush
+	Wet
+	Mix
+	Wetness Jitter
+	Mix Jitter
+	Show the layer mask as an overlay
+	Toggle visibility
+	Unlink the mask from the layer
+	Link the mask to the layer
+	Gradient
+	Gradient Options
+	Align with layer
+	Reset Alignment
+	Centre the gradient (offset 0, 0)
+	Gradient Editor
+	Gradient picker
+	Save As Preset
+	The gradient the Gradient tool paints with
+	Adds the current gradient to the Gradients panel
+	Gradient stops
+	Select a type layer to edit its character and paragraph settings.
+	Text color
+	Type Options
+	Anti-aliasing method
+	Horizontal type
+	Vertical type
+	Fill path with foreground color
+	Stroke path with brush
+	Load path as a selection
+	Make work path from selection
+	Add vector mask
+	Create new path
+	Delete path
+	Delete vector mask
+	CPU (no GPU acceleration)
+	DirectX 12
+	GPU backend
+	Linux display server
+	X11
+	Metal
+	OpenGL
+	Use tablet pressure
+	Vulkan
+	Alt-click to define a source point to clone from
+	No path to make a selection from: draw one with the Pen tool or select one in the Paths panel.
+	Cancel opening
+	Cancelled opening {name}
+	Developing {name}
+	Cancelled {label}
+	Esc to cancel
+	Opening {name}
+	Saving {name}
+	A save to {name} is still running; try again when it finishes
+	{label} is writing the file and can no longer be cancelled
+	Opening {name}…
+	Opening…
+	Reading…
+	Working…
+@id	select.all
+@id	edit.purge.undo
+	Delete Smart Filters
+	Enable Smart Filters
+	New Layer…
+	Delete Layer…
+	Color Range
+	Select Similar Colors
+	New Selection
+	Adaptive Wide Angle
+	Chalk & Charcoal
+	Charcoal
+	Chrome
+	Conté Crayon
+	Graphic Pen
+	Halftone Pattern
+	Note Paper
+	Photocopy
+	Plaster
+	Reticulation
+	Stamp
+	Torn Edges
+	Water Paper
+	Canvas rotation
+	Extensions
+	Libraries
+	3D
+	Toolbars
+	Move
+	Wand
+	Pencil
+	Clone Stamp
+	Healing
+	Dodge
+	Burn
+	Pen
+	Hand
+	Sampler
+	Note tool
+	Quick Selection
+	Magnetic Lasso
+	History Brush
+	Art History Brush
+	Pattern Stamp
+	Spot Healing
+	Red Eye
+	Patch
+	Content-Aware Move
+	Rotate View
+	Perspective Crop
+	Color Replacement
+	Dodge/Burn
+	Dynamics
+	Tilt
+	Reset
+	Defaults restored.
+	Stop
+	Create new set
+	Technology Previews
+	New Group

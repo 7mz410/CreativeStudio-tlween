@@ -13,3 +13,5 @@ this list.
   (`shibshib/RTL.md`); the tool bar, rail and dock change sides; `crates/ui-egui/tests/rtl.rs`.
 - Arabic groundwork: IBM Plex Sans Arabic (OFL) as the Arabic UI font and
   `crates/ui-egui/src/i18n/bidi.rs` (Arabic catalogs in visual order for egui).
+- Arabic interface: `crates/ui-egui/src/i18n/ar.tsv` (2766 entries, built from `shibshib/ar-work/`),
+  Arabic plural rules, in the language list. The "unsupported language" tests use Hebrew now.

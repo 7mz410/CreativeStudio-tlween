@@ -20,6 +20,12 @@ KEEP = ('Default PhotoCraft Size', 'PhotoCraft Studio CMYK', 'the PhotoCraft aut
 
 # Exact replacements, applied before the general rename (and kept idempotent: skipped once done).
 RTL_RULES = [
+    # Arabic is supported now: the 'unsupported language' tests use Hebrew instead.
+    ('crates/ui-egui/src/i18n/live_tests.rs', '    for tags in [vec![], vec!["sv-SE", "ar-SA"]] {', '    for tags in [vec![], vec!["sv-SE", "he-IL"]] {'),
+    ('crates/ui-egui/src/i18n/system.rs', '            (vec!["sv-SE", "ar-SA"], "en"),', '            (vec!["sv-SE", "he-IL"], "en"),'),
+    ('crates/ui-egui/src/i18n/mod.rs', 'fn plural_none(_: u64) -> usize {\n', '/// ShibShib: Arabic: zero, one, two, few (n % 100 in 3–10), many (n % 100 in 11–99), other.\nfn plural_arabic(n: u64) -> usize {\n    match (n, n % 100) {\n        (0, _) => 0,\n        (1, _) => 1,\n        (2, _) => 2,\n        (_, 3..=10) => 3,\n        (_, 11..=99) => 4,\n        _ => 5,\n    }\n}\n\nfn plural_none(_: u64) -> usize {\n'),
+    ('crates/ui-egui/src/i18n/mod.rs', 'pub static LANGUAGES: [LangInfo; 17] = [', 'pub static LANGUAGES: [LangInfo; 18] = ['),
+    ('crates/ui-egui/src/i18n/mod.rs', '    LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },\n', '    LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },\n    // ShibShib: Arabic (shibshib/ar-work), right to left.\n    LangInfo { code: "ar", name: "العربية", source: catalog!("ar"), plural: plural_arabic, complete_menus: true, catalog: OnceLock::new() },\n'),
     # Upstream's README moved to docs/UPSTREAM-README.md (ours is the fork's).
     ('crates/ui-egui/src/state.rs', '        let readme = include_str!("../../../README.md");', '        let readme = include_str!("../../../docs/UPSTREAM-README.md");'),
     ('Cargo.toml', '[workspace.dependencies]', '[patch.crates-io]\n# ShibShib: egui with a right-to-left switch for the Arabic interface (shibshib/RTL.md).\negui = { path = "vendor/egui" }\n\n[workspace.dependencies]'),

@@ -52,6 +52,18 @@ fn plural_one_other(n: u64) -> usize {
     usize::from(n != 1)
 }
 
+/// ShibShib: Arabic: zero, one, two, few (n % 100 in 3–10), many (n % 100 in 11–99), other.
+fn plural_arabic(n: u64) -> usize {
+    match (n, n % 100) {
+        (0, _) => 0,
+        (1, _) => 1,
+        (2, _) => 2,
+        (_, 3..=10) => 3,
+        (_, 11..=99) => 4,
+        _ => 5,
+    }
+}
+
 fn plural_none(_: u64) -> usize {
     0
 }
@@ -124,7 +136,7 @@ fn inflate(source: &[u8]) -> Result<String, String> {
 }
 
 /// The registry. English first: it is the fallback and the source language.
-pub static LANGUAGES: [LangInfo; 17] = [
+pub static LANGUAGES: [LangInfo; 18] = [
     LangInfo { code: "en", name: "English", source: b"", plural: plural_one_other, complete_menus: false, catalog: OnceLock::new() },
     LangInfo { code: "ja", name: "日本語", source: catalog!("ja"), plural: plural_none, complete_menus: true, catalog: OnceLock::new() },
     LangInfo { code: "zh-hans", name: "简体中文", source: catalog!("zh-hans"), plural: plural_none, complete_menus: true, catalog: OnceLock::new() },
@@ -135,6 +147,8 @@ pub static LANGUAGES: [LangInfo; 17] = [
     LangInfo { code: "ru", name: "Русский", source: catalog!("ru"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },
     // Ukrainian has the same one/few/many rule for integer counts.
     LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },
+    // ShibShib: Arabic (shibshib/ar-work), right to left.
+    LangInfo { code: "ar", name: "العربية", source: catalog!("ar"), plural: plural_arabic, complete_menus: true, catalog: OnceLock::new() },
     LangInfo { code: "cs", name: "Čeština", source: catalog!("cs"), plural: plural_cs, complete_menus: true, catalog: OnceLock::new() },
     LangInfo { code: "fr", name: "Français", source: catalog!("fr"), plural: plural_fr, complete_menus: true, catalog: OnceLock::new() },
     LangInfo { code: "id", name: "Bahasa Indonesia", source: catalog!("id"), plural: plural_none, complete_menus: true, catalog: OnceLock::new() },

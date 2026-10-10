@@ -704,7 +704,7 @@
 	Split Warp Horizontally	تقسيم الالتواء أفقياً
 	Split Warp Vertically	تقسيم الالتواء عمودياً
 	Statistics…	الإحصاءات…
-@plural	{n} item|{n} items	{n} عنصر|عنصر واحد|عنصران|{n} عناصر|{n} عنصراً|{n} عنصر
+@plural	{n} item|{n} items	{n} عنصر|{n} عنصر|{n} عنصران|{n} عناصر|{n} عنصراً|{n} عنصر
 	Auto	تلقائي
 	(print to the printer)	(طباعة إلى الطابعة)
 	+ Add variable	+ إضافة متغير
@@ -1704,9 +1704,9 @@
 	BLANK DOCUMENT PRESETS ({n})	إعدادات المستندات الفارغة ({n})
 	Constraints ({n})	القيود ({n})
 	Align {what}	محاذاة {what}
-@plural	{n} Layer|{n} Layers	{n} طبقة|طبقة واحدة|طبقتان|{n} طبقات|{n} طبقة|{n} طبقة
-@plural	{n} layer|{n} layers	{n} طبقة|طبقة واحدة|طبقتان|{n} طبقات|{n} طبقة|{n} طبقة
-@plural	Group · {n} layer|Group · {n} layers	مجموعة · {n} طبقة|مجموعة · طبقة واحدة|مجموعة · طبقتان|مجموعة · {n} طبقات|مجموعة · {n} طبقة|مجموعة · {n} طبقة
+@plural	{n} Layer|{n} Layers	{n} طبقة|{n} طبقة|{n} طبقتان|{n} طبقات|{n} طبقة|{n} طبقة
+@plural	{n} layer|{n} layers	{n} طبقة|{n} طبقة|{n} طبقتان|{n} طبقات|{n} طبقة|{n} طبقة
+@plural	Group · {n} layer|Group · {n} layers	مجموعة · {n} طبقة|مجموعة · {n} طبقة|مجموعة · {n} طبقتان|مجموعة · {n} طبقات|مجموعة · {n} طبقة|مجموعة · {n} طبقة
 	Additional plugins folder	مجلد إضافات إضافي
 	Adobe	Adobe
 	Adobe rgb	Adobe RGB
@@ -1894,7 +1894,7 @@
 	Exclusion	استبعاد
 	Divide	قسمة
 	Luminosity	السطوع
-@plural	{n} sample|{n} samples	{n} عينة|عينة واحدة|عينتان|{n} عينات|{n} عينة|{n} عينة
+@plural	{n} sample|{n} samples	{n} عينة|{n} عينة|{n} عينتان|{n} عينات|{n} عينة|{n} عينة
 	{added}, {removed} subtracted	{added}، و{removed} مطروحة
 	Adjustment Preview	معاينة التعديل
 	Airbrush: keeps depositing paint while the pointer rests.	البخاخ: يستمر بإيداع الطلاء أثناء ثبات المؤشر.
@@ -2406,3 +2406,369 @@
 	Flag	علم
 	Fish	سمكة
 	Wave	موجة
+	Rise	ارتفاع
+	Inflate	نفخ
+	Twist	فتل
+	Squeeze	ضغط
+	Add Pins	إضافة دبابيس
+	Delete Pins	حذف الدبابيس
+	Rotate Auto	تدوير تلقائي
+	Rotate Fixed	تدوير ثابت
+	Create Plane	إنشاء مستوى
+	Edit Plane	تعديل المستوى
+	Select Plane	تحديد المستوى
+	Measure	قياس
+	Heal	معالجة
+	Heal Off	المعالجة متوقفة
+	Heal On	المعالجة تعمل
+	Heal Auto	المعالجة تلقائية
+	Blend	مزج
+	Brush Size	حجم الفرشاة
+	Heal Color	لون المعالجة
+	Mask	القناع
+	Channel	القناة
+	Rectangle	مستطيل
+	Result	النتيجة
+	New Channel	قناة جديدة
+	Save Selection	حفظ التحديد
+	Load Selection	تحميل التحديد
+	Duplicate	تكرار
+	Fast	سريع
+	Accurate	دقيق
+	Add to	إضافة إلى
+	Subtract from	طرح من
+	Intersect with	تقاطع مع
+	Capture Comp	التقاط التركيبة
+	No Layer Comps	لا تركيبات طبقات
+	Adobe PDF Presets…	إعدادات Adobe PDF المسبقة…
+	3D…	ثلاثي الأبعاد…
+	Technology Previews…	معاينات التقنيات…
+	Background from Layer	خلفية من الطبقة
+	Add a mask  (from the selection; ⌥ inverts)	إضافة قناع  (من التحديد؛ ⌥ للعكس)
+	Add to selection  (⇧)	إضافة إلى التحديد  (⇧)
+	Airbrush: keeps painting while the pointer rests.	البخاخ: يستمر بالرسم أثناء ثبات المؤشر.
+	Click the first point or press ↵ to close · Esc cancels	انقر النقطة الأولى أو اضغط ↵ للإغلاق · Esc للإلغاء
+	Click to add a point · drag off or ⌘/Ctrl-click or Delete to remove	انقر لإضافة نقطة · اسحب للخارج أو ⌘/Ctrl-نقر أو Delete للإزالة
+	Click to apply, ⌥-click to clear overrides, double-click for Style Options	انقر للتطبيق، و⌥-نقر لمسح التجاوزات، وانقر مرتين لخيارات النمط
+	Click to zoom in  ·  ⌥-click to zoom out	انقر للتكبير  ·  ⌥-نقر للتصغير
+	Click: corner · Drag: smooth · Click first point: close · ↩ finish · Esc cancel	نقر: زاوية · سحب: ناعم · نقر النقطة الأولى: إغلاق · ↩ إنهاء · Esc إلغاء
+	Commit Perspective Warp (↩)	اعتماد التواء المنظور (↩)
+	Commit Puppet Warp (↩)	اعتماد التواء الدمية (↩)
+	Commit any current edits (⌘↩)	اعتماد أي تعديلات حالية (⌘↩)
+	Commit current crop operation  (↵)	اعتماد عملية القص الحالية  (↵)
+	Commit transform (↩)	اعتماد التحويل (↩)
+	Commit warp (↩)	اعتماد الالتواء (↩)
+	Create a new layer  (⇧⌘N)	إنشاء طبقة جديدة  (⇧⌘N)
+	Custom pattern	نقش مخصص
+	General Brushes	فُرش عامة
+	Grid  (⌘')	الشبكة  (⌘')
+	Intersect with selection  (⇧⌥)	التقاطع مع التحديد  (⇧⌥)
+	New document…     ⌘N	مستند جديد…     ⌘N
+	Open…     ⌘O	فتح…     ⌘O
+	Rulers  (⌘R)	المساطر  (⌘R)
+	Search commands (⌘K)	البحث في الأوامر (⌘K)
+	Show Guides  (⌘;)	إظهار الأدلة  (⌘;)
+	Subtract from selection  (⌥)	الطرح من التحديد  (⌥)
+	Uses the foreground and background colors.	يستخدم لوني المقدمة والخلفية.
+	↑↓ navigate   ↵ run   esc close	↑↓ للتنقل   ↵ للتشغيل   esc للإغلاق
+	Adds grain to the soft edges of the brush tip.	يضيف حبيبات إلى الحواف الناعمة لرأس الفرشاة.
+	Keeps the current texture when switching presets.	يحتفظ بالملمس الحالي عند تبديل الإعدادات المسبقة.
+	Watercolour look: lighter interior, darker rims.	مظهر الألوان المائية: داخل أفتح وحواف أغمق.
+	Collapse group  (⌥-click: all groups)	طيّ المجموعة  (⌥-نقر: كل المجموعات)
+	Expand group  (⌥-click: all groups)	توسيع المجموعة  (⌥-نقر: كل المجموعات)
+	Hide the layer's effects  (⌥-click: all layers)	إخفاء تأثيرات الطبقة  (⌥-نقر: كل الطبقات)
+	Show the layer's effects  (⌥-click: all layers)	إظهار تأثيرات الطبقة  (⌥-نقر: كل الطبقات)
+	New from Clipboard	جديد من الحافظة
+	Free Transform a Copy	تحويل حر لنسخة
+	Transform Again on a Copy	التحويل مرة أخرى على نسخة
+	Select Layer Above	تحديد الطبقة العليا
+	Select Layer Below	تحديد الطبقة السفلى
+	Select Top Layer	تحديد الطبقة الأعلى
+	Select Bottom Layer	تحديد الطبقة الأدنى
+	Add Layer Above to Selection	إضافة الطبقة العليا إلى التحديد
+	Add Layer Below to Selection	إضافة الطبقة السفلى إلى التحديد
+	8 bit	8 بت
+	Integer	عدد صحيح
+	16 bit	16 بت
+	32 bit (float)	32 بت (عشري)
+	Floating point	فاصلة عائمة
+	Use Global Light	استخدام الضوء العام
+	Native file drag-and-drop is unavailable	سحب الملفات وإفلاتها غير متاح
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	سحب الملفات وإفلاتها غير مدعوم في Wayland بعد. استخدم ملف › فتح، أو انسخ الصورة من مدير الملفات والصقها بـ {paste}.
+	To drop files, start ShibShib tlween under XWayland: `{command}`	لإفلات الملفات، شغّل شبشب تلوين تحت XWayland: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: ShibShib tlween then always starts under XWayland.	أو اضبط التفضيلات › الأداء › خادم العرض في Linux على X11: عندها يعمل شبشب تلوين دائماً تحت XWayland.
+	Edit › Paste	تحرير › لصق
+	Use File › Open, or paste a copied image with {paste}.	استخدم ملف › فتح، أو الصق صورة منسوخة بـ {paste}.
+	Mixer Brush Tool	أداة فرشاة الخلط
+	Invalid {mode} profile	ملف تعريف {mode} غير صالح
+	Unnamed {mode} profile	ملف تعريف {mode} بلا اسم
+	Show bounding box when dragging layer	إظهار المربع المحيط عند سحب الطبقة
+	System title bar	شريط عنوان النظام
+	Freeze Lasso: drag to freeze an area, Alt-drag to thaw it (L)	وهق التجميد: اسحب لتجميد منطقة، وAlt-سحب لإذابتها (L)
+	Rendering Mode	وضع التصيير
+	Automatic (recommended)	تلقائي (موصى به)
+	CPU / Compatibility	CPU / التوافق
+	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	الوضع التلقائي يستخدم تسريع GPU عند توفره ويرجع إلى التصيير بالمعالج عند الأخطاء.
+	Switched to CPU rendering	تم التحويل إلى التصيير بالمعالج
+	GPU acceleration could not continue. Your documents are unchanged.	تعذّر استمرار تسريع GPU. مستنداتك لم تتغير.
+	ShibShib tlween is using the CPU image compositor. The window may still use your graphics adapter.	يستخدم شبشب تلوين مُركّب الصور بالمعالج. قد تستمر النافذة باستخدام بطاقة الرسوميات.
+	Retry GPU requires a restart. Save your work first.	إعادة محاولة GPU تتطلب إعادة التشغيل. احفظ عملك أولاً.
+	Keep Using CPU	الاستمرار بالمعالج
+	Retry GPU	إعادة محاولة GPU
+	GPU Backend	واجهة GPU
+	Details	التفاصيل
+	Rendering mode	وضع التصيير
+	Shadow Clipping Warning (U)	تحذير قص الظلال (U)
+	Highlight Clipping Warning (O)	تحذير قص الإضاءات (O)
+	Show Lab Color Readouts	إظهار قراءات ألوان Lab
+	Show Vectorscope	إظهار مخطط المتجهات اللوني
+	Show Red at 3 o'clock	إظهار الأحمر عند الساعة 3
+	Show Skin Tone Indicator	إظهار مؤشر لون البشرة
+	Tone Histogram	مدرج الدرجات
+	Show Selected Region	إظهار المنطقة المحددة
+cameraRaw	Light	الضوء
+	Camera Raw Filter ({layer})	فلتر Camera Raw ({layer})
+	Camera Raw ({name})	Camera Raw ({name})
+cameraRaw	Lights	الدرجات الفاتحة
+cameraRaw	Darks	الدرجات الداكنة
+cameraRaw	Blacks	الأسود
+cameraRaw	Amount	المقدار
+cameraRaw	Tint	الصبغة
+cameraRaw	Masking	التقنيع
+cameraRaw	Blending	المزج
+	Patch Tool	أداة الرقعة
+	Patch:	الرقعة:
+	Lasso around an area, then drag the selection	ارسم بالوهق حول منطقة، ثم اسحب التحديد
+	Now drag the selection onto another area	الآن اسحب التحديد إلى منطقة أخرى
+	3 x 3	3 × 3
+	4 x 4	4 × 4
+	5 x 5	5 × 5
+	Grid:	الشبكة:
+	Edit Type	تعديل النص
+	New Style…	نمط جديد…
+	Style {name} saved	حُفظ النمط {name}
+	Create new style (from the selected type)	إنشاء نمط جديد (من النص المحدد)
+	Create new style from the selected layer	إنشاء نمط جديد من الطبقة المحددة
+	Make Default	جعله افتراضياً
+	Reset to Default	إعادة إلى الافتراضي
+	Full-resolution preview unavailable	معاينة الدقة الكاملة غير متاحة
+	No patterns	لا نقوش
+	Enable {name}	تفعيل {name}
+	Hold Alt while drawing for straight segments	اضغط Alt أثناء الرسم لمقاطع مستقيمة
+	Drag or click polygon points · hold Alt during lasso for straight segments · {add} add · {sub} before drawing subtracts	اسحب أو انقر نقاط المضلع · اضغط Alt أثناء الوهق لمقاطع مستقيمة · {add} إضافة · {sub} قبل الرسم للطرح
+	Extend	توسيع
+	Structure:	البنية:
+	Content-Aware Move Tool	أداة التحريك المدرك للمحتوى
+	TIFF Options	خيارات TIFF
+	Including layers will increase file size.	تضمين الطبقات يزيد حجم الملف.
+	Discard Layers and Save a Copy	تجاهل الطبقات وحفظ نسخة
+	Don't show again	عدم الإظهار مجدداً
+	Save failed: {error}	فشل الحفظ: {error}
+	Save cancelled	أُلغي الحفظ
+	Couldn't place {name}: {error}	تعذّر وضع {name}: {error}
+	Magnetic Lasso Tool	أداة الوهق المغناطيسي
+	Frequency	التردد
+	Use tablet pressure to change pen width	استخدام ضغط اللوح لتغيير عرض القلم
+	About	حول
+	Contributors	المساهمون
+	Models	النماذج
+	Sort	فرز
+	Username	اسم المستخدم
+	Display name	اسم العرض
+	Real name	الاسم الحقيقي
+	Reverse the order	عكس الترتيب
+	Grab bag	منوّعات
+	Table	جدول
+	Name (A–Z)	الاسم (أ–ي)
+	Merged PRs	الـ PRs المدموجة
+	Commits	الـ Commits
+	Lines added	الأسطر المضافة
+	Lines deleted	الأسطر المحذوفة
+	Line delta	فرق الأسطر
+	Binary assets added	ملفات ثنائية أُضيفت
+	Binary assets removed	ملفات ثنائية حُذفت
+	First commit	أول commit
+	First	الأول
+	Last commit	آخر commit
+	Last	الأخير
+	Contributors: {contributors} · Commits: {commits}	المساهمون: {contributors} · الـ Commits: {commits}
+	No contributor data was built into this copy.	لم تُضمَّن بيانات المساهمين في هذه النسخة.
+	No model credits were built into this copy.	لم تُضمَّن بيانات النماذج في هذه النسخة.
+	Company	الشركة
+	Version	الإصدار
+	% of all commits	% من كل الـ commits
+	Lines +/−	الأسطر +/−
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{binAdded} / −{binDeleted} binary assets, {first} – {last}	@{login}: {prs} PR، {commits} commit، +{added} / −{deleted} سطر (Δ {delta})، +{binAdded} / −{binDeleted} ملف ثنائي، {first} – {last}
+	Create new swatch	إنشاء عينة جديدة
+	New Swatch…	عينة جديدة…
+	New Swatch Group…	مجموعة عينات جديدة…
+	Import Swatches…	استيراد عينات…
+	Replace Swatches…	استبدال العينات…
+	Export Swatches…	تصدير العينات…
+	Export Swatches for Exchange…	تصدير العينات للتبادل…
+	Reset Swatches	إعادة ضبط العينات
+	Add to Swatches	إضافة إلى العينات
+	Blend If:	المزج إذا:
+	Channels:	القنوات:
+	Knockout	الحجب
+	Apply At Canvas Bounds	التطبيق عند حدود اللوحة
+	Color Picker (Text Color)	منتقي الألوان (لون النص)
+	Color Picker (Fill Color)	منتقي الألوان (لون التعبئة)
+	Fill color	لون التعبئة
+	Color Picker (Stroke Color)	منتقي الألوان (لون الحدود)
+	Stroke color	لون الحدود
+	Pick screen color	اختيار لون من الشاشة
+	Sample a pixel anywhere on the screen	أخذ عينة بكسل من أي مكان في الشاشة
+	Click to pick · Esc to cancel	انقر للاختيار · Esc للإلغاء
+	Pick a screen pixel or press Esc to cancel	اختر بكسلاً من الشاشة أو اضغط Esc للإلغاء
+	Scroll to zoom	التمرير للتكبير
+	Show/Hide All Panels	إظهار/إخفاء كل اللوحات
+	Show/Hide Panels	إظهار/إخفاء اللوحات
+	Could not open	تعذّر الفتح
+	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: المسار ليس Unicode صالحاً؛ أعد تسمية الملف وافتحه مجدداً.
+	Contents:	المحتوى:
+	Custom Pattern:	نقش مخصص:
+	Foreground Color	لون المقدمة
+	Color…	لون…
+	50% Gray	رمادي 50%
+	{size} (was {old})	{size} (كان {old})
+	Cone	مخروط
+	Cone (Inverted)	مخروط (معكوس)
+	Domed	مقبّب
+	Domed (Inverted)	مقبّب (معكوس)
+	Diagonal (Descending)	قُطري (هابط)
+	Red Eye Tool	أداة العين الحمراء
+	Pupil Size	حجم البؤبؤ
+	Darken Amount	مقدار التغميق
+	Click a red pupil to neutralize it	انقر بؤبؤاً أحمر لتحييده
+	open source	مفتوح المصدر
+	…and {n} more	…و{n} أخرى
+	Eyedroppers:	القطّارات:
+	Set Black Point	تعيين النقطة السوداء
+	Set Neutral Gray Point	تعيين نقطة الرمادي المحايد
+	Set White Point	تعيين النقطة البيضاء
+	Unavailable in this color mode	غير متاح في وضع الألوان هذا
+	Selection Preview:	معاينة التحديد:
+	Black Matte	حافة سوداء
+	White Matte	حافة بيضاء
+	Seafoam	أخضر بحري
+	Indigo	نيلي
+	Fuchsia	فوشيا
+	Violet	بنفسجي
+	Large document: redrawing on the CPU	مستند كبير: إعادة الرسم على المعالج
+	This redraw took {seconds} s on the CPU.	استغرقت إعادة الرسم هذه {seconds} ث على المعالج.
+	Edits that change the whole document, such as a layer's blend mode, opacity or visibility, redraw all of it.	التعديلات التي تغيّر المستند كله، مثل وضع مزج الطبقة أو عتامتها أو ظهورها، تعيد رسمه كاملاً.
+	Its layers don't fit the GPU memory budget. Raising Memory usage in Preferences › Performance raises the budget, up to a quarter of this computer's memory.	طبقاته لا تتسع في ميزانية ذاكرة GPU. رفع استخدام الذاكرة في التفضيلات › الأداء يرفع الميزانية، حتى ربع ذاكرة هذا الجهاز.
+	The GPU compositor wasn't used: {reason}	لم يُستخدم مُركّب GPU: {reason}
+fontWeight	Thin	رفيع
+fontWeight	ExtraLight	رفيع جداً
+fontWeight	Light	خفيف
+fontWeight	Regular	عادي
+fontWeight	Medium	متوسط
+fontWeight	SemiBold	شبه عريض
+fontWeight	Bold	عريض
+fontWeight	ExtraBold	عريض جداً
+fontWeight	Black	أسود
+fontWeight	Italic	مائل
+	Pattern Stamp Tool	أداة ختم النقش
+	Impressionist	انطباعي
+	Rotate View Tool	أداة تدوير العرض
+	Reset View	إعادة ضبط العرض
+	Drag around the centre to rotate the view  ·  Shift constrains to 15°	اسحب حول المركز لتدوير العرض  ·  Shift للتقييد بـ 15°
+	Dual Axis	محوران
+	Diagonal	قُطري
+	Transform Symmetry	تماثل التحويل
+	Point Sample	عينة نقطية
+	3 by 3 Average	متوسط 3 × 3
+	5 by 5 Average	متوسط 5 × 5
+	11 by 11 Average	متوسط 11 × 11
+	31 by 31 Average	متوسط 31 × 31
+	51 by 51 Average	متوسط 51 × 51
+	101 by 101 Average	متوسط 101 × 101
+	Sample Size:	حجم العينة:
+	All Layers No Adjustments	كل الطبقات بدون تعديلات
+	Current & Below No Adjustments	الحالية وما تحتها بدون تعديلات
+	Show Sampling Ring	إظهار حلقة أخذ العينة
+	Out of gamut for printing: click for the nearest printable colour	خارج نطاق ألوان الطباعة: انقر لأقرب لون قابل للطباعة
+	Not a web colour: click for the nearest web colour	ليس لون ويب: انقر لأقرب لون ويب
+	Color to Alpha…	اللون إلى ألفا…
+	Transparency Threshold	عتبة الشفافية
+	Opacity Threshold	عتبة العتامة
+	Rasterize svg groups deeper than	تنقيط مجموعات SVG الأعمق من
+	0 turns this threshold off; SVG groups nested deeper than 100 levels are always rasterized.	0 يوقف هذه العتبة؛ مجموعات SVG المتداخلة لأعمق من 100 مستوى تُنقَّط دائماً.
+	Rule of Thirds	قاعدة الأثلاث
+	Triangle	مثلث
+	Golden Ratio	النسبة الذهبية
+	Golden Spiral	الحلزون الذهبي
+	Auto Show Overlay	إظهار التراكب تلقائياً
+	Always Show Overlay	إظهار التراكب دائماً
+	Never Show Overlay	عدم إظهار التراكب أبداً
+	Cycle Overlay	تبديل التراكب
+	Cycle Orientation	تبديل الاتجاه
+	Set the overlay options for the Crop tool	ضبط خيارات التراكب لأداة القص
+	Alt-click went to the desktop, which moves windows with Alt-drag. Set its window-move key to Super, or latch Alt in Window › Modifier Keys.	ذهب Alt-نقر إلى سطح المكتب، الذي يحرّك النوافذ بـ Alt-سحب. اضبط مفتاح تحريك النوافذ على Super، أو ثبّت Alt من نافذة › مفاتيح التعديل.
+	Color Picker (Layer Style Color)	منتقي الألوان (لون نمط الطبقة)
+	Auto Hide Notifications	إخفاء الإشعارات تلقائياً
+	Notification Duration (seconds)	مدة الإشعار (ثوانٍ)
+	Appearance Mode	وضع المظهر
+	Dark Theme	السمة الداكنة
+	Light Theme	السمة الفاتحة
+	Pro Medium	Pro متوسط
+	Studio Light	Studio فاتح
+	Next Appearance Mode	وضع المظهر التالي
+	Sync with system	مزامنة مع النظام
+	Active	نشط
+	Color Picker (Solid Color)	منتقي الألوان (لون خالص)
+	Straighten the image by drawing a line on it	قوّم الصورة برسم خط عليها
+	Set additional Crop options	ضبط خيارات قص إضافية
+	Show Cropped Area	إظهار المنطقة المقصوصة
+	Enable Crop Shield	تفعيل درع القص
+	Match Canvas	مطابقة اللوحة
+	Auto Adjust Opacity	ضبط العتامة تلقائياً
+	Crop Shield color	لون درع القص
+	Color Picker (Crop Shield Color)	منتقي الألوان (لون درع القص)
+	From Center	من المركز
+	Link radii	ربط أنصاف الأقطار
+	Star Ratio:	نسبة النجمة:
+	Create Rectangle	إنشاء مستطيل
+	Create Ellipse	إنشاء قطع ناقص
+	Create Triangle	إنشاء مثلث
+	Create Polygon	إنشاء مضلع
+	Pressure curve	منحنى الضغط
+	Click to add a point, right-click to remove	انقر لإضافة نقطة، والنقر بالزر الأيمن للإزالة
+	Some brush presets could not be loaded	تعذّر تحميل بعض إعدادات الفُرش المسبقة
+	Retry saving presets	إعادة محاولة حفظ الإعدادات المسبقة
+	Brush preset changes are not saved: {error}	تغييرات إعدادات الفُرش لم تُحفظ: {error}
+	Keep this tab open to retain your brushes.	أبقِ علامة التبويب هذه مفتوحة للاحتفاظ بفُرشك.
+	Browser storage is unavailable; brushes are session-only. Keep this tab open to retain them.	تخزين المتصفح غير متاح؛ الفُرش للجلسة فقط. أبقِ علامة التبويب مفتوحة للاحتفاظ بها.
+	Saving brush presets… Keep this tab open until saving finishes.	جارٍ حفظ إعدادات الفُرش… أبقِ علامة التبويب مفتوحة حتى ينتهي الحفظ.
+	Reflect	انعكاس
+	Glow	توهج
+	Negation	نفي
+	XOR	XOR
+	Color Burn (Paint.NET)	حرق اللون (Paint.NET)
+	Color Dodge (Paint.NET)	تفتيح اللون (Paint.NET)
+	Stroke Options	خيارات الحدود
+	Solid	مصمت
+	Dashed	متقطع
+	Dotted	منقّط
+	Caps	النهايات
+	Butt / Flat	مستقيمة / مسطحة
+	Corners	الزوايا
+	Miter	حادة
+	Round	مستديرة
+	Bevel	مشطوفة
+	Miter limit	حد الزاوية الحادة
+	Dashed line	خط متقطع
+	Dash	الشرطة
+	Gap	الفراغ
+	Dash / gap lengths × stroke width	أطوال الشرطة / الفراغ × عرض الحدود
+	Add pair	إضافة زوج
+	Remove pair	إزالة زوج
+	Dash offset	إزاحة الشرطة
+	Open paths use centered strokes	المسارات المفتوحة تستخدم حدوداً في المنتصف
+	Use finite lengths and a positive pattern total	استخدم أطوالاً محدودة ومجموع نمط موجباً
+	No subject found — try Object Selection or the Lasso	لم يُعثر على موضوع — جرّب تحديد العنصر أو الوهق
+	Quick Selection found nothing there	لم يجد التحديد السريع شيئاً هناك
+	Object Selection found nothing there — try a tighter rectangle	لم يجد تحديد العنصر شيئاً هناك — جرّب مستطيلاً أضيق
+	No subject found — try a rectangle around the object	لم يُعثر على موضوع — جرّب مستطيلاً حول العنصر

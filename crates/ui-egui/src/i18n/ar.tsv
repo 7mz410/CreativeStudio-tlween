@@ -1926,3 +1926,483 @@
 	Brush picker	منتقي الفُرش
 	Erase	مسح
 	Right click with painting tools	النقر بالزر الأيمن مع أدوات الرسم
+	System Info…	معلومات النظام…
+	System Info	معلومات النظام
+	More panels	لوحات أخرى
+	More documents	مستندات أخرى
+	These settings aren't available in ShibShib tlween yet.	هذه الإعدادات غير متاحة في شبشب تلوين بعد.
+	Graphics	الرسوميات
+	Reset GPU Backend	إعادة ضبط واجهة GPU
+	Applies at next launch.	يُطبَّق عند التشغيل التالي.
+	Click to sample the foreground colour  ·  {key}-click for background	انقر لأخذ عينة لون المقدمة  ·  {key}-نقر للخلفية
+	{key}-click to set the source	{key}-نقر لتعيين المصدر
+	{key} to subtract	{key} للطرح
+	Clone source {n} ({key}-click with Clone Stamp to set)	مصدر الاستنساخ {n} ({key}-نقر بختم الاستنساخ للتعيين)
+	Source: not set ({key}-click with Clone Stamp)	المصدر: غير معيّن ({key}-نقر بختم الاستنساخ)
+	Pixel Layer	طبقة بكسل
+	Type Layer	طبقة نص
+	Shape Layer	طبقة شكل
+	Group Layer	طبقة مجموعة
+	Fill Layer	طبقة تعبئة
+	Smart Object Layer	طبقة كائن ذكي
+	Create Warped Text	إنشاء نص ملتوٍ
+	Rasterize Smart Object	تنقيط الكائن الذكي
+	Rasterize Fill Content	تنقيط محتوى التعبئة
+	Unlock: picking a preset replaces these settings	فك القفل: اختيار إعداد مسبق يستبدل هذه الإعدادات
+	Lock: keep these settings when picking another preset	قفل: الاحتفاظ بهذه الإعدادات عند اختيار إعداد آخر
+	Diameter:	القطر:
+	Hardness:	الصلابة:
+	No brush presets	لا إعدادات فُرش مسبقة
+	Toggle the Brush Settings panel  (F5)	تبديل لوحة إعدادات الفرشاة  (F5)
+	Create new brush preset from the current settings	إنشاء إعداد فرشاة مسبق جديد من الإعدادات الحالية
+	Brush Settings…  (F5): every option of this brush	إعدادات الفرشاة…  (F5): كل خيارات هذه الفرشاة
+	Rename Brush…	إعادة تسمية الفرشاة…
+	Delete Brush	حذف الفرشاة
+	New Brush Preset…	إعداد فرشاة مسبق جديد…
+	Brush Preset Options	خيارات إعداد الفرشاة المسبق
+	Group name	اسم المجموعة
+	Brush name	اسم الفرشاة
+	Brush Name	اسم الفرشاة
+	Brush Stroke	ضربة الفرشاة
+	Off: the speed of the pointer sets the spacing	متوقف: سرعة المؤشر تحدد التباعد
+	Tilt Scale	مقياس الإمالة
+	Brush Projection	إسقاط الفرشاة
+	Apply the pen's tilt and rotation to the tip shape	تطبيق إمالة القلم ودورانه على شكل الرأس
+	Mixer Brush	فرشاة الخلط
+	Wet	البلل
+	Mix	المزج
+	Wetness Jitter	تذبذب البلل
+	Mix Jitter	تذبذب المزج
+	Show the layer mask as an overlay	إظهار قناع الطبقة كتراكب
+	Toggle visibility	تبديل الظهور
+	Unlink the mask from the layer	فك ربط القناع عن الطبقة
+	Link the mask to the layer	ربط القناع بالطبقة
+	Gradient	التدرّج
+	Gradient Options	خيارات التدرّج
+	Align with layer	محاذاة مع الطبقة
+	Reset Alignment	إعادة ضبط المحاذاة
+	Centre the gradient (offset 0, 0)	توسيط التدرّج (إزاحة 0، 0)
+	Gradient Editor	محرر التدرّج
+	Gradient picker	منتقي التدرّج
+	Save As Preset	حفظ كإعداد مسبق
+	The gradient the Gradient tool paints with	التدرّج الذي ترسم به أداة التدرّج
+	Adds the current gradient to the Gradients panel	يضيف التدرّج الحالي إلى لوحة التدرّجات
+	Gradient stops	نقاط توقف التدرّج
+	Select a type layer to edit its character and paragraph settings.	حدد طبقة نص لتعديل إعدادات الحرف والفقرة.
+	Text color	لون النص
+	Type Options	خيارات النص
+	Anti-aliasing method	طريقة تنعيم الحواف
+	Horizontal type	نص أفقي
+	Vertical type	نص عمودي
+	Fill path with foreground color	تعبئة المسار بلون المقدمة
+	Stroke path with brush	رسم حدود المسار بالفرشاة
+	Load path as a selection	تحميل المسار كتحديد
+	Make work path from selection	إنشاء مسار عمل من التحديد
+	Add vector mask	إضافة قناع متجهي
+	Create new path	إنشاء مسار جديد
+	Delete path	حذف المسار
+	Delete vector mask	حذف القناع المتجهي
+	CPU (no GPU acceleration)	CPU (بدون تسريع GPU)
+	DirectX 12	DirectX 12
+	GPU backend	واجهة GPU
+	Linux display server	خادم العرض في Linux
+	X11	X11
+	Metal	Metal
+	OpenGL	OpenGL
+	Use tablet pressure	استخدام ضغط اللوح
+	Vulkan	Vulkan
+	Alt-click to define a source point to clone from	Alt-نقر لتعريف نقطة مصدر للاستنساخ منها
+	No path to make a selection from: draw one with the Pen tool or select one in the Paths panel.	لا مسار لإنشاء تحديد منه: ارسم واحداً بأداة القلم أو حدد واحداً في لوحة المسارات.
+	Cancel opening	إلغاء الفتح
+	Cancelled opening {name}	أُلغي فتح {name}
+	Developing {name}	جارٍ تحميض {name}
+	Cancelled {label}	أُلغي {label}
+	Esc to cancel	Esc للإلغاء
+	Opening {name}	جارٍ فتح {name}
+	Saving {name}	جارٍ حفظ {name}
+	A save to {name} is still running; try again when it finishes	حفظ إلى {name} ما زال جارياً؛ حاول مجدداً عند انتهائه
+	{label} is writing the file and can no longer be cancelled	{label} يكتب الملف ولم يعد ممكناً إلغاؤه
+	Opening {name}…	جارٍ فتح {name}…
+	Opening…	جارٍ الفتح…
+	Reading…	جارٍ القراءة…
+	Working…	جارٍ العمل…
+@id	select.all	تحديد الكل
+@id	edit.purge.undo	سجل التراجع
+	Delete Smart Filters	حذف الفلاتر الذكية
+	Enable Smart Filters	تفعيل الفلاتر الذكية
+	New Layer…	طبقة جديدة…
+	Delete Layer…	حذف الطبقة…
+	Color Range	نطاق اللون
+	Select Similar Colors	تحديد الألوان المتشابهة
+	New Selection	تحديد جديد
+	Adaptive Wide Angle	زاوية واسعة متكيفة
+	Chalk & Charcoal	طباشير وفحم
+	Charcoal	فحم
+	Chrome	كروم
+	Conté Crayon	قلم Conté
+	Graphic Pen	قلم الجرافيك
+	Halftone Pattern	نمط نقاط الطباعة
+	Note Paper	ورق الملاحظات
+	Photocopy	نسخة مصوّرة
+	Plaster	جص
+	Reticulation	تشبّك
+	Stamp	ختم
+	Torn Edges	حواف ممزقة
+	Water Paper	ورق مائي
+	Canvas rotation	تدوير اللوحة
+	Extensions	الامتدادات
+	Libraries	المكتبات
+	3D	ثلاثي الأبعاد
+	Toolbars	أشرطة الأدوات
+	Move	تحريك
+	Wand	العصا
+	Pencil	قلم الرصاص
+	Clone Stamp	ختم الاستنساخ
+	Healing	المعالجة
+	Dodge	تفتيح
+	Burn	حرق
+	Pen	القلم
+	Hand	اليد
+	Sampler	أخذ العينات
+	Note tool	أداة الملاحظة
+	Quick Selection	التحديد السريع
+	Magnetic Lasso	الوهق المغناطيسي
+	History Brush	فرشاة السجل
+	Art History Brush	فرشاة السجل الفنية
+	Pattern Stamp	ختم النقش
+	Spot Healing	المعالجة الموضعية
+	Red Eye	العين الحمراء
+	Patch	الرقعة
+	Content-Aware Move	تحريك مدرك للمحتوى
+	Rotate View	تدوير العرض
+	Perspective Crop	قص المنظور
+	Color Replacement	استبدال اللون
+	Dodge/Burn	تفتيح/حرق
+	Dynamics	الديناميكيات
+	Tilt	الإمالة
+	Reset	إعادة ضبط
+	Defaults restored.	استُعيدت الافتراضيات.
+	Stop	إيقاف
+	Create new set	إنشاء مجموعة جديدة
+	Technology Previews	معاينات التقنيات
+	New Group	مجموعة جديدة
+	Layer Comp	تركيبة طبقات
+	Create new layer	إنشاء طبقة جديدة
+	Group · {n} layer	مجموعة · {n} طبقة
+	General Blend	المزج العام
+	Advanced Blending	المزج المتقدم
+	RGB	RGB
+	Alpha	ألفا
+	Spot Channel	قناة لون موضعي
+	Working Gray Plate	لوح الرمادي للعمل
+	HSL/Grayscale	HSL/تدرج رمادي
+	Tone Curve	منحنى الدرجات
+	Split Toning	تقسيم الدرجات
+	Lens Corrections	تصحيحات العدسة
+	Camera Calibration	معايرة الكاميرا
+	Snapshots	اللقطات
+	Recovery	الاستعادة
+	Fill Light	ضوء التعبئة
+	Convert to Grayscale	تحويل إلى تدرج رمادي
+	Sharpness	الحدة
+	Color Noise Reduction	تقليل ضوضاء الألوان
+	Luminance Smoothness	نعومة النصوع
+	Make	الشركة
+	Model	الطراز
+	Lens	العدسة
+	F	F
+	ISO	ISO
+	Focal Length35mm	البعد البؤري 35mm
+	Aspect Ratio	نسبة الأبعاد
+	Time	الوقت
+	Artist	الفنان
+	Enter description…	أدخل وصفاً…
+	ColorSync	ColorSync
+	ProPhoto	ProPhoto
+	sRGB	sRGB
+	ACES	ACES
+	Industry Standard	معيار الصناعة
+	Uncoated CMYK	CMYK غير مطلي
+	Newspaper	ورق الجرائد
+	Working Spaces	مساحات العمل
+	Color Management Policies	سياسات إدارة الألوان
+	Detect Faces	اكتشاف الوجوه
+	Localize Color Clusters	مجموعات ألوان موضعية
+	Duplicated selection name	اسم التحديد المكرر
+	Operation	العملية
+	New channel only	قناة جديدة فقط
+	Masked Areas	المناطق المقنّعة
+	Selected Areas	المناطق المحددة
+	Spot Color	لون موضعي
+	Color indicates	اللون يشير إلى
+	Create Snapshot	إنشاء لقطة
+	Delete Snapshot	حذف اللقطة
+	New Snapshot	لقطة جديدة
+	Snapshot 1	لقطة 1
+	Step Forward	خطوة للأمام
+	Step Backward	خطوة للخلف
+	Nonlinear History	سجل غير خطي
+	Set New Snapshot as Default	تعيين اللقطة الجديدة كافتراضية
+	Automatically Create First Snapshot	إنشاء أول لقطة تلقائياً
+	Automatically Create New Snapshot When Saving	إنشاء لقطة جديدة تلقائياً عند الحفظ
+	Show New Snapshot Dialog by Default	إظهار نافذة اللقطة الجديدة افتراضياً
+	Clear History	مسح السجل
+	Panel Options…	خيارات اللوحة…
+	View menu	قائمة العرض
+	Keep view in sync	إبقاء العرض متزامناً
+	{zoom}%	{zoom}%
+	Mouse Controls	عناصر تحكم الفأرة
+	Initial Direction of Stroke	الاتجاه الأولي للضربة
+	Direction of Stroke	اتجاه الضربة
+	Humidity	الرطوبة
+	Auto Clean Brush	تنظيف الفرشاة تلقائياً
+	Spacing:	التباعد:
+	Brush Tip	رأس الفرشاة
+	New Layer from Brush	طبقة جديدة من الفرشاة
+	New Brush	فرشاة جديدة
+	New Tool Preset	إعداد أداة مسبق جديد
+	Auto-Leading	تباعد أسطر تلقائي
+	Scale Horizontally	تحجيم أفقي
+	Scale Vertically	تحجيم عمودي
+	Baseline Shift	إزاحة خط الأساس
+	Mac LCD	Mac LCD
+	Mac Sharp	Mac حاد
+	Mac Crisp	Mac واضح
+	Mac Strong	Mac قوي
+	Mac Smooth	Mac ناعم
+	Superscript	مرتفع
+	Subscript	منخفض
+	Ligature	حرف مركّب
+	Alternative	بديل
+	Roman	عادي
+	Bold Italic	عريض مائل
+	Ultra Light	رفيع للغاية
+	Extra Light	رفيع جداً
+	Semi Bold	شبه عريض
+	Extra Bold	عريض جداً
+	Ultra Bold	عريض للغاية
+	Condensed	مضغوط
+	First Line Indent	مسافة السطر الأول
+	Hanging Punctuation	ترقيم معلّق
+	Roman Hanging Punctuation	ترقيم روماني معلّق
+	Avoid Widows/Orphans	تجنّب الأسطر اليتيمة
+	Compose	التنضيد
+	Adobe Single-line Composer	منضّد Adobe للسطر الواحد
+	Adobe Every-line Composer	منضّد Adobe لكل سطر
+	Justification	الضبط
+	Word Spacing	تباعد الكلمات
+	Letter Spacing	تباعد الحروف
+	Glyph Scaling	تحجيم الحروف الرسومية
+	Auto-leading %	تباعد الأسطر التلقائي %
+	Single Word Justification	ضبط الكلمة المنفردة
+	Alignment	المحاذاة
+	Justify	ضبط
+	Glyph	حرف رسومي
+	Alternates for Current Selection	بدائل التحديد الحالي
+	Digits	الأرقام
+	Symbols	الرموز
+	Punctuation	علامات الترقيم
+	Path:	المسار:
+	Path to Illustrator…	المسار إلى Illustrator…
+	Make Work Path	إنشاء مسار عمل
+	Make Selection	إنشاء تحديد
+	Fill Path	تعبئة المسار
+	Stroke Path	رسم حدود المسار
+	Clipping Path	مسار القص
+	New Path	مسار جديد
+	Duplicate Path	تكرار المسار
+	Delete Path	حذف المسار
+	Auto-Hide	إخفاء تلقائي
+	W	ع
+	H	ط
+	X	X
+	Y	Y
+	Frame Sync	مزامنة الإطارات
+	Quick Sync	مزامنة سريعة
+	Audio	الصوت
+	Frame Duration	مدة الإطار
+	Loop	تكرار
+	Split at Playhead	تقسيم عند رأس التشغيل
+	Flatten Frames Into Clips	تسطيح الإطارات في مقاطع
+	Flatten Frames Into Layers	تسطيح الإطارات في طبقات
+	Convert Frames > Video Layers	تحويل الإطارات > طبقات فيديو
+	New Video Layer	طبقة فيديو جديدة
+	New Video Group	مجموعة فيديو جديدة
+	Limit Playback	تقييد التشغيل
+	Enable Timeline Quick Config	تفعيل الإعداد السريع للخط الزمني
+	Set Start Timecode…	تعيين رمز الوقت للبداية…
+	Timecode	رمز الوقت
+	30 fps	30 إطار/ث
+	25 fps	25 إطار/ث
+	24 fps	24 إطار/ث
+	15 fps	15 إطار/ث
+	10 fps	10 إطار/ث
+	Current Time	الوقت الحالي
+	Out	الخروج
+	In	الدخول
+	Duration	المدة
+	Repeat	تكرار
+	Play Once	تشغيل مرة واحدة
+	Info Options…	خيارات المعلومات…
+	First Color Readout	قراءة اللون الأولى
+	Second Color Readout	قراءة اللون الثانية
+	Actual Color	اللون الفعلي
+	Grayscale Slider	شريط التدرج الرمادي
+	Web Color	لون الويب
+	HSB Color	لون HSB
+	Total Ink	مجموع الحبر
+	Opacity Mask	قناع العتامة
+	Ruler	المسطرة
+	Document Size	حجم المستند
+	Timing	التوقيت
+	Status Information	معلومات الحالة
+	Saved Multichannel	متعدد القنوات محفوظ
+	Mouse Coordinates	إحداثيات الفأرة
+	Ruler Units	وحدات المسطرة
+	Hide	إخفاء
+	New Layer Comp	تركيبة طبقات جديدة
+	Duplicate Layer Comp	تكرار تركيبة الطبقات
+	Rename Layer Comp	إعادة تسمية تركيبة الطبقات
+	Apply Layer Comp	تطبيق تركيبة الطبقات
+	Update Layer Comp	تحديث تركيبة الطبقات
+	Restore last viewed comp	استعادة آخر تركيبة معروضة
+	Method	الطريقة
+	Select All Layers	تحديد كل الطبقات
+	Keep proportions	الحفاظ على النِسب
+	Interpolation	الاستيفاء
+	Author	المؤلف
+	Caption	التعليق
+	Caption Credits	كاتب التعليق
+	Keywords	الكلمات المفتاحية
+	Copyright Info URL	رابط معلومات حقوق النشر
+	Copyright Status	حالة حقوق النشر
+	Copyrighted	محمي بحقوق النشر
+	Public Domain	ملكية عامة
+	Unknown	غير معروف
+	Credit	النسبة
+	Transmission Reference	مرجع الإرسال
+	Urgency	الأولوية
+	High	عالية
+	Low	منخفضة
+	Category	الفئة
+	Supplemental Categories	فئات إضافية
+	Object Name / Title	اسم العنصر / العنوان
+	Date Created	تاريخ الإنشاء
+	City	المدينة
+	Location	الموقع
+	Province / State	المحافظة / الولاية
+	Country	الدولة
+	Byline	التوقيع
+	Byline Title	لقب صاحب التوقيع
+	Phone	الهاتف
+	Email	البريد الإلكتروني
+	URLs	الروابط
+	Last Modified	آخر تعديل
+	EXIF	EXIF
+	GPS	GPS
+	Camera Data	بيانات الكاميرا
+	Camera Model	طراز الكاميرا
+	Camera Make	شركة الكاميرا
+	EXIF Version	إصدار EXIF
+	Exposure Program	برنامج التعريض
+	Aperture	فتحة العدسة
+	Shutter Speed	سرعة الغالق
+	Metering Mode	وضع القياس
+	Light Source	مصدر الضوء
+	Flash	الفلاش
+	Lens Info	معلومات العدسة
+	ISO Speed	سرعة ISO
+	Subject Distance	مسافة الموضوع
+	DateTime Original	التاريخ والوقت الأصليان
+	Create Date	تاريخ الإنشاء
+	Modify Date	تاريخ التعديل
+	Software	البرنامج
+	Raw Data	البيانات الخام
+	Advanced	متقدم
+	Import…	استيراد…
+	PDF Presentation…	عرض PDF تقديمي…
+	Create Multiple Picture Packages	إنشاء حزم صور متعددة
+	Picture Package…	حزمة الصور…
+	Web Photo Gallery…	معرض صور ويب…
+	Choose…	اختيار…
+	Select Folder…	تحديد مجلد…
+	Override Action "Save" Commands	تجاوز أوامر "حفظ" في الإجراء
+	File Naming	تسمية الملفات
+	Compatibility	التوافق
+	Mac OS	Mac OS
+	Unix	Unix
+	Include ICC Profile	تضمين ملف تعريف ICC
+	Error File	ملف الأخطاء
+	Stop For Errors	التوقف عند الأخطاء
+	Log Errors To File	تسجيل الأخطاء في ملف
+	Errors	الأخطاء
+	Settings	الإعدادات
+	Settings:	الإعدادات:
+	Working Space	مساحة العمل
+	RGB:	RGB:
+	CMYK:	CMYK:
+	Gray:	رمادي:
+	Spot:	موضعي:
+	Advanced Controls	عناصر تحكم متقدمة
+	Desaturate Monitor Colors By	تقليل تشبّع ألوان الشاشة بمقدار
+	Blend RGB Colors Using Gamma 1.0	مزج ألوان RGB باستخدام غاما 1.0
+	Profile Mismatches: Ask When Opening	عدم تطابق الملفات التعريفية: السؤال عند الفتح
+	Ask When Pasting	السؤال عند اللصق
+	Missing Profiles: Ask When Opening	الملفات التعريفية المفقودة: السؤال عند الفتح
+	Embed profiles	تضمين الملفات التعريفية
+	Ask Before Saving Saved Embedded	السؤال قبل الحفظ بالملف المضمّن
+	Coerce to sRGB	فرض sRGB
+	sRGB IEC61966-2.1	sRGB IEC61966-2.1
+	Adobe RGB (1998)	Adobe RGB (1998)
+	ProPhoto RGB	ProPhoto RGB
+	ColorMatch RGB	ColorMatch RGB
+	Wide Gamut RGB	Wide Gamut RGB
+	Apple RGB	Apple RGB
+	NTSC (1953)	NTSC (1953)
+	PAL/SECAM	PAL/SECAM
+	SMPTE C	SMPTE C
+	HDTV (Rec. 709)	HDTV (Rec. 709)
+	CIE RGB	CIE RGB
+	Graphic and web	الجرافيك والويب
+	Minimalistic	بسيط
+	Expand All Groups	توسيع كل المجموعات
+	Photo (2 × 3 in)	صورة (2 × 3 إنش)
+	Photo (4 × 6 in)	صورة (4 × 6 إنش)
+	Photo (5 × 7 in)	صورة (5 × 7 إنش)
+	Photo (8 × 10 in)	صورة (8 × 10 إنش)
+	Recent Items	العناصر الأخيرة
+	Save Preset…	حفظ الإعداد المسبق…
+	Delete Preset…	حذف الإعداد المسبق…
+	Preset Name:	اسم الإعداد المسبق:
+	Width and Height	العرض والارتفاع
+	Color Profile	ملف تعريف الألوان
+	Units	الوحدات
+	Columns	الأعمدة
+	Create new count group	إنشاء مجموعة عدّ جديدة
+	Adjustment Layer	طبقة تعديل
+	Pencil Tool	أداة قلم الرصاص
+	Pixel	بكسل
+	Adjustment	تعديل
+	Drag (lasso) or click points (polygonal) · {add} add · {sub} subtract	اسحب (وهق) أو انقر نقاطاً (مضلع) · {add} إضافة · {sub} طرح
+	Drag a crop box · drag inside to move · edges resize ({ratio} ratio, {centre} centre) · Space moves while drawing · arrows nudge · X swaps orientation · {commit} commits · Esc cancels	اسحب مربع قص · اسحب داخله للتحريك · الحواف لتغيير الحجم ({ratio} للنسبة، {centre} للمركز) · Space للتحريك أثناء الرسم · الأسهم للدفع · X يبدّل الاتجاه · {commit} للاعتماد · Esc للإلغاء
+	{mode} Color · {bits} bit	ألوان {mode} · {bits} بت
+	Drag to move the layer	اسحب لتحريك الطبقة
+	Scrubby Zoom	تكبير بالسحب
+	Auto Erase	مسح تلقائي
+	Color Adaptation	تكيّف الألوان
+	Preserve Transparency	الحفاظ على الشفافية
+	shortcut	اختصار
+	Go to Layer	الانتقال إلى الطبقة
+	Saved	محفوظ
+	After (X)	بعد (X)
+	Current	الحالي
+	Reference point location	موقع النقطة المرجعية
+	Toggle reference point	تبديل النقطة المرجعية
+	Arc	قوس
+	Arch	قنطرة
+	Bulge	انتفاخ
+	Shell Lower	صدفة سفلية
+	Shell Upper	صدفة علوية
+	Flag	علم
+	Fish	سمكة
+	Wave	موجة

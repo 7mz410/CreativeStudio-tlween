@@ -126,7 +126,7 @@ def apply_rtl_rules() -> list:
     for rel, a, b in RTL_RULES:
         path = ROOT / rel
         src = path.read_text(encoding='utf-8')
-        if b not in src and a in src:
+        if (not b or b not in src) and a in src:
             path.write_text(src.replace(a, b), encoding='utf-8')
             changed.append(path)
     return changed

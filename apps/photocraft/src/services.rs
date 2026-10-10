@@ -39,7 +39,7 @@ fn open_filter_extensions(extensions: &[&str]) -> Vec<String> {
 /// An explicit SVG filter keeps vector artwork discoverable even when a native picker defaults to
 /// the PhotoCraft-only filter. SVG is also included in All Formats for normal multi-format opens.
 fn open_filters() -> Vec<(&'static str, Vec<String>)> {
-    vec![("All Formats", open_filter_extensions(OPEN_EXTS)), ("PhotoCraft", open_filter_extensions(&["pcraft"])), ("SVG", open_filter_extensions(SVG_EXTS))]
+    vec![("All Formats", open_filter_extensions(OPEN_EXTS)), ("ShibShib tlween", open_filter_extensions(&["pcraft"])), ("SVG", open_filter_extensions(SVG_EXTS))]
 }
 
 /// File › Save As formats: (filter name, extensions). The filter matching the suggested name's
@@ -47,7 +47,7 @@ fn open_filters() -> Vec<(&'static str, Vec<String>)> {
 /// keeps defaulting to PSD.
 const SAVE_FILTERS: &[(&str, &[&str])] = &[
     ("PSD Document", &["psd", "psb"]),
-    ("PhotoCraft", &["pcraft"]),
+    ("ShibShib tlween", &["pcraft"]),
     ("PNG", &["png"]),
     ("JPEG", &["jpg"]),
     ("WebP", &["webp"]),

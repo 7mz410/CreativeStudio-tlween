@@ -1,7 +1,7 @@
-# ShibShib tlween app icon
+# tlween app icon
 
-**Artwork:** the ShibShib tlween tile by Hamza Abu Ayyash (the ShibShib flip-flop with a paint
-splash on the tlween blue, `#0081ff`), from `~/Documents/ShibShib/file icons/tlween.svg`. It
+**Artwork:** the tlween tile by Hamza Abu Ayyash (the Creative Studio flip-flop with a paint
+splash on the tlween blue, `#0081ff`), from `~/Documents/CreativeStudio/file icons/tlween.svg`. It
 replaces upstream PhotoCraft's icon. File names keep upstream's `photocraft` names so the build and
 packaging scripts work unchanged. Regenerate everything with `packaging/icons.sh`.
 

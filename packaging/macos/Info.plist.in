@@ -7,13 +7,13 @@
   <key>CFBundleDevelopmentRegion</key>
   <string>en</string>
   <key>CFBundleDisplayName</key>
-  <string>ShibShib tlween</string>
+  <string>tlween</string>
   <key>CFBundleName</key>
-  <string>ShibShib tlween</string>
+  <string>tlween</string>
   <key>CFBundleExecutable</key>
   <string>PhotoCraft</string>
   <key>CFBundleIdentifier</key>
-  <string>com.shibshib.tlween</string>
+  <string>ps.creative.studio.tlween</string>
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
   <key>CFBundlePackageType</key>

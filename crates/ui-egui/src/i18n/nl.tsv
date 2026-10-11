@@ -696,10 +696,10 @@
 	Timeline	Tijdlijn
 	Tool Presets	Gereedschapsvoorinstellingen
 	Tools	Gereedschappen
-	About ShibShib tlween	Over ShibShib tlween
-	ShibShib tlween Website	Website van ShibShib tlween
-	ShibShib tlween on GitHub	ShibShib tlween op GitHub
-	ShibShib Website	Website van ArtCraft
+	About tlween	Over tlween
+	tlween Website	Website van tlween
+	tlween on GitHub	tlween op GitHub
+	Creative Studio Website	Website van ArtCraft
 	Upstream Community on Discord…	Deelnemen aan de ArtCraft-Discord…
 	Report an Issue…	Probleem melden…
 	WIA Support…	WIA-ondersteuning…
@@ -750,7 +750,7 @@
 	All Caps	Alleen hoofdletters
 	All Slices	Alle segmenten
 	All User Slices	Alle gebruikerssegmenten
-	All shortcuts reset to ShibShib tlween defaults.	Alle sneltoetsen zijn teruggezet naar de standaardwaarden van ShibShib tlween.
+	All shortcuts reset to tlween defaults.	Alle sneltoetsen zijn teruggezet naar de standaardwaarden van tlween.
 	Alt	Alt
 	Always use pressure for opacity	Altijd druk gebruiken voor dekking
 	Always use pressure for size	Altijd druk gebruiken voor grootte
@@ -990,8 +990,8 @@
 	Drop an image or PSD anywhere to open it.	Sleep een afbeelding of PSD ergens naartoe om deze te openen.
 	Native file drag-and-drop is unavailable	Bestanden slepen en neerzetten is niet beschikbaar
 	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	Bestanden slepen en neerzetten wordt nog niet ondersteund onder Wayland. Gebruik Bestand › Openen, of kopieer de afbeelding in je bestandsbeheerder en plak deze met {paste}.
-	To drop files, start ShibShib tlween under XWayland: `{command}`	Start ShibShib tlween onder XWayland om bestanden neer te zetten: `{command}`
-	Or set Preferences › Performance › Linux display server to X11: ShibShib tlween then always starts under XWayland.	Of zet Voorkeuren › Prestaties › Linux-weergaveserver op X11: ShibShib tlween start dan altijd onder XWayland.
+	To drop files, start tlween under XWayland: `{command}`	Start tlween onder XWayland om bestanden neer te zetten: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: tlween then always starts under XWayland.	Of zet Voorkeuren › Prestaties › Linux-weergaveserver op X11: tlween start dan altijd onder XWayland.
 	Edit › Paste	Bewerken › Plakken
 	Duplicate Layers…	Lagen dupliceren…
 	Duplicate style	Stijl dupliceren
@@ -1237,9 +1237,9 @@
 	Perspective Warp is not active	Perspectiefvervorming is niet actief
 	Perspective Warp: draw planes along the image's perspective, then switch to Warp	Perspectiefvervorming: teken vlakken langs het perspectief van de afbeelding en schakel daarna naar Verbuigen
 	Photo Filter	Fotofilter
-	ShibShib tlween	ShibShib tlween
-	ShibShib tlween Manages Colors	ShibShib tlween beheert kleuren
-	ShibShib tlween — an open-source, native image editor written in Rust.	ShibShib tlween — een opensource, native afbeeldingseditor geschreven in Rust.
+	tlween	tlween
+	tlween Manages Colors	tlween beheert kleuren
+	tlween — an open-source, native image editor written in Rust.	tlween — een opensource, native afbeeldingseditor geschreven in Rust.
 	Pin Depth:	Speldiepte:
 	Pixel Length:	Pixellengte:
 	Pixels/Centimeter	Pixels/centimeter
@@ -1313,11 +1313,11 @@
 	Import Shortcuts…	Sneltoetsen importeren…
 	Load a keyboard shortcut set saved as .kys	Een als .kys opgeslagen sneltoetsenset laden
 	Imported {n} shortcuts from {file}. Click OK to keep them.	{n} sneltoetsen geïmporteerd uit {file}. Klik op OK om ze te behouden.
-	{n} commands are not in ShibShib tlween.	{n} opdrachten bestaan niet in ShibShib tlween.
+	{n} commands are not in tlween.	{n} opdrachten bestaan niet in tlween.
 	Keyboard shortcuts imported	Sneltoetsen geïmporteerd
 	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	Je sneltoetsenset {set} wordt hier gebruikt: {n} sneltoetsen wijken af van de standaardwaarden. Bewerken › Sneltoetsen toont ze; Alles terugzetten naar standaard maakt dit ongedaan.
 	Import keyboard shortcuts?	Sneltoetsen importeren?
-	ShibShib tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from ShibShib tlween's. Import it?	ShibShib tlween heeft op deze computer je sneltoetsenset {set} van een andere beeldbewerker gevonden: {n} van de sneltoetsen wijken af van die van ShibShib tlween. Importeren?
+	tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from tlween's. Import it?	tlween heeft op deze computer je sneltoetsenset {set} van een andere beeldbewerker gevonden: {n} van de sneltoetsen wijken af van die van tlween. Importeren?
 	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	Bewerken › Sneltoetsen › Alles terugzetten naar standaard maakt een import ongedaan.
 	Don't Import	Niet importeren
 	The keyboard shortcut set was not imported: {error}	De sneltoetsenset is niet geïmporteerd: {error}
@@ -1536,7 +1536,7 @@
 	Current Tool	Huidig gereedschap
 	Custom Shape Tool	Gereedschap Aangepaste vorm
 	Cyans	Cyaantinten
-	Default PhotoCraft Size	Standaardgrootte ShibShib tlween
+	Default PhotoCraft Size	Standaardgrootte tlween
 	Delete Workspace	Werkruimte verwijderen
 	Diamond	Ruit
 	Dimensions:	Afmetingen:
@@ -1637,7 +1637,7 @@
 	Pen Tilt	Penkanteling
 	Pen Tool	Pengereedschap
 	Photo	Foto
-	ShibShib tlween website	Website van ShibShib tlween
+	tlween website	Website van tlween
 	Picas	Pica's
 	Pillow Emboss	Kussenreliëf
 	Pixel Replacement	Pixelvervanging
@@ -1955,7 +1955,7 @@
 	System Info	Systeeminformatie
 	More panels	Meer panelen
 	More documents	Meer documenten
-	These settings aren't available in ShibShib tlween yet.	Deze instellingen zijn nog niet beschikbaar in ShibShib tlween.
+	These settings aren't available in tlween yet.	Deze instellingen zijn nog niet beschikbaar in tlween.
 	Graphics	Grafisch
 	Reset GPU Backend	GPU-backend herstellen
 	Applies at next launch.	Wordt toegepast bij de volgende start.
@@ -2143,7 +2143,7 @@
 	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	Automatisch gebruikt GPU-versnelling indien beschikbaar en valt bij fouten terug op CPU-rendering.
 	Switched to CPU rendering	Overgeschakeld naar CPU-rendering
 	GPU acceleration could not continue. Your documents are unchanged.	GPU-versnelling kon niet doorgaan. Je documenten zijn ongewijzigd.
-	ShibShib tlween is using the CPU image compositor. The window may still use your graphics adapter.	ShibShib tlween gebruikt de CPU-beeldcompositor. Het venster kan nog steeds je grafische adapter gebruiken.
+	tlween is using the CPU image compositor. The window may still use your graphics adapter.	tlween gebruikt de CPU-beeldcompositor. Het venster kan nog steeds je grafische adapter gebruiken.
 	Retry GPU requires a restart. Save your work first.	GPU opnieuw proberen vereist een herstart. Sla eerst je werk op.
 	Keep Using CPU	CPU blijven gebruiken
 	Retry GPU	GPU opnieuw proberen
@@ -2502,7 +2502,7 @@ cameraRaw	Color	Kleur
 	Restart Required	Herstart vereist
 	Restart	Opnieuw starten
 	Quit	Afsluiten
-	Quit ShibShib tlween	ShibShib tlween afsluiten
+	Quit tlween	tlween afsluiten
 	Close Window	Venster sluiten
 	New Window	Nieuw venster
 	Open Image	Afbeelding openen
@@ -3272,7 +3272,7 @@ cameraRaw	Color	Kleur
 	Modify Date	Wijzigingsdatum
 	Mosaic	Mozaïek
 	Motion Blur	Bewegingsonscherpte
-	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run ShibShib tlween under XWayland with `WAYLAND_DISPLAY= photocraft`.	Bestanden slepen en neerzetten wordt nog niet ondersteund onder Wayland. Gebruik Bestand › Openen, of start ShibShib tlween onder XWayland met `WAYLAND_DISPLAY= photocraft`.
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run tlween under XWayland with `WAYLAND_DISPLAY= photocraft`.	Bestanden slepen en neerzetten wordt nog niet ondersteund onder Wayland. Gebruik Bestand › Openen, of start tlween onder XWayland met `WAYLAND_DISPLAY= photocraft`.
 	Neon Glow	Neongloed
 	New Guide Layout	Nieuwe hulplijnindeling
 	New Path	Nieuw pad

@@ -5,7 +5,7 @@
 # Clean-room: every entry was written from the plain meaning of the English label using ordinary
 # Arabic computing and design vocabulary. No proprietary localisation resource, string table or
 # product UI was consulted or copied; in particular not any Arabic localisation of Adobe Photoshop.
-# Made by the ShibShib project (shibshib/ar-work).
+# Made by the Creative Studio project (studio/ar-work).
 	File	ملف
 	Edit	تحرير
 	Image	صورة
@@ -684,10 +684,10 @@
 	Timeline	الخط الزمني
 	Tool Presets	إعدادات الأدوات المسبقة
 	Tools	الأدوات
-	About ShibShib tlween	حول شبشب تلوين
-	ShibShib tlween Website	موقع شبشب تلوين
-	ShibShib tlween on GitHub	شبشب تلوين على GitHub
-	ShibShib Website	موقع شبشب
+	About tlween	حول تلوين
+	tlween Website	موقع تلوين
+	tlween on GitHub	تلوين على GitHub
+	Creative Studio Website	موقع Creative Studio
 	Upstream Community on Discord…	مجتمع المشروع الأصلي على Discord…
 	Report an Issue…	الإبلاغ عن مشكلة…
 	WIA Support…	دعم WIA…
@@ -738,7 +738,7 @@
 	All Caps	أحرف كبيرة
 	All Slices	كل الشرائح
 	All User Slices	كل شرائح المستخدم
-	All shortcuts reset to ShibShib tlween defaults.	أُعيدت كل الاختصارات إلى افتراضيات شبشب تلوين.
+	All shortcuts reset to tlween defaults.	أُعيدت كل الاختصارات إلى افتراضيات تلوين.
 	Alt	Alt
 	Always use pressure for opacity	استخدام الضغط دائماً للعتامة
 	Always use pressure for size	استخدام الضغط دائماً للحجم
@@ -1213,9 +1213,9 @@
 	Perspective Warp is not active	التواء المنظور غير نشط
 	Perspective Warp: draw planes along the image's perspective, then switch to Warp	التواء المنظور: ارسم مستويات على طول منظور الصورة، ثم انتقل إلى الالتواء
 	Photo Filter	فلتر الصورة
-	ShibShib tlween	شبشب تلوين
-	ShibShib tlween Manages Colors	شبشب تلوين يدير الألوان
-	ShibShib tlween — an open-source, native image editor written in Rust.	شبشب تلوين — محرر صور أصلي ومفتوح المصدر مكتوب بلغة Rust.
+	tlween	تلوين
+	tlween Manages Colors	تلوين يدير الألوان
+	tlween — an open-source, native image editor written in Rust.	تلوين — محرر صور أصلي ومفتوح المصدر مكتوب بلغة Rust.
 	Pin Depth:	عمق الدبوس:
 	Pixel Length:	طول البكسل:
 	Pixels/Centimeter	بكسل/سنتيمتر
@@ -1290,11 +1290,11 @@
 	Import Shortcuts…	استيراد الاختصارات…
 	Load a keyboard shortcut set saved as .kys	تحميل مجموعة اختصارات محفوظة بصيغة .kys
 	Imported {n} shortcuts from {file}. Click OK to keep them.	استُورد {n} اختصاراً من {file}. انقر موافق للاحتفاظ بها.
-	{n} commands are not in ShibShib tlween.	{n} أمراً غير موجود في شبشب تلوين.
+	{n} commands are not in tlween.	{n} أمراً غير موجود في تلوين.
 	Keyboard shortcuts imported	استُوردت اختصارات لوحة المفاتيح
 	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	مجموعة اختصاراتك {set} مستخدمة هنا: {n} اختصاراً يختلف عن الافتراضي. تحرير › اختصارات لوحة المفاتيح يعرضها؛ وإعادة الكل إلى الافتراضي تتراجع عن ذلك.
 	Import keyboard shortcuts?	استيراد اختصارات لوحة المفاتيح؟
-	ShibShib tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from ShibShib tlween's. Import it?	وجد شبشب تلوين مجموعة اختصاراتك {set} من محرر صور آخر على هذا الجهاز: {n} من اختصاراتها تختلف عن اختصارات شبشب تلوين. استيرادها؟
+	tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from tlween's. Import it?	وجد تلوين مجموعة اختصاراتك {set} من محرر صور آخر على هذا الجهاز: {n} من اختصاراتها تختلف عن اختصارات تلوين. استيرادها؟
 	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	تحرير › اختصارات لوحة المفاتيح › إعادة الكل إلى الافتراضي يتراجع عن الاستيراد.
 	Don't Import	عدم الاستيراد
 	The keyboard shortcut set was not imported: {error}	لم تُستورد مجموعة الاختصارات: {error}
@@ -1614,7 +1614,7 @@
 	Pen Tilt	إمالة القلم
 	Pen Tool	أداة القلم
 	Photo	صورة فوتوغرافية
-	ShibShib tlween website	موقع شبشب تلوين
+	tlween website	موقع تلوين
 	Picas	بايكا
 	Pillow Emboss	نقش وسادي
 	Pixel Replacement	استبدال البكسلات
@@ -1930,7 +1930,7 @@
 	System Info	معلومات النظام
 	More panels	لوحات أخرى
 	More documents	مستندات أخرى
-	These settings aren't available in ShibShib tlween yet.	هذه الإعدادات غير متاحة في شبشب تلوين بعد.
+	These settings aren't available in tlween yet.	هذه الإعدادات غير متاحة في تلوين بعد.
 	Graphics	الرسوميات
 	Reset GPU Backend	إعادة ضبط واجهة GPU
 	Applies at next launch.	يُطبَّق عند التشغيل التالي.
@@ -2495,8 +2495,8 @@
 	Use Global Light	استخدام الضوء العام
 	Native file drag-and-drop is unavailable	سحب الملفات وإفلاتها غير متاح
 	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	سحب الملفات وإفلاتها غير مدعوم في Wayland بعد. استخدم ملف › فتح، أو انسخ الصورة من مدير الملفات والصقها بـ {paste}.
-	To drop files, start ShibShib tlween under XWayland: `{command}`	لإفلات الملفات، شغّل شبشب تلوين تحت XWayland: `{command}`
-	Or set Preferences › Performance › Linux display server to X11: ShibShib tlween then always starts under XWayland.	أو اضبط التفضيلات › الأداء › خادم العرض في Linux على X11: عندها يعمل شبشب تلوين دائماً تحت XWayland.
+	To drop files, start tlween under XWayland: `{command}`	لإفلات الملفات، شغّل تلوين تحت XWayland: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: tlween then always starts under XWayland.	أو اضبط التفضيلات › الأداء › خادم العرض في Linux على X11: عندها يعمل تلوين دائماً تحت XWayland.
 	Edit › Paste	تحرير › لصق
 	Use File › Open, or paste a copied image with {paste}.	استخدم ملف › فتح، أو الصق صورة منسوخة بـ {paste}.
 	Mixer Brush Tool	أداة فرشاة الخلط
@@ -2511,7 +2511,7 @@
 	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	الوضع التلقائي يستخدم تسريع GPU عند توفره ويرجع إلى التصيير بالمعالج عند الأخطاء.
 	Switched to CPU rendering	تم التحويل إلى التصيير بالمعالج
 	GPU acceleration could not continue. Your documents are unchanged.	تعذّر استمرار تسريع GPU. مستنداتك لم تتغير.
-	ShibShib tlween is using the CPU image compositor. The window may still use your graphics adapter.	يستخدم شبشب تلوين مُركّب الصور بالمعالج. قد تستمر النافذة باستخدام بطاقة الرسوميات.
+	tlween is using the CPU image compositor. The window may still use your graphics adapter.	يستخدم تلوين مُركّب الصور بالمعالج. قد تستمر النافذة باستخدام بطاقة الرسوميات.
 	Retry GPU requires a restart. Save your work first.	إعادة محاولة GPU تتطلب إعادة التشغيل. احفظ عملك أولاً.
 	Keep Using CPU	الاستمرار بالمعالج
 	Retry GPU	إعادة محاولة GPU

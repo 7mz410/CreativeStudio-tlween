@@ -75,12 +75,12 @@ pub const UI_COMMANDS: &[(&str, &str, &[&str], Option<&str>)] = &[
     ("window.theme.system", "Sync with system", &["Window", "Theme"], None),
     ("edit.search", "Search…", &["Edit"], Some("Cmd+F")),
     ("help.discord", "Upstream Community on Discord…", &["Help"], None),
-    ("help.website", "ShibShib tlween Website", &["Help"], None),
-    ("help.artcraftWebsite", "ShibShib Website", &["Help"], None),
-    ("help.github", "ShibShib tlween on GitHub", &["Help"], None),
+    ("help.website", "tlween Website", &["Help"], None),
+    ("help.artcraftWebsite", "Creative Studio Website", &["Help"], None),
+    ("help.github", "tlween on GitHub", &["Help"], None),
     ("help.reportIssue", "Report an Issue…", &["Help"], None),
     ("help.systemInfo", "System Info…", &["Help"], None),
-    ("help.about", "About ShibShib tlween", &["Help"], None),
+    ("help.about", "About tlween", &["Help"], None),
 ];
 
 /// Photoshop's Window › <panel> ids for the panels the shell already has, as `window.toggle.*`.
@@ -1550,7 +1550,7 @@ mod tests {
                 }
                 h.run_steps(3);
             };
-            let open = |h: &Harness<'_, PhotocraftApp>| h.query_by_label_contains("About ShibShib tlween").is_some();
+            let open = |h: &Harness<'_, PhotocraftApp>| h.query_by_label_contains("About tlween").is_some();
             let field_id = egui::Id::new("help-menu-search").with("field");
             let help = h.get_by_label("Help").rect().center();
             click(&mut h, help);

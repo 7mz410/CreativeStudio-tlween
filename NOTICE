@@ -3,9 +3,9 @@ Copyright (c) 2026 ArtCraft Team and the PhotoCraft contributors.
 Licensed under the MIT License or the Apache License, Version 2.0, at your option
 (LICENSE-MIT, LICENSE-APACHE).
 
-ShibShib tlween is a fork of PhotoCraft by the ArtCraft Team and the PhotoCraft contributors
-(https://github.com/storytold/photocraft), made by the ShibShib project (https://shibshib.art).
-Our changes are listed in shibshib/CHANGES.md. The ShibShib name and logos belong to the ShibShib
+tlween is a fork of PhotoCraft by the ArtCraft Team and the PhotoCraft contributors
+(https://github.com/storytold/photocraft), made by the Creative Studio project (https://studio.creative.ps).
+Our changes are listed in studio/CHANGES.md. The Creative Studio name and logos belong to the Creative Studio
 project. The ArtCraft name and logos are trademarks of the ArtCraft Team; this fork does not use
 them, as their brand terms require (upstream's docs/brand/ was removed).
 
@@ -24,5 +24,5 @@ https://github.com/storytold/craft-fonts/blob/main/ATTRIBUTION.md (today BIZ UDP
 BIZ UDMincho; not the web build), under the SIL Open Font License 1.1. Their licence texts
 ship with the package as OFL-<family>.txt.
 
-IBM Plex Sans Arabic (assets/fonts/IBMPlexSansArabic-*.ttf), the Arabic UI font added by ShibShib,
+IBM Plex Sans Arabic (assets/fonts/IBMPlexSansArabic-*.ttf), the Arabic UI font added by Creative Studio,
 is licensed under the SIL Open Font License 1.1 (assets/fonts/OFL-IBMPlexSansArabic.txt).

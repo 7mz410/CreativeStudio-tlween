@@ -1309,7 +1309,7 @@ impl eframe::App for PhotocraftApp {
     fn ui(&mut self, ui: &mut egui::Ui, frame: &mut eframe::Frame) {
         let ctx = ui.ctx().clone();
         i18n::set_current(i18n::Lang::from_pref(&self.session.prefs().interface.language));
-        // ShibShib: Arabic lays the interface out right to left (vendor/egui). The switch is
+        // Creative Studio: Arabic lays the interface out right to left (vendor/egui). The switch is
         // process-wide, so unit tests, which run in parallel, leave it off (tests/rtl.rs covers it).
         #[cfg(not(test))]
         egui::set_rtl(i18n::bidi::RTL_CODES.contains(&i18n::current().code()));

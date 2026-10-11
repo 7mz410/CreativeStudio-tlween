@@ -220,7 +220,7 @@ fn capture(_wayland: bool, _scale: f32, stop: &std::sync::atomic::AtomicBool, pl
 fn capture(_wayland: bool, _scale: f32, stop: &std::sync::atomic::AtomicBool, placements: &[Placement]) -> Result<Capture, String> {
     use core_graphics2::{display::get_active_display_list, image::CGImageAlphaInfo as Alpha, window};
     if !window::preflight_screen_capture_access() && !window::request_screen_capture_access() {
-        return Err("Allow ShibShib tlween in System Settings > Privacy & Security > Screen Recording, then reopen ShibShib tlween".into());
+        return Err("Allow tlween in System Settings > Privacy & Security > Screen Recording, then reopen tlween".into());
     }
     let displays = get_active_display_list(17).ok_or("Could not enumerate displays")?;
     if displays.is_empty() || displays.len() > 16 {

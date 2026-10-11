@@ -5,7 +5,7 @@
 the same order, with catalog escapes (\\n). Plural rows take Arabic's six forms
 `zero|one|two|few|many|other`.
 
-    python3 shibshib/ar-work/assemble.py
+    python3 studio/ar-work/assemble.py
 """
 import re
 from pathlib import Path
@@ -20,7 +20,7 @@ HEADER = """# Arabic (ar) catalog. Columns, separated by a TAB:  context <TAB> s
 # Clean-room: every entry was written from the plain meaning of the English label using ordinary
 # Arabic computing and design vocabulary. No proprietary localisation resource, string table or
 # product UI was consulted or copied; in particular not any Arabic localisation of Adobe Photoshop.
-# Made by the ShibShib project (shibshib/ar-work).
+# Made by the Creative Studio project (studio/ar-work).
 """
 rows, problems, done = [], [], 0
 for part in sorted(HERE.glob('part_*')):

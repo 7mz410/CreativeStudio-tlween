@@ -1,16 +1,16 @@
 <p align="center">
-  <img alt="ShibShib tlween" src="docs/shibshib/tlween.svg" width="140">
+  <img alt="tlween" src="docs/studio/tlween.svg" width="140">
 </p>
 
-<h1 align="center">ShibShib tlween</h1>
+<h1 align="center">tlween</h1>
 
 <p align="center">
-  <b>Free, open-source image editing — part of the ShibShib creative suite.</b><br>
-  <b>تعديل صور مجاني ومفتوح المصدر — جزء من حزمة شبشب.</b>
+  <b>Free, open-source image editing — part of the Creative Studio creative suite.</b><br>
+  <b>تعديل صور مجاني ومفتوح المصدر — جزء من حزمة Creative Studio.</b>
 </p>
 
 <p align="center">
-  <a href="https://shibshib.art/">shibshib.art</a>
+  <a href="https://studio.creative.ps/">studio.creative.ps</a>
 </p>
 
 <p align="center">
@@ -20,36 +20,36 @@
 
 ## Built on PhotoCraft
 
-ShibShib tlween is a fork of **[PhotoCraft](https://github.com/storytold/photocraft)**, the
+tlween is a fork of **[PhotoCraft](https://github.com/storytold/photocraft)**, the
 open-source, clean-room image editor written in Rust by the
 **[ArtCraft](https://getartcraft.com/)** team and the PhotoCraft contributors. Almost everything
-that makes this app work is their work. Thank you. If you like ShibShib tlween, please star and
+that makes this app work is their work. Thank you. If you like tlween, please star and
 support the upstream project as well.
 
-What we add: the ShibShib identity, a full Arabic interface laid out right to left, and Arabic
-features to come. Our changes are listed in [`shibshib/CHANGES.md`](shibshib/CHANGES.md).
+What we add: the Creative Studio identity, a full Arabic interface laid out right to left, and Arabic
+features to come. Our changes are listed in [`studio/CHANGES.md`](studio/CHANGES.md).
 Upstream's own README, with the full feature list and build instructions, is in
 [`docs/UPSTREAM-README.md`](docs/UPSTREAM-README.md).
 
-## The ShibShib suite
+## The Creative Studio suite
 
 | App | What it's for | Based on |
 |---|---|---|
-| [ShibShib rsm](https://github.com/7mz410/ShibShib-rsm) | Vector illustration | VectorCraft |
-| [ShibShib ttshat](https://github.com/7mz410/ShibShib-ttshat) | Photo library and raw development | LightCraft |
-| **ShibShib tlween** | Image editing | PhotoCraft |
+| [Creative Studio rsm](https://github.com/7mz410/CreativeStudio-rsm) | Vector illustration | VectorCraft |
+| [Creative Studio ttshat](https://github.com/7mz410/CreativeStudio-ttshat) | Photo library and raw development | LightCraft |
+| **tlween** | Image editing | PhotoCraft |
 
-More apps are on the way: see [shibshib.art](https://shibshib.art/).
+More apps are on the way: see [studio.creative.ps](https://studio.creative.ps/).
 
 ## Building
 
 ```sh
 cargo run --release -p photocraft
 # after merging upstream:
-git fetch upstream && git merge upstream/main && python3 shibshib/rebrand.py
+git fetch upstream && git merge upstream/main && python3 studio/rebrand.py
 ```
 
 ## Licence
 
-Code: MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`, `NOTICE`), like upstream. The ShibShib
-name and logos in `docs/shibshib/` belong to the ShibShib project.
+Code: MIT OR Apache-2.0 (`LICENSE-MIT`, `LICENSE-APACHE`, `NOTICE`), like upstream. The Creative Studio
+name and logos in `docs/studio/` belong to the Creative Studio project.

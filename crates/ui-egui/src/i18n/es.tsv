@@ -704,10 +704,10 @@
 	Timeline	Línea de tiempo
 	Tool Presets	Preajustes de herramienta
 	Tools	Herramientas
-	About ShibShib tlween	Acerca de ShibShib tlween
-	ShibShib tlween Website	Sitio web de ShibShib tlween
-	ShibShib tlween on GitHub	ShibShib tlween en GitHub
-	ShibShib Website	Sitio web de ArtCraft
+	About tlween	Acerca de tlween
+	tlween Website	Sitio web de tlween
+	tlween on GitHub	tlween en GitHub
+	Creative Studio Website	Sitio web de ArtCraft
 	Upstream Community on Discord…	Únete al Discord de ArtCraft…
 	Report an Issue…	Informar de un problema…
 	WIA Support…	Compatibilidad con WIA…
@@ -760,7 +760,7 @@
 	All Caps	Todo en mayúsculas
 	All Slices	Todas las secciones
 	All User Slices	Todas las secciones de usuario
-	All shortcuts reset to ShibShib tlween defaults.	Se restablecieron todos los atajos a los valores predeterminados de ShibShib tlween.
+	All shortcuts reset to tlween defaults.	Se restablecieron todos los atajos a los valores predeterminados de tlween.
 	Alt	Alt
 	Always use pressure for opacity	Usar siempre la presión para la opacidad
 	Always use pressure for size	Usar siempre la presión para el tamaño
@@ -997,8 +997,8 @@
 	Drop an image or PSD anywhere to open it.	Suelte una imagen o un PSD en cualquier lugar para abrirlo.
 	Native file drag-and-drop is unavailable	El arrastrar y soltar archivos de forma nativa no está disponible en Wayland
 	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	El arrastrar y soltar archivos de forma nativa aún no está disponible en Wayland. Usa Archivo › Abrir, o copia la imagen en tu gestor de archivos y pégala con {paste}.
-	To drop files, start ShibShib tlween under XWayland: `{command}`	Para soltar archivos, inicia ShibShib tlween bajo XWayland: `{command}`
-	Or set Preferences › Performance › Linux display server to X11: ShibShib tlween then always starts under XWayland.	O establece Preferencias › Rendimiento › Servidor de pantalla de Linux en X11: ShibShib tlween se iniciará siempre bajo XWayland.
+	To drop files, start tlween under XWayland: `{command}`	Para soltar archivos, inicia tlween bajo XWayland: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: tlween then always starts under XWayland.	O establece Preferencias › Rendimiento › Servidor de pantalla de Linux en X11: tlween se iniciará siempre bajo XWayland.
 	Edit › Paste	Edición › Pegar
 	Duplicate Layers…	Duplicar capas…
 	Duplicate style	Duplicar estilo
@@ -1244,9 +1244,9 @@
 	Perspective Warp is not active	La deformación en perspectiva no está activa
 	Perspective Warp: draw planes along the image's perspective, then switch to Warp	Deformación en perspectiva: dibuje planos siguiendo la perspectiva de la imagen y luego cambie a Deformar
 	Photo Filter	Filtro fotográfico
-	ShibShib tlween	ShibShib tlween
-	ShibShib tlween Manages Colors	ShibShib tlween gestiona el color
-	ShibShib tlween — an open-source, native image editor written in Rust.	ShibShib tlween — un editor de imágenes nativo y de código abierto escrito en Rust.
+	tlween	tlween
+	tlween Manages Colors	tlween gestiona el color
+	tlween — an open-source, native image editor written in Rust.	tlween — un editor de imágenes nativo y de código abierto escrito en Rust.
 	Pin Depth:	Profundidad del pin:
 	Pixel Length:	Longitud en píxeles:
 	Pixels/Centimeter	Píxeles/centímetro
@@ -1321,11 +1321,11 @@
 	Import Shortcuts…	Importar atajos…
 	Load a keyboard shortcut set saved as .kys	Cargar un conjunto de atajos de teclado guardado como .kys
 	Imported {n} shortcuts from {file}. Click OK to keep them.	Se importaron {n} atajos de {file}. Haz clic en OK para conservarlos.
-	{n} commands are not in ShibShib tlween.	{n} comandos no existen en ShibShib tlween.
+	{n} commands are not in tlween.	{n} comandos no existen en tlween.
 	Keyboard shortcuts imported	Atajos de teclado importados
 	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	Tu conjunto de atajos de teclado {set} se usa aquí: {n} atajos difieren de los predeterminados. Edición › Atajos de teclado los muestra; Restablecer todo a valores predeterminados lo deshace.
 	Import keyboard shortcuts?	¿Importar atajos de teclado?
-	ShibShib tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from ShibShib tlween's. Import it?	ShibShib tlween encontró en este equipo tu conjunto de atajos de teclado {set} de otro editor de imágenes: {n} de sus atajos difieren de los de ShibShib tlween. ¿Importarlo?
+	tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from tlween's. Import it?	tlween encontró en este equipo tu conjunto de atajos de teclado {set} de otro editor de imágenes: {n} de sus atajos difieren de los de tlween. ¿Importarlo?
 	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	Edición › Atajos de teclado › Restablecer todo a valores predeterminados deshace una importación.
 	Don't Import	No importar
 	The keyboard shortcut set was not imported: {error}	No se importó el conjunto de atajos de teclado: {error}
@@ -1549,7 +1549,7 @@
 	Current Tool	Herramienta actual
 	Custom Shape Tool	Herramienta Forma personalizada
 	Cyans	Cianes
-	Default PhotoCraft Size	Tamaño predeterminado de ShibShib tlween
+	Default PhotoCraft Size	Tamaño predeterminado de tlween
 	Delete Workspace	Eliminar espacio de trabajo
 	Diamond	Diamante
 	Dimensions:	Dimensiones:
@@ -1650,7 +1650,7 @@
 	Pen Tilt	Inclinación del lápiz
 	Pen Tool	Herramienta Pluma
 	Photo	Fotografía
-	ShibShib tlween website	Sitio web de ShibShib tlween
+	tlween website	Sitio web de tlween
 	Picas	Picas
 	Pillow Emboss	Relieve almohadillado
 	Pixel Replacement	Sustitución de píxeles
@@ -1978,7 +1978,7 @@
 	System Info	Información del sistema
 	More panels	Más paneles
 	More documents	Más documentos
-	These settings aren't available in ShibShib tlween yet.	Estos ajustes aún no están disponibles en ShibShib tlween.
+	These settings aren't available in tlween yet.	Estos ajustes aún no están disponibles en tlween.
 	Graphics	Gráficos
 	Reset GPU Backend	Restablecer el backend de GPU
 	Applies at next launch.	Se aplicará en el próximo inicio.
@@ -2174,7 +2174,7 @@
 	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	Automático utiliza la GPU cuando está disponible y cambia a la CPU si hay errores.
 	Switched to CPU rendering	Se cambió al renderizado por CPU
 	GPU acceleration could not continue. Your documents are unchanged.	La aceleración GPU no pudo continuar. Los documentos no han cambiado.
-	ShibShib tlween is using the CPU image compositor. The window may still use your graphics adapter.	ShibShib tlween compone las imágenes en la CPU. La ventana aún puede usar el adaptador gráfico.
+	tlween is using the CPU image compositor. The window may still use your graphics adapter.	tlween compone las imágenes en la CPU. La ventana aún puede usar el adaptador gráfico.
 	Retry GPU requires a restart. Save your work first.	Reintentar la GPU requiere reiniciar. Guarda primero tu trabajo.
 	Keep Using CPU	Seguir usando CPU
 	Retry GPU	Reintentar GPU

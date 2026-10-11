@@ -708,10 +708,10 @@
 	Timeline	タイムライン
 	Tool Presets	ツールプリセット
 	Tools	ツール
-	About ShibShib tlween	ShibShib tlween について
-	ShibShib tlween Website	ShibShib tlween の Web サイト
-	ShibShib tlween on GitHub	GitHub 上の ShibShib tlween
-	ShibShib Website	ArtCraft の Web サイト
+	About tlween	tlween について
+	tlween Website	tlween の Web サイト
+	tlween on GitHub	GitHub 上の tlween
+	Creative Studio Website	ArtCraft の Web サイト
 	Upstream Community on Discord…	ArtCraft の Discord に参加…
 	Report an Issue…	問題を報告…
 	WIA Support…	WIA サポート…
@@ -764,7 +764,7 @@
 	All Caps	すべて大文字
 	All Slices	すべてのスライス
 	All User Slices	すべてのユーザースライス
-	All shortcuts reset to ShibShib tlween defaults.	すべてのショートカットを初期状態に戻しました。
+	All shortcuts reset to tlween defaults.	すべてのショートカットを初期状態に戻しました。
 	Alt	Alt
 	Alt-click to define a source point to clone from	Alt+クリックでコピー元を指定
 	Always use pressure for opacity	常に筆圧を不透明度に使う
@@ -1002,8 +1002,8 @@
 	Drop an image or PSD anywhere to open it.	画像や PSD をここにドロップすると開きます。
 	Native file drag-and-drop is unavailable	Wayland ではネイティブのファイルドラッグ＆ドロップを利用できません
 	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	Wayland ではネイティブのファイルドラッグ＆ドロップはまだ利用できません。[ファイル › 開く] を使うか、ファイルマネージャーで画像をコピーして {paste} で貼り付けてください。
-	To drop files, start ShibShib tlween under XWayland: `{command}`	ファイルをドロップするには、XWayland 上で ShibShib tlween を起動してください: `{command}`
-	Or set Preferences › Performance › Linux display server to X11: ShibShib tlween then always starts under XWayland.	または 環境設定 › パフォーマンス › Linux ディスプレイサーバー を X11 にすると、ShibShib tlween は常に XWayland 上で起動します。
+	To drop files, start tlween under XWayland: `{command}`	ファイルをドロップするには、XWayland 上で tlween を起動してください: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: tlween then always starts under XWayland.	または 環境設定 › パフォーマンス › Linux ディスプレイサーバー を X11 にすると、tlween は常に XWayland 上で起動します。
 	Edit › Paste	[編集 › 貼り付け]
 	Duplicate Layers…	レイヤーを複製…
 	Duplicate style	スタイルを複製
@@ -1249,9 +1249,9 @@
 	Perspective Warp is not active	遠近法ワープは有効ではありません
 	Perspective Warp: draw planes along the image's perspective, then switch to Warp	遠近法ワープ: 画像の遠近に沿って面を描き、ワープに切り替えます
 	Photo Filter	写真フィルター
-	ShibShib tlween	ShibShib tlween
-	ShibShib tlween Manages Colors	ShibShib tlween でカラーを管理
-	ShibShib tlween — an open-source, native image editor written in Rust.	ShibShib tlween — Rust で書かれた、オープンソースのネイティブ画像エディター。
+	tlween	tlween
+	tlween Manages Colors	tlween でカラーを管理
+	tlween — an open-source, native image editor written in Rust.	tlween — Rust で書かれた、オープンソースのネイティブ画像エディター。
 	Pin Depth:	ピンの深さ:
 	Pixel Length:	ピクセル長:
 	Pixels/Centimeter	ピクセル/センチメートル
@@ -1325,11 +1325,11 @@
 	Import Shortcuts…	ショートカットを読み込む…
 	Load a keyboard shortcut set saved as .kys	.kys として保存されたキーボードショートカットセットを読み込みます
 	Imported {n} shortcuts from {file}. Click OK to keep them.	{file} から {n} 個のショートカットを読み込みました。OK をクリックすると保持されます。
-	{n} commands are not in ShibShib tlween.	{n} 個のコマンドは ShibShib tlween にありません。
+	{n} commands are not in tlween.	{n} 個のコマンドは tlween にありません。
 	Keyboard shortcuts imported	キーボードショートカットを読み込みました
 	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	キーボードショートカットセット {set} をここで使用しています。{n} 個のショートカットが既定と異なります。編集 › キーボードショートカットで確認でき、「すべて既定に戻す」で元に戻せます。
 	Import keyboard shortcuts?	キーボードショートカットを読み込みますか？
-	ShibShib tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from ShibShib tlween's. Import it?	このコンピューターで、別の画像編集アプリのキーボードショートカットセット {set} が見つかりました。{n} 個のショートカットが ShibShib tlween と異なります。読み込みますか？
+	tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from tlween's. Import it?	このコンピューターで、別の画像編集アプリのキーボードショートカットセット {set} が見つかりました。{n} 個のショートカットが tlween と異なります。読み込みますか？
 	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	編集 › キーボードショートカット › 「すべて既定に戻す」で読み込みを元に戻せます。
 	Don't Import	読み込まない
 	The keyboard shortcut set was not imported: {error}	キーボードショートカットセットは読み込まれませんでした: {error}
@@ -1553,7 +1553,7 @@
 	Current Tool	現在のツール
 	Custom Shape Tool	カスタムシェイプツール
 	Cyans	シアン系
-	Default PhotoCraft Size	ShibShib tlween 既定サイズ
+	Default PhotoCraft Size	tlween 既定サイズ
 	Delete Workspace	ワークスペースを削除
 	Diamond	ダイヤモンド形
 	Dimensions:	寸法:
@@ -1654,7 +1654,7 @@
 	Pen Tilt	ペンの傾き
 	Pen Tool	ペンツール
 	Photo	写真
-	ShibShib tlween website	ShibShib tlween の Web サイト
+	tlween website	tlween の Web サイト
 	Picas	パイカ
 	Pillow Emboss	ピローエンボス
 	Pixel Replacement	ピクセルの置き換え
@@ -1982,7 +1982,7 @@
 	System Info	システム情報
 	More panels	その他のパネル
 	More documents	その他のドキュメント
-	These settings aren't available in ShibShib tlween yet.	これらの設定は ShibShib tlween ではまだ使用できません。
+	These settings aren't available in tlween yet.	これらの設定は tlween ではまだ使用できません。
 	Graphics	グラフィックス
 	Reset GPU Backend	GPU バックエンドをリセット
 	Applies at next launch.	次回の起動時に適用されます。
@@ -2089,7 +2089,7 @@
 	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	自動モードは利用可能な場合にGPUを使用し、エラー時はCPU描画に切り替えます。
 	Switched to CPU rendering	CPU描画に切り替えました
 	GPU acceleration could not continue. Your documents are unchanged.	GPUアクセラレーションを継続できませんでした。ドキュメントは変更されていません。
-	ShibShib tlween is using the CPU image compositor. The window may still use your graphics adapter.	ShibShib tlweenはCPUで画像を合成しています。ウィンドウは引き続きグラフィックスアダプターを使用する場合があります。
+	tlween is using the CPU image compositor. The window may still use your graphics adapter.	tlweenはCPUで画像を合成しています。ウィンドウは引き続きグラフィックスアダプターを使用する場合があります。
 	Retry GPU requires a restart. Save your work first.	GPUの再試行には再起動が必要です。先に作業を保存してください。
 	Keep Using CPU	CPUを使い続ける
 	Retry GPU	GPUを再試行
@@ -3225,7 +3225,7 @@ fontWeight	Italic	斜体
 	Mouse Controls	マウス操作
 	Mouse Coordinates	マウス座標
 	NTSC (1953)	NTSC (1953)
-	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run ShibShib tlween under XWayland with `WAYLAND_DISPLAY= photocraft`.	Wayland ではネイティブのファイルのドラッグ&ドロップにまだ対応していません。ファイル › 開く を使うか、XWayland 上で `WAYLAND_DISPLAY= photocraft` として ShibShib tlween を実行してください。
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run tlween under XWayland with `WAYLAND_DISPLAY= photocraft`.	Wayland ではネイティブのファイルのドラッグ&ドロップにまだ対応していません。ファイル › 開く を使うか、XWayland 上で `WAYLAND_DISPLAY= photocraft` として tlween を実行してください。
 	New Brush	新規ブラシ
 	New Channel	新規チャンネル
 	New Layer from Brush	ブラシから新規レイヤー

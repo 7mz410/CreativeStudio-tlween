@@ -2,11 +2,11 @@
 	Import Shortcuts…
 	Load a keyboard shortcut set saved as .kys
 	Imported {n} shortcuts from {file}. Click OK to keep them.
-	{n} commands are not in ShibShib tlween.
+	{n} commands are not in tlween.
 	Keyboard shortcuts imported
 	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.
 	Import keyboard shortcuts?
-	ShibShib tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from ShibShib tlween's. Import it?
+	tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from tlween's. Import it?
 	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.
 	Don't Import
 	The keyboard shortcut set was not imported: {error}

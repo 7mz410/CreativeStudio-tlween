@@ -311,7 +311,7 @@ mod tests {
             }
             // Wide windows show the whole group; the narrowest drops Discord (also Help › Discord).
             let has_discord = texts(&out).iter().any(|(t, _)| t == "Discord");
-            assert!(!has_discord, "ShibShib: no Discord button ({width})");
+            assert!(!has_discord, "Creative Studio: no Discord button ({width})");
         }
     }
 

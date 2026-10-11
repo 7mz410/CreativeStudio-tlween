@@ -514,7 +514,7 @@ pub fn title_bar(app: &mut PhotocraftApp, ui: &mut egui::Ui) {
                 let max = ui.ctx().input(|i| i.viewport().maximized.unwrap_or(false));
                 ui.ctx().send_viewport_cmd(egui::ViewportCommand::Maximized(!max));
             }
-            let title = app.session.active().map(|d| format!("{}{}", d.doc.name, if d.is_dirty() { "  •" } else { "" })).unwrap_or_else(|| "ShibShib tlween".into());
+            let title = app.session.active().map(|d| format!("{}{}", d.doc.name, if d.is_dirty() { "  •" } else { "" })).unwrap_or_else(|| "tlween".into());
             // The menus and the right-hand controls are laid out first; the title is centred in
             // whatever room is left between them, shortened or dropped rather than drawn over them.
             let (mut menus_right, mut controls_left) = (full.left(), full.right());
@@ -626,7 +626,7 @@ pub fn system_title_bar(app: &PhotocraftApp) -> bool {
 /// marks unsaved changes, like the `•` in the app-drawn title), or just the app name with no
 /// document open.
 pub fn window_title(app: &PhotocraftApp) -> String {
-    app.session.active().map(|d| format!("{}{} \u{2014} ShibShib tlween", if d.is_dirty() { "*" } else { "" }, d.doc.name)).unwrap_or_else(|| "ShibShib tlween".into())
+    app.session.active().map(|d| format!("{}{} \u{2014} tlween", if d.is_dirty() { "*" } else { "" }, d.doc.name)).unwrap_or_else(|| "tlween".into())
 }
 
 /// Keep the OS window title (and the taskbar / Alt-Tab entry) on the active file. Sends
@@ -703,19 +703,19 @@ mod title_tests {
 
     #[test]
     fn window_title_with_no_document_is_the_app_name() {
-        assert_eq!(window_title(&app(true)), "ShibShib tlween");
+        assert_eq!(window_title(&app(true)), "tlween");
     }
 
     #[test]
     fn window_title_follows_the_active_file() {
         let mut app = app(true);
         open_named(&mut app, "foo.psd");
-        assert_eq!(window_title(&app), "foo.psd \u{2014} ShibShib tlween");
+        assert_eq!(window_title(&app), "foo.psd \u{2014} tlween");
         // Unsaved changes gain a `*` prefix, like the `•` in the app-drawn title.
         if let Some(st) = app.session.active_mut() {
             st.revision += 1;
         }
-        assert_eq!(window_title(&app), "*foo.psd \u{2014} ShibShib tlween");
+        assert_eq!(window_title(&app), "*foo.psd \u{2014} tlween");
     }
 
     #[test]
@@ -753,11 +753,11 @@ mod title_tests {
         let ctx = egui::Context::default();
         crate::PhotocraftApp::setup_context(&ctx, crate::theme::ThemeKind::ALL[0]);
         super::sync_window_title(&mut app, &ctx);
-        assert_eq!(app.last_window_title, "ShibShib tlween");
+        assert_eq!(app.last_window_title, "tlween");
         let mut out = ctx.run_ui(egui::RawInput::default(), |_| {});
         out.textures_delta.clear();
         let cmds = out.viewport_output.remove(&egui::ViewportId::ROOT).map(|v| v.commands).unwrap_or_default();
-        assert!(cmds.iter().any(|c| matches!(c, egui::ViewportCommand::Title(t) if t == "ShibShib tlween")), "{cmds:?}");
+        assert!(cmds.iter().any(|c| matches!(c, egui::ViewportCommand::Title(t) if t == "tlween")), "{cmds:?}");
         // Same document state again: the cached title stops a repeat command.
         super::sync_window_title(&mut app, &ctx);
         let mut out = ctx.run_ui(egui::RawInput::default(), |_| {});
@@ -766,7 +766,7 @@ mod title_tests {
         assert!(!cmds.iter().any(|c| matches!(c, egui::ViewportCommand::Title(_))), "repeat Title: {cmds:?}");
         open_named(&mut app, "foo.psd");
         super::sync_window_title(&mut app, &ctx);
-        assert_eq!(app.last_window_title, "foo.psd \u{2014} ShibShib tlween");
+        assert_eq!(app.last_window_title, "foo.psd \u{2014} tlween");
     }
 }
 

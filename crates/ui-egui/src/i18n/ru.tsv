@@ -466,11 +466,11 @@
 	Hide All	Скрыть все
 
 # Help
-	About ShibShib tlween	О программе ShibShib tlween
-	ShibShib tlween Website	Сайт ShibShib tlween
-	ShibShib tlween on GitHub	ShibShib tlween на GitHub
+	About tlween	О программе tlween
+	tlween Website	Сайт tlween
+	tlween on GitHub	tlween на GitHub
 	Report an Issue…	Сообщить о проблеме…
-	ShibShib Website	Сайт ArtCraft
+	Creative Studio Website	Сайт ArtCraft
 	Upstream Community on Discord…	Discord сообщества ArtCraft…
 	System Info…	Информация о системе…
 
@@ -546,11 +546,11 @@
 	Import Shortcuts…	Импортировать сочетания клавиш…
 	Load a keyboard shortcut set saved as .kys	Загрузить набор сочетаний клавиш, сохранённый как .kys
 	Imported {n} shortcuts from {file}. Click OK to keep them.	Импортировано сочетаний: {n} из {file}. Нажмите OK, чтобы сохранить их.
-	{n} commands are not in ShibShib tlween.	Команд, которых нет в ShibShib tlween: {n}.
+	{n} commands are not in tlween.	Команд, которых нет в tlween: {n}.
 	Keyboard shortcuts imported	Сочетания клавиш импортированы
 	Your keyboard shortcut set {set} is in use here: {n} shortcuts differ from the defaults. Edit › Keyboard Shortcuts shows them; Reset All to Defaults undoes this.	Здесь используется ваш набор сочетаний клавиш {set}: сочетаний, отличных от стандартных: {n}. Их показывает Редактирование › Сочетания клавиш; «Сбросить всё к значениям по умолчанию» отменяет импорт.
 	Import keyboard shortcuts?	Импортировать сочетания клавиш?
-	ShibShib tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from ShibShib tlween's. Import it?	ShibShib tlween нашёл на этом компьютере ваш набор сочетаний клавиш {set} из другого графического редактора: сочетаний, отличных от ShibShib tlween: {n}. Импортировать его?
+	tlween found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from tlween's. Import it?	tlween нашёл на этом компьютере ваш набор сочетаний клавиш {set} из другого графического редактора: сочетаний, отличных от tlween: {n}. Импортировать его?
 	Edit › Keyboard Shortcuts › Reset All to Defaults undoes an import.	Редактирование › Сочетания клавиш › «Сбросить всё к значениям по умолчанию» отменяет импорт.
 	Don't Import	Не импортировать
 	The keyboard shortcut set was not imported: {error}	Набор сочетаний клавиш не импортирован: {error}
@@ -853,7 +853,7 @@
 	Embed Color Profile	Встроить цветовой профиль
 	Assign Profile…	Назначить профиль…
 	Convert to Profile…	Преобразовать в профиль…
-	ShibShib tlween Manages Colors	ShibShib tlween управляет цветами
+	tlween Manages Colors	tlween управляет цветами
 	Printer Manages Colors	Принтер управляет цветами
 	(print to the printer)	(печать на принтере)
 	Absolute Colorimetric	Абсолютный колориметрический
@@ -1423,15 +1423,15 @@
 	Use File › Open, or paste a copied image with {paste}.	Выберите Файл › Открыть или вставьте скопированное изображение с помощью {paste}.
 	Native file drag-and-drop is unavailable	Нативное перетаскивание файлов в Wayland недоступно
 	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	Нативное перетаскивание файлов в Wayland пока не поддерживается. Откройте файл через Файл › Открыть или скопируйте изображение в файловом менеджере и вставьте его с помощью {paste}.
-	To drop files, start ShibShib tlween under XWayland: `{command}`	Чтобы перетаскивать файлы, запустите ShibShib tlween в XWayland: `{command}`
-	Or set Preferences › Performance › Linux display server to X11: ShibShib tlween then always starts under XWayland.	Или выберите в Настройки › Производительность › Дисплейный сервер Linux значение X11: ShibShib tlween будет всегда запускаться в XWayland.
+	To drop files, start tlween under XWayland: `{command}`	Чтобы перетаскивать файлы, запустите tlween в XWayland: `{command}`
+	Or set Preferences › Performance › Linux display server to X11: tlween then always starts under XWayland.	Или выберите в Настройки › Производительность › Дисплейный сервер Linux значение X11: tlween будет всегда запускаться в XWayland.
 	Edit › Paste	Редактирование › Вставить
 	Photo	Фото
 	Print	Печать
 	Art & Illustration	Искусство и иллюстрация
 	Mobile	Мобильные
 	Film & Video	Кино и видео
-	Default PhotoCraft Size	Размер ShibShib tlween по умолчанию
+	Default PhotoCraft Size	Размер tlween по умолчанию
 	Clipboard	Буфер обмена
 	Photo (2 × 3 in)	Фото (2 × 3 дюйма)
 	Photo (4 × 6 in)	Фото (4 × 6 дюйма)
@@ -1571,7 +1571,7 @@
 	Reverse	Обратить
 	Align with layer	По слою
 	Join us on Discord	Мы в Discord
-	ShibShib tlween website	Сайт ShibShib tlween
+	tlween website	Сайт tlween
 	ArtCraft	ArtCraft
 	GitHub	GitHub
 	No character style	Нет стиля символов
@@ -1597,9 +1597,9 @@
 	Don't Save	Не сохранять
 	No	Нет
 	Yes	Да
-	These settings aren't available in ShibShib tlween yet.	Эти параметры пока недоступны в ShibShib tlween.
+	These settings aren't available in tlween yet.	Эти параметры пока недоступны в tlween.
 	Shortcut removed.	Комбинация клавиш удалена.
-	All shortcuts reset to ShibShib tlween defaults.	Все комбинации клавиш сброшены к стандартным ShibShib tlween.
+	All shortcuts reset to tlween defaults.	Все комбинации клавиш сброшены к стандартным tlween.
 	Delete Shortcut	Удалить комбинацию
 	Press keys…	Нажмите клавиши…
 	shortcut	комбинация
@@ -2058,8 +2058,8 @@
 	Output:	Выход:
 	Paint Overlay	Перекрытие краской
 	Pattern Size	Размер паттерна
-	ShibShib tlween	ShibShib tlween
-	ShibShib tlween — an open-source, native image editor written in Rust.	ShibShib tlween — открытый нативный графический редактор на Rust.
+	tlween	tlween
+	tlween — an open-source, native image editor written in Rust.	tlween — открытый нативный графический редактор на Rust.
 	Position and Size	Положение и размер
 	Preserve Details	Сохранять детали
 	Preserve Luminosity	Сохранять светлоту
@@ -2371,7 +2371,7 @@
 	Automatic uses GPU acceleration when available and falls back to CPU rendering on errors.	Автоматический режим использует GPU, когда он доступен, и переходит на CPU при ошибках.
 	Switched to CPU rendering	Включена отрисовка на CPU
 	GPU acceleration could not continue. Your documents are unchanged.	Ускорение GPU остановлено. Документы не изменены.
-	ShibShib tlween is using the CPU image compositor. The window may still use your graphics adapter.	ShibShib tlween обрабатывает изображения на CPU. Окно может продолжать использовать графический адаптер.
+	tlween is using the CPU image compositor. The window may still use your graphics adapter.	tlween обрабатывает изображения на CPU. Окно может продолжать использовать графический адаптер.
 	Retry GPU requires a restart. Save your work first.	Для повтора GPU нужен перезапуск. Сначала сохраните работу.
 	Keep Using CPU	Продолжить с CPU
 	Retry GPU	Повторить GPU

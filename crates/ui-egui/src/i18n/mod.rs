@@ -18,7 +18,7 @@
 //! - [`trn`]: plural-aware (`{n}` is filled in). [`fmt`]: fill `{name}` placeholders after [`tr`];
 //!   translators may reorder placeholders freely.
 
-/// ShibShib: Arabic in visual order for egui.
+/// Creative Studio: Arabic in visual order for egui.
 pub(crate) mod bidi;
 mod catalog;
 mod system;
@@ -52,7 +52,7 @@ fn plural_one_other(n: u64) -> usize {
     usize::from(n != 1)
 }
 
-/// ShibShib: Arabic: zero, one, two, few (n % 100 in 3–10), many (n % 100 in 11–99), other.
+/// Creative Studio: Arabic: zero, one, two, few (n % 100 in 3–10), many (n % 100 in 11–99), other.
 fn plural_arabic(n: u64) -> usize {
     match (n, n % 100) {
         (0, _) => 0,
@@ -147,7 +147,7 @@ pub static LANGUAGES: [LangInfo; 18] = [
     LangInfo { code: "ru", name: "Русский", source: catalog!("ru"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },
     // Ukrainian has the same one/few/many rule for integer counts.
     LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },
-    // ShibShib: Arabic (shibshib/ar-work), right to left.
+    // Creative Studio: Arabic (studio/ar-work), right to left.
     LangInfo { code: "ar", name: "العربية", source: catalog!("ar"), plural: plural_arabic, complete_menus: true, catalog: OnceLock::new() },
     LangInfo { code: "cs", name: "Čeština", source: catalog!("cs"), plural: plural_cs, complete_menus: true, catalog: OnceLock::new() },
     LangInfo { code: "fr", name: "Français", source: catalog!("fr"), plural: plural_fr, complete_menus: true, catalog: OnceLock::new() },
@@ -173,7 +173,7 @@ impl LangInfo {
     }
 
     fn catalog(&self) -> &Catalog {
-        // ShibShib: right-to-left catalogs are stored in visual order (bidi.rs).
+        // Creative Studio: right-to-left catalogs are stored in visual order (bidi.rs).
         self.catalog.get_or_init(|| if bidi::RTL_CODES.contains(&self.code) { Catalog::parse(&bidi::visual_catalog(&self.text())) } else { Catalog::parse(&self.text()) })
     }
 }

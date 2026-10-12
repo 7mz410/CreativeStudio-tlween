@@ -1,0 +1,1162 @@
+	Rows
+	Number
+	Margin
+	Top:
+	Left:
+	Bottom:
+	Right:
+	Target:
+	Selected Artboards
+	Center Columns
+	Clear Existing Guides
+	Invalid guide layout
+	Leave empty for automatic size
+	5 Columns, 3 Rows
+	8 Columns
+	12 Columns
+	Open EXR Parts…
+	Add beauty precomp from the AOVs
+	Remove from Recent
+	Remove {name} from Recent
+	Show in Explorer
+	Show in Folder
+	Background From Layer
+	Smart Radius
+	Shift Edge
+	Decontaminate
+	Output
+	Refine Edge
+	80%
+	85%
+	90%
+	95%
+	Reset Tool
+	Reset All Tools
+	Reset all tools to their default settings?
+	Pro Light Gray Theme
+	Pro Light Theme
+	Breeze dark
+	Breeze Dark Theme
+	Breeze light
+	Breeze Light Theme
+	Refine Strokes
+	Automatic
+	Bicubic Smoother (enlargement)
+	Bicubic Sharper (reduction)
+	Click: corner · Drag: smooth · {alt}-drag: break handle · Click or drag first point: close · {key} finish · Esc cancel
+	Refine
+	Slant
+	New Document With Mask
+	New Layer With Mask
+	New Layer
+	Block
+	Single Row Marquee Tool
+	Single Column Marquee Tool
+	Horizontal Type Mask Tool
+	Vertical Type Mask Tool
+	Could not complete the Free Transform command because the layer is locked.
+	Add Anchor Point Tool
+	Delete Anchor Point Tool
+	Click a segment to add an anchor point · {alt}-click an anchor to delete it
+	Click an anchor point to delete it · {alt}-click a segment to add one
+	Convert Point Tool
+	Pro (Light)
+	Pro (Light Gray)
+	{w} {unit} x {h} {unit} ({ppi} ppi)
+	Show canvas dots
+	Pro light
+	Pro light gray
+	Enable animations
+	Show highlight on rollover
+	Rasterize Layer Style
+	Color Replacement Tool
+	The current gradient (pick one in Window › Gradients)
+	Opened {name}
+	Saved {name}
+	Saving {percent}
+cameraRaw	Red
+cameraRaw	Orange
+cameraRaw	Yellow
+cameraRaw	Green
+cameraRaw	Aqua
+cameraRaw	Blue
+cameraRaw	Purple
+cameraRaw	Magenta
+cameraRaw	Temperature
+	Transform On Drop
+	Scale or rotate the moved area, then press {key}
+	Targa Options
+	24 bits/pixel
+	32 bits/pixel
+	Color Picker ({name})
+	Contour Editor
+	Anti-aliased
+	Corner
+	Gloss Contour
+	Contour
+	Cone - Inverted
+	Cove - Deep
+	Cove - Shallow
+	Gaussian
+	Half Round
+	Ring
+	Ring - Double
+	Rolling Slope - Descending
+	Rounded Steps
+	Sawtooth 1
+	tlween — Screen Color Picker
+	Click the first point or press {key} to close · {del} removes a point · Esc cancels
+	Click, then move along an edge · click to fasten a point · {alt}-click for a straight segment · double-click to close
+	Follows only edges this close to the pointer ([ and ] change it)
+	Higher values follow only edges that contrast sharply with their surroundings
+	How often fastening points are placed by themselves
+	Appearance Settings…
+	Add to favorites
+	Remove from favorites
+cameraData	Make
+cameraData	Model
+cameraData	Date Taken
+cameraData	Exposure
+cameraData	F-Stop
+cameraData	ISO Speed
+cameraData	Focal Length
+cameraData	Focal Length (35 mm)
+cameraData	Lens
+	Activate Panel
+	Change Panel Group
+	Change Panel Layout
+	Close Panel
+	Dock Panel
+	Float Panel
+	Move Panel
+	Group with
+	Panel menu
+	Resize panel window
+	Resize panels
+	Use Classic Mode
+	Auto Center Preview
+	Next Document
+	Previous Document
+	W x H x Resolution
+	Front Image
+	Frame Tool
+	Create a new rectangular frame
+	Create a new elliptical frame
+	Include in playback
+	Perspective Crop Tool
+	Show Grid
+	Drag a box or click four corners · drag the corners onto the edges of a skewed shape · {commit} commits · Esc cancels
+	Artboard Tool
+	Make Portrait
+	Make Landscape
+	Add New Artboard
+	Freeform Pen Tool
+	Curvature Pen Tool
+	Curve Fit:
+	Drag: draw freehand · {alt}-click: straight segment · Release on the start point: close
+	Click: smooth point · Double-click: corner · Drag a point: move · Click first point: close · {key} finish
+	New Crop Preset…
+	Delete Crop Preset…
+	Select the crop presets to delete:
+	Select the crop presets to delete
+	Enter a name for the crop preset
+	There is no crop size or ratio to save
+	Scale:
+	Snap to Origin
+	Search settings…
+	No matching settings
+	Loading fonts…
+	Tool
+	Simulate Pressure
+	Stroke Path…
+	Background Eraser
+	Healing Brush
+	Spot Healing Brush
+	Smudge
+	Sponge
+	Amount:
+	Protect:
+	Protect skin tones
+	Edit points to modify the curve
+	Draw to modify the curve
+curves	Smooth
+	Smooth the curve values
+	Drag to draw the curve · {key}-click draws a straight line
+	Grid Size:
+	Vanishing Point: click four corners to create a plane
+	Vanishing Point is not active
+	Apply Vanishing Point ({key})
+	Fix the red plane first: its corners must form a convex quad
+	Onion Skin
+	Marching Ants
+	On Black
+	On White
+	On Layers
+	Show Edge
+	Show Original
+	F cycles the views; hold X to see the image
+	Refine Edge Brush (R)
+	Expand Detection Area
+	Restore Original Edge
+	Paint over hair or fur on the image; Alt paints the other mode
+	Clear Brush Strokes
+	Show rulers
+	Click to place · Alt-click or drag off-canvas to remove
+	No document open
+	{n} of {max} sample points
+	Emulsion Down
+	Functions
+	Print Resolution:
+	Use Previous Layer to Create Clipping Mask
+	Fill with {mode}-neutral color (white)
+	Fill with {mode}-neutral color (black)
+	Fill with {mode}-neutral color (50% gray)
+	(No neutral color exists for {mode} mode.)
+	Apply mask to layer before removing?
+	The layer or its mask changed. Drag the mask onto the Trash again.
+	Delete the vector mask?
+@plural	Exported {n} swatch to {file}|Exported {n} swatches to {file}
+@plural	Imported {n} brush from {group}|Imported {n} brushes from {group}
+@plural	Imported {n} swatch from {file}|Imported {n} swatches from {file}
+@plural	Played {n} step|Played {n} steps
+@plural	Updated {n} linked smart object changed on disk|Updated {n} linked smart objects changed on disk
+@plural	Saved for Web: {n} file|Saved for Web: {n} files
+@plural	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.
+@plural	{n} plane|{n} planes
+@plural	{n} preset|{n} presets
+@plural	{n} sample point removed|{n} sample points removed
+@plural	{n} slice|{n} slices
+@plural	{n} step|{n} steps
+@plural	{warning} (+{n} more brush preset warning)|{warning} (+{n} more brush preset warnings)
+@plural	{what} with {n} warning|{what} with {n} warnings
+	Light Blue
+	Light Red
+	Medium Blue
+	Light Gray
+@id	edit.stroke
+@id	edit.transform.scale
+cameraRaw	Luminance
+cameraRaw	Color
+cameraRaw	Vibrance
+cameraRaw	Color Grading
+cameraRaw	Global
+cameraRaw	Hue
+cameraRaw	Luminance Detail
+cameraRaw	Color Detail
+cameraRaw	Roughness
+cameraRaw	Whites
+layerLabel	No Color
+	Preferences…
+	Actual Pixels
+	Clipping Mask
+	Tool Options
+	Color Picker
+	Color Swatches
+	Linear Dodge
+	Preview Image
+	Save As
+	Remove All
+	Unlock
+	Enable
+	Disable
+	On
+	Clear Selection
+	Invert Selection
+	Select Inverse
+	Contract
+	Sample Size
+	Strength
+	Gamma
+	Input
+	Input Levels
+	Output Levels
+	Layer Styles
+	Blending Mode
+	Fill Color
+	Stroke Color
+	Stroke Width
+	Shadow
+	Adjustment Layers
+	Text Layer
+	Documents
+	File Name
+	File Format
+	Compression
+	Artboards
+	Snap to Grid
+	Full Screen
+	Fullscreen
+	Workspaces
+	Show All
+	Hidden
+	Duplicate Layer
+	Ungroup
+	Lock Transparent Pixels
+	Lock Image Pixels
+	Lock Position
+	Lock All
+	Show Rulers
+	Guide Layout…
+	Page Setup…
+	Reset Preferences
+	Documentation
+	Check for Updates
+	Loading…
+	Processing…
+	Saving…
+	Exporting…
+	Please wait…
+	No selection
+	No layers
+	No recent files
+	Unsupported file format
+	Failed to open file
+	Failed to save file
+	Operation canceled
+	Changes have not been saved.
+	Are you sure?
+	Discard Changes
+	Recent Files
+	Open File
+	Save File
+	Save Changes
+	Rendering…
+	Importing…
+	Ready
+	Failed
+	Warning
+	Information
+	Retry
+	Continue
+	Skip
+	Resume
+	Reset All
+	Defaults
+	Apply to All
+	Confirm
+	Finish
+	Back
+	Next
+	Previous
+	More
+	Less
+	Manual
+	Disabled
+	Locked
+	Unlocked
+	Delete…
+	Create…
+	Edit…
+	Change…
+	Transformation
+	Scaling
+	Canvas Size
+	Percentage
+	Degrees
+	Middle
+	Diameter
+	Intensity
+	Sensitivity
+	Softness
+	Feather Radius
+	Library
+	Layer Properties
+	Groups
+	Masks
+	Add Mask
+	Delete Mask
+	Invert Mask
+	Enable Mask
+	Disable Mask
+	Apply Mask
+	Import Settings
+	Export Settings
+	Shortcut
+	Shortcuts
+	Keyboard
+	Mouse
+	Tablet
+	Display
+	Panel
+	Hide Grid
+	Fit to Window
+	Live Preview
+	Before
+	After
+	Compare
+	File Size
+	Filename
+	Folder
+	Open Folder
+	Choose Folder
+	Browse
+	Find
+	Replace
+	Date
+	Learn More
+	Report a Bug
+	Updates
+	Update
+	Restart Required
+	Restart
+	Quit
+	Quit tlween
+	Close Window
+	New Window
+	Open Image
+	Save Image
+	Export Image
+	Import Image
+	Export As
+	Export to
+	Export Options
+	Import Options
+	No Selection
+	No Document
+	No Image
+	No Layers
+	No Results
+	No Results Found
+	Nothing to Undo
+	Nothing to Redo
+	Changes Saved
+	Unsaved Changes
+	Save before closing?
+	Are you sure you want to quit?
+	The file could not be opened.
+	The file could not be saved.
+	Unsupported format
+	Out of memory
+	Permission denied
+	File not found
+	Operation failed
+	Operation completed
+	Operation cancelled
+	Sharpen Amount
+	Sharpen Radius
+	Sharpen Detail
+	Sharpen Masking
+	Noise Luminance
+	Noise Luminance Detail
+	Noise Color
+	Noise Color Detail
+	Grain Amount
+	Grain Size
+	Grain Roughness
+	Vignette Roundness
+	Vignette Feather
+	Vignette Highlights
+	Vignette Style
+	Planes
+	Plane
+	Shadow Amount
+	Shadow Tone
+	Shadow Radius
+	Highlight Amount
+	Highlight Tone
+	Highlight Radius
+	Midtone
+	Black Clip
+	White Clip
+	Fuzziness
+	Source Layer
+	Neutralize
+	Use Selection In Source
+	Use Selection In Target
+	Flame Type
+	Randomize Length
+	Interval
+	Adjust Interval For Loops
+	Use Custom Color
+	Flame Lines
+	Flame Bottom Alignment
+	Flame Style
+	Flame Shape
+	Randomize Shapes
+	Frame
+	Arrangement
+	Thickness
+	Vine Color
+	Flower Color
+	Leaf Color
+	Base Tree Type
+	Light Direction
+	Leaves Amount
+	Leaves Size
+	Branches Height
+	Branches Thickness
+	Default Leaves
+	Leaves Color
+	Custom Branch Color
+	Branches Color
+	Flat Shading
+	Date and Time
+	Scale Units
+	Scale Factor
+	Area
+	Perimeter
+	Circularity
+	Gray Value (Minimum)
+	Gray Value (Maximum)
+	Gray Value (Mean)
+	Gray Value (Median)
+	Integrated Density
+	Length
+	In Black
+	In White
+	Out Black
+	Out White
+	Tint Color
+	Stops
+	Center X
+	Center Y
+	Distribution
+	Monochromatic
+	Cell Size
+	Generators
+	Wavelength Min
+	Wavelength Max
+	Amplitude Min
+	Amplitude Max
+	Undefined Areas
+	Preserve
+	Max Radius
+	Depth Mode
+	Solid Front Faces
+	Mask Incomplete Blocks
+	Stylization
+	Cleanliness
+	Bristle Detail
+	Lighting
+	Shine
+	Max Offset
+	Map Document
+	Map Path
+	Map Layer
+	Ridges
+	Light Type
+	Light X
+	Light Y
+	Light Z
+	Target X
+	Target Y
+	Hotspot
+	Elevation
+	Ambient
+	Warmth
+	Gloss
+	Metallic
+	Ambience
+	White Is High
+	Reduce Color Noise
+	Sharpen Details
+	Remove Jpeg Artifact
+	Blade Curvature
+	Depth Map
+	Focal Distance
+	Focus
+	Transition
+	Radius X
+	Radius Y
+	Pins
+	Blur Angle
+	Speed
+	Taper
+	Start X
+	Start Y
+	End X
+	End Y
+	Kernel
+	Input Mode
+	Row Order
+	Eliminate
+	Create By
+	List
+	Pencil Width
+	Stroke Pressure
+	Paper Brightness
+	Number Of Levels
+	Edge Simplicity
+	Edge Fidelity
+	Brush Detail
+	Highlight Area
+	Glow Size
+	Glow Brightness
+	Brush Type
+	Stroke Size
+	Stroke Detail
+	Highlight Strength
+	Smoothness
+	Edge Thickness
+	Edge Intensity
+	Posterization
+	Stroke Length
+	Relief
+	Definition
+	Texture Coverage
+	Shadow Intensity
+	Edge Width
+	Edge Brightness
+	Direction Balance
+	Black Intensity
+	White Intensity
+	Dark Intensity
+	Custom Pixel Aspect Ratio
+	32-bit Preview Options
+	New Guide
+	Upstream Community on Discord
+	Report an Issue
+	Load Files into Stack
+	Statistics
+	Duplicate Layers
+	Edit Toolbar
+	Import Brushes
+	Load 3D LUT
+	New document
+	Press keys
+	Rename Group
+	Rename Tool Preset
+	Search commands, tools and panels
+	Slice Options
+	Rename Brush
+	Opening
+	Reading
+	Working
+	Accented Edges
+	Angled Strokes
+	Anisotropic
+	Around Center
+	Artistic
+	Bamboo
+	Bas Relief
+	Berries
+	Blast
+	Bleach Bypass
+	Blocks
+	Brick
+	Brush Strokes
+	Burlap
+	Candle Light
+	Circle
+	Clumped
+	Coarse Dots
+	Colored Pencil
+	Contrasty
+	Cool
+	Craquelure
+	Cross
+	Cross Process
+	Crosshatch
+	Cutout
+	Daisies
+	Dark Rough
+	Dark Strokes
+	Darken Only
+	Day For Night
+	Deep Blue
+	Deep Emerald
+	Deep Red
+	Deep Yellow
+	Dot
+	Double Line
+	Draft
+	Dry Brush
+	Duplication
+	Edge Extension
+	Edge Only
+	Enlarged
+	Even Fields
+	Faded Film
+	Film Grain
+	Fine
+	Fine Dots
+	Flat
+	Fresco
+	From Left
+	From Right
+	Frosted
+	Generic
+	Glass
+	Glowing Edges
+	Grainy Dots
+	Hearts
+	Heptagon
+	Hexagon
+	Horizontal Only
+	Infinite
+	Ink Outlines
+	Ivy
+	Left Diagonal
+	Level Based
+	Light Rough
+	Lighten Only
+	Long Lines
+	Long Strokes
+	Lower
+	Medium Dots
+	Medium Lines
+	Medium Strokes
+	Mono Contrast
+	Mosaic Tiles
+	Multiple Flames Along Path
+	Multiple Flames One Direction
+	Multiple Flames Path Directions
+	Multiple Flames Various Length
+	Octagon
+	Odd Fields
+	One Flame Along Path
+	Out From Center
+	Oval
+	Overlay Edge
+	Palette Knife
+	Parallel
+	Patchwork
+	Pentagon
+	Point
+	Pointed
+	Pond Ripples
+	Pyramids
+	Random
+	Right Diagonal
+	Rope
+	Roses
+	Sandstone
+	Scallops
+	Sepia
+	Short Lines
+	Short Strokes
+	Simple
+	Light Intensity
+	Spray Radius
+	Stroke Direction
+	Graininess
+	Glow Amount
+	Clear Amount
+	Distortion
+	Ripple Size
+	Ripple Magnitude
+	Charcoal Area
+	Chalk Area
+	Charcoal Thickness
+	Light Dark Balance
+	Foreground Level
+	Background Level
+	Pattern Type
+	Image Balance
+	Darkness
+	Fiber Length
+	Crack Spacing
+	Crack Depth
+	Crack Brightness
+	Grain Type
+	Tile Size
+	Grout Width
+	Lighten Grout
+	Square Size
+	Border Thickness
+	Correct Distortion
+	Correct Vignette
+	Correct C A
+	Auto Scale
+	Red Cyan
+	Blue Yellow
+	Vignette Amount
+	Vignette Midpoint
+	Constraints
+	Curve Highlights
+	Curve Lights
+	Curve Darks
+	Curve Shadows
+	Curve Splits
+	Point Curve
+	Point Curve Red
+	Point Curve Green
+	Point Curve Blue
+	Hsl Hue
+	Hsl Sat
+	Hsl Lum
+	Grade Shadows
+	Grade Midtones
+	Grade Highlights
+	Grade Global
+	Grade Blending
+	Grade Balance
+	Sine
+	Sketch
+	Snowflakes
+	Sparkle
+	Spatter
+	Speckle
+	Spin
+	Sprinkles
+	Squareness
+	Stagger
+	Stained Glass
+	Star
+	Stars
+	Stippled
+	Stretch
+	Teal Orange
+	Tiny Lens
+	To Center
+	Unaltered
+	Underpainting
+	Underwater
+	Uniform
+	Upper
+	Vertical Only
+	Vine With Flowers
+	Vine With Leaves
+	Violent
+	Warm
+	Watercolor
+	Waves
+	Wide Blurry
+	Wide Sharp
+	Wrap
+	Zigzag
+	Wetness
+	AI Integrations
+	Add Noise
+	Apply Data Set
+	Apply Image
+	Arbitrary
+	Artboard from Group
+	Artboard from Layers
+	Artboards to Files
+	Artboards to PDF
+	Assign Profile
+	At
+	Auto-Align Layers
+	Auto-Blend Layers
+	Batch
+	Border
+	Box Blur
+	Calculations
+	Camera Raw
+	Camera Raw Filter
+	Channel1
+	Channel2
+	Channel3
+	Channel4
+	Clone
+	Color Decontaminate
+	Color Halftone
+	Color Lookup Tables
+	Color Settings
+	Color Table
+	Conditional Mode Change
+	Content-Aware Fill
+	Convert to Linked
+	Convert to Profile
+	Crystallize
+	Data
+	Data Sets as Files
+	De-Interlace
+	Define Brush Preset
+	Define Custom Shape
+	Define Pattern
+	Defringe
+	Diffuse
+	Diffuse Glow
+	Displace
+	Do you want to save you made to “{name}” before quitting?
+	Dust & Scratches
+	Export Contents
+	Export Preferences
+	Export/Import Presets
+	Extrude
+	Fibers
+	Field Blur
+	File Info
+	Filter Gallery
+	Find and Replace Text
+	Fit Image
+	Flame
+	Focus Area
+	Gaussian Blur
+	Global Light
+	Group from Layers
+	HDR Toning
+	High Pass
+	Highlight
+	Image Processor
+	Install Plug-in
+	Interpret Footage
+	Iris Blur
+	Jag
+	Label
+	Layer Comps to Files
+	Layer Content Options
+	Layer From Background
+	Layer from Background
+	Layers to Files
+	Legacy
+	Lens Blur
+	Lens Correction
+	Lens Flare
+	Lighting Effects
+	Liquify
+	Lock Layers
+	Lum
+	Match Color
+	Merge to HDR Pro
+	Mezzotint
+	Mosaic
+	Motion Blur
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run tlween under XWayland with `WAYLAND_DISPLAY= photocraft`.
+	Neon Glow
+	New Guide Layout
+	New Video Layer from File
+	Ocean Ripple
+	Oil Paint
+	Open As
+	Package
+	Paint Daubs
+	Path Blur
+	Paths to Illustrator
+	Photomerge
+	Picture Frame
+	Pinch
+	Place Embedded
+	Place Linked
+	Place Scale Marker
+	Plastic Wrap
+	Pointillize
+	Polar Coordinates
+	Polar To Rectangular
+	Poster Edges
+	Preset Manager
+	Profile
+	Radial Blur
+	Raw Defaults
+	Rectangular To Polar
+	Reduce Noise
+	Relink to File
+	Render Video
+	Replace Color
+	Replace Contents
+	Replace Footage
+	Resolve Missing Fonts
+	Ripple
+	Rough Pastels
+	Sat
+	Save a Copy
+	Save for Web (Legacy)
+	Scale Effects
+	Script Events Manager
+	Search menus
+	Seed
+	Select and Mask
+	Set Measurement Scale
+	Shadows/Highlights
+	Shape Blur
+	Shear
+	Smart Blur
+	Smart Sharpen
+	Smudge Stick
+	Solid Color
+	Spherize
+	Spin Blur
+	Spot
+	Sprayed Strokes
+	Strokes
+	Sumi-e
+	Surface Blur
+	Texturizer
+	Tiles
+	Tilt-Shift
+	Trace Contour
+	Trap
+	Tree
+	Trim
+	Turbulent
+	Twirl
+	Unsharp Mask
+	Use File › Open to open an image.
+	Vanishing Point
+	Variable Data Sets
+	Video Frames to Layers
+	WIA Support
+	Warp Text
+	Wind
+	ZigZag
+	Vertical Type Tool
+	About {app}
+	Hide {app}
+	Quit {app}
+	Services
+	Hide Others
+	Lut
+	Cooling L B B
+	Cooling80
+	Cooling82
+	Hsb
+	Hsl
+	Movie Prime
+	Prime105
+	Prime35
+	Rgb
+	Warming L B A
+	Warming81
+	Warming85
+@id	filter.sharpen.sharpen
+	Good
+	Best
+	Adjustment Properties
+	Default Foreground and Background Colors
+	Move Layer
+	Rectangular Selection
+	Reorder Layer
+	Select Layer
+	Set Colors
+	Switch Foreground and Background Colors
+	Target
+	Make Work Path…
+	Create Vector Mask
+	Make Selection…
+	Fill Path…
+	Clipping Path…
+	Free Transform Path
+	Unite Shapes at Overlap
+	Subtract Shapes at Overlap
+	Copy Fill
+	Copy Complete Stroke
+	Paste Fill
+	Paste Complete Stroke
+	Make Symmetry Path
+	Disable Symmetry Path
+	Dark Gray
+	Medium Gray
+	Select Custom Color…
+	Color Picker (Custom Canvas Color)
+	Duplicate Channel
+	Delete Channel
+	Rename Channel…
+	Merge Spot Channel
+	Convert to Alpha Channel
+	Exit Quick Mask
+	New Channel…
+	New Spot Channel…
+	Split Channels
+	Merge Channels…
+	Color Indicates Masked Areas
+	Color Indicates Selected Areas
+	✓ Color Indicates Masked Areas
+	✓ Color Indicates Selected Areas
+	Up
+	To
+	Shallow
+	Deep
+	Blend Interior Effects as Group
+	Blend Clipped Layers as Group
+	Transparency Shapes Layer
+	Layer Mask Hides Effects
+	Vector Mask Hides Effects
+	General Blending
+	This Layer:
+	Underlying Layer:
+	Nothing to paste: the clipboard holds no image
+	Preferences saved
+	Invalid panel layout; restored the default dock
+	Preferences were reset: {error}
+	Recovered {name}
+	Couldn't save preferences: {error}. Retrying…
+	Autosave failed: {error}
+	Exported presets to {path}
+	Ran script {name}
+	Sent to the printer ({spooler})
+	Printed to {path}
+	Exported {path} ({size})
+	Exported {path}
+	Added swatch {name}
+	Step {step} ({id}) failed: {error}
+	Could not rename the action: {error}
+	Action playback failed: {error}
+	Clone source set at {x}, {y}
+	Color management: {error}
+	Opened {url}
+	No custom shape "{name}": pick one in the options bar or Window › Shapes
+	Saved a copy as {path}
+	Exported contents to {path}
+	{label} is not available: {reason}
+	Saved {path}; image assets: {n} in {dir}
+	{message} (notes: {n}; {warning})
+	Preferences can't be saved
+	tlween keeps retrying; until a save succeeds, preference changes are lost when it closes.
+	GPU retry scheduled
+	Save your work and restart tlween to retry GPU acceleration. CPU rendering remains active for this session.
+	GPU device was lost; using the CPU renderer.
+	GPU error; using the CPU renderer.
+	Couldn't open {name}: {error}
+	Toggle the Brush Settings panel
+	New Brush Preset
+	Grid view
+	List view
+	{verb} {mask} {layer}
+	Unlink
+	Link
+	layer mask
+	vector mask
+	Commit transform
+	Cancel transform
+	Scroll menu up
+	Scroll menu down
+	This type layer must be rasterized before proceeding. Its text will no longer be editable. Rasterize the type?
+	This shape layer must be rasterized before proceeding. It will no longer be editable as a shape. Rasterize the shape?
+	This Smart Object must be rasterized before proceeding. Its contents will no longer be editable. Rasterize the Smart Object?
+	This fill layer must be rasterized before proceeding. Its fill content will no longer be editable. Rasterize the layer?
+	This layer must be rasterized before proceeding.
+	Color Picker (Background Color)
+	Color Picker (Foreground Color)
+	Adwaita (Light)
+	Adwaita (Dark)
+	Breeze Light
+	Breeze Dark
+	Solarized Dark
+	Open Recent is unavailable on the web
+	Graphics adapter: {adapter}
+	Backend: {backend} ({type})
+	Driver: {driver}
+	GPU backend preference: {backend}
+	Selected at launch: {backend}
+	Image compositor: {processor}
+	Fallback: {reason}
+	This session: {reason}
+	Window renderer: {renderer}
+	Software adapter
+	Graphics adapter
+	unknown
+	unknown type
+	auto
+	Platform: {os} {arch}
+	previous reading kept; the last re-read failed: {reason}
+	Monitor profile: {profile}
+	Display profiles: {reason}
+	Monitor profile in use on {display}: {profile}
+	Monitor profile in use: {profile}
+	The canvas is shown as sRGB. Choose a monitor profile in Edit › Color Settings.
+	The canvas on {display} is shown as sRGB. Choose a monitor profile in Edit › Color Settings.
+	Display profile not used
+	Monitor profile on {display} (main window): {profile}
+	Monitor profile on {display}: {profile}
+	manual
+	fallback
+	The document does not have an embedded colour profile. Working space: {working}.
+	The document has an embedded colour profile that does not match the working space.\nEmbedded: {embedded}\nWorking: {working}
+	Importing {what} from {file}…
+	brushes
+	gradients
+@plural	Imported {n} brush from {file}|Imported {n} brushes from {file}
+@plural	Imported {n} gradient from {file}|Imported {n} gradients from {file}
+	Data Set: {name}  ({index}/{total})
+	(none)
+navigator	Zoom
+	Apply {option}: {state}
+	on
+	off
+	This adjustment ({key}) is kept as imported and can't be edited yet.
+	Upstream Community on Discord ({url})
+	{index} of {total}
+	{shortcut} assigned.
+	{shortcut} is already in use by {commands} and will be removed from it when you click OK.

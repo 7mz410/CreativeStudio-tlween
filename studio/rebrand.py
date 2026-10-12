@@ -20,11 +20,26 @@ KEEP = ('Default PhotoCraft Size', 'PhotoCraft Studio CMYK', 'the PhotoCraft aut
 
 # Exact replacements, applied before the general rename (and kept idempotent: skipped once done).
 RTL_RULES = [
+    ('crates/ui-egui/src/cjk_fonts.rs', """                assert_eq!(stack.iter().filter(|n| n.starts_with(FONT_PREFIX)).count(), 3);
+                assert_eq!(stack.last().map(String::as_str), Some("system-cjk-2"), "appended last so Latin keeps Inter");""", """                assert_eq!(stack.iter().filter(|n| n.starts_with(FONT_PREFIX)).count(), 2);
+                assert_eq!(stack.last().map(String::as_str), Some("system-cjk-1"), "appended last so Latin keeps Inter");"""),
+    ('crates/ui-egui/src/cjk_fonts.rs', """                assert!(p.0.scripts_tried.contains(&Script::Hebrew));
+                assert_eq!(p.0.registered.len(), 3);""", """                assert!(p.0.scripts_tried.contains(&Script::Hebrew));
+                assert_eq!(p.0.registered.len(), 2); // Creative Studio: Arabic is built in"""),
+    # Upstream's tests assume no right-to-left catalog and load Arabic glyphs on demand; ours ships
+    # Arabic (right to left) with IBM Plex Sans Arabic built in.
+    ('crates/ui-egui/src/direction_tests.rs', """    for lang in Lang::all() {
+        assert_eq!(lang.dir(), Dir::Ltr, "{}", lang.code());
+    }""", """    for lang in Lang::all() {
+        let want = if lang.code() == "ar" { Dir::Rtl } else { Dir::Ltr };
+        assert_eq!(lang.dir(), want, "{}", lang.code());
+    }"""),
+    ('crates/ui-egui/src/cjk_fonts.rs', 'assert_eq!(fallback_files(&ctx), ["thai.ttf", "arabic.ttf", "devanagari.ttf"], "the first file that maps the character, never Inter");',
+     'assert_eq!(fallback_files(&ctx), ["thai.ttf", "devanagari.ttf"], "the first file that maps the character, never Inter (Arabic is built in)");'),
     # Arabic is supported now: the 'unsupported language' tests use Hebrew instead.
     ('crates/ui-egui/src/i18n/live_tests.rs', '    for tags in [vec![], vec!["sv-SE", "ar-SA"]] {', '    for tags in [vec![], vec!["sv-SE", "he-IL"]] {'),
     ('crates/ui-egui/src/i18n/system.rs', '            (vec!["sv-SE", "ar-SA"], "en"),', '            (vec!["sv-SE", "he-IL"], "en"),'),
     ('crates/ui-egui/src/i18n/mod.rs', 'fn plural_none(_: u64) -> usize {\n', '/// Creative Studio: Arabic: zero, one, two, few (n % 100 in 3–10), many (n % 100 in 11–99), other.\nfn plural_arabic(n: u64) -> usize {\n    match (n, n % 100) {\n        (0, _) => 0,\n        (1, _) => 1,\n        (2, _) => 2,\n        (_, 3..=10) => 3,\n        (_, 11..=99) => 4,\n        _ => 5,\n    }\n}\n\nfn plural_none(_: u64) -> usize {\n'),
-    ('crates/ui-egui/src/i18n/mod.rs', 'pub static LANGUAGES: [LangInfo; 17] = [', 'pub static LANGUAGES: [LangInfo; 18] = ['),
     ('crates/ui-egui/src/i18n/mod.rs', '    LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },\n', '    LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },\n    // Creative Studio: Arabic (studio/ar-work), right to left.\n    LangInfo { code: "ar", name: "العربية", source: catalog!("ar"), plural: plural_arabic, complete_menus: true, catalog: OnceLock::new() },\n'),
     # Upstream's README moved to docs/UPSTREAM-README.md (ours is the fork's).
     ('crates/ui-egui/src/state.rs', '        let readme = include_str!("../../../README.md");', '        let readme = include_str!("../../../docs/UPSTREAM-README.md");'),
@@ -132,8 +147,23 @@ def apply_rtl_rules() -> list:
     return changed
 
 
+def fix_language_count() -> list:
+    # The table's length follows its rows (upstream adds languages; we add Arabic).
+    p = ROOT / 'crates/ui-egui/src/i18n/mod.rs'
+    s = p.read_text(encoding='utf-8')
+    m = re.search(r'pub static LANGUAGES: \[LangInfo; (\d+)\] = \[(.*?)\n\];', s, re.S)
+    if not m:
+        return []
+    n = len(re.findall(r'LangInfo \{', m.group(2)))
+    if int(m.group(1)) == n:
+        return []
+    p.write_text(s[:m.start(1)] + str(n) + s[m.end(1):], encoding='utf-8')
+    return [p]
+
+
 def main():
     changed = apply_rtl_rules()
+    changed += fix_language_count()
     changed += [p for p in RUST_FILES() if rebrand_rust(p)]
     changed += [p for p in sorted((ROOT / 'crates/ui-egui/src/i18n').glob('*.tsv')) if rebrand_locale(p)]
     web = ROOT / 'apps/photocraft-web/index.html'

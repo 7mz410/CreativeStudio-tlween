@@ -3934,3 +3934,7 @@ navigator	Zoom	التكبير
 	{index} of {total}	{index} من {total}
 	{shortcut} assigned.	تم تعيين {shortcut}.
 	{shortcut} is already in use by {commands} and will be removed from it when you click OK.	الاختصار {shortcut} قيد الاستخدام بالفعل بواسطة {commands} وستتم إزالته منها عند النقر على موافق.
+	Merge Group	دمج المجموعة
+	Remove after each stroke	الإزالة بعد كل ضربة
+	Apply the removal ({key})	تطبيق الإزالة ({key})
+	Strokes to remove: {n} (Enter applies, Esc cancels)	الضربات المراد إزالتها: {n} (Enter للتطبيق، Esc للإلغاء)

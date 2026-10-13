@@ -20,5 +20,5 @@ jobs:
       app: tlween
       package: photocraft
       version_var: PHOTOCRAFT_VERSION
-      bundle: PhotoCraft.app
+      bundle: tlween.app
       tag: ${{ github.ref_name }}

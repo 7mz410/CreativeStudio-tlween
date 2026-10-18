@@ -29,6 +29,7 @@ pub(crate) fn clone_params(app: &PhotocraftApp) -> Option<Value> {
     let o = &app.ui.tool_options;
     let mut p = json!({"aligned": o.clone_aligned, "sampleLayer": o.clone_sample});
     if app.ui.tool == Tool::CloneStamp {
+        p["wrap"] = json!(app.ui.view.pattern_preview);
         p["opacity"] = json!(app.session.tools.brush.opacity * 100.0);
         p["flow"] = json!(app.session.tools.brush.flow * 100.0);
     }
@@ -176,7 +177,7 @@ pub fn remove_pending_add(app: &mut PhotocraftApp, points: &[[f64; 3]]) {
         app.remove_pending_doc = Some(doc);
     }
     let diameter = app.session.tools.brush.size;
-    app.remove_trail.get_or_insert_with(|| crate::stroke_trail::Trail::new(size)).feed(points, diameter);
+    app.remove_trail.get_or_insert_with(|| crate::stroke_trail::Trail::new(size)).feed_stroke(points, diameter);
     app.remove_pending.push(points.to_vec());
     app.ui.status = crate::i18n::fmt(tl!("Strokes to remove: {n} (Enter applies, Esc cancels)"), &[("n", &app.remove_pending.len().to_string())]);
     app.ui.status_error = false;
@@ -342,13 +343,28 @@ pub fn content_aware_move_params(app: &PhotocraftApp, offset: [i64; 2]) -> Value
 }
 
 /// Object Selection: the dragged rectangle. A click (or a sub-2 px nudge) cannot be a
-/// rectangle: like Photoshop's click-to-select, it falls back to a Quick Selection dab at
+/// rectangle: with Object Finder on it selects the object under the pointer, the one hovering
+/// highlighted (#4087; ⇧ adds, ⌥ subtracts, ⇧⌥ intersects, otherwise replaces). With it off it
+/// falls back to a Quick Selection dab at
 /// the brush size instead of looking dead (⌥ subtracts, otherwise it adds). Larger drags
 /// run the rectangle GrabCut (⌥ subtracts, ⇧ adds, otherwise replaces).
 pub fn finish_object_selection(app: &mut PhotocraftApp, start: [f64; 2], end: [f64; 2], mods: egui::Modifiers) {
     let (x, y) = (start[0].min(end[0]), start[1].min(end[1]));
     let (w, h) = ((end[0] - start[0]).abs(), (end[1] - start[1]).abs());
     let sample_all = app.ui.tool_options.sample_all_layers;
+    if (w < 2.0 || h < 2.0) && app.ui.tool_options.object_finder {
+        // Object Finder (#4087): the object under the click, as hovering highlighted it.
+        let mode = match (mods.shift, mods.alt) {
+            (true, true) => "intersect",
+            (true, false) => "add",
+            (false, true) => "subtract",
+            (false, false) => "replace",
+        };
+        let r = app.run("select.object", json!({"point": [end[0], end[1]], "mode": mode, "sampleAllLayers": sample_all}));
+        crate::object_finder::clear(app);
+        report_smart_result(app, r, tl!("No object found there — drag a rectangle around it"));
+        return;
+    }
     if w < 2.0 || h < 2.0 {
         let size = app.session.tools.brush.size;
         let mode = if mods.alt { "subtract" } else { "add" };
@@ -600,6 +616,7 @@ pub fn options_bar(app: &mut PhotocraftApp, ui: &mut egui::Ui, tool: Tool) -> bo
             }
         }
         Tool::ObjectSelection => {
+            crate::widgets::checkbox(ui, &mut o.object_finder, tl!("Object Finder"));
             crate::widgets::checkbox(ui, &mut o.sample_all_layers, tl!("Sample All Layers"));
             opt(ui, tl!("Drag a rectangle around the object"));
             crate::widgets::vline(ui, 22.0);
@@ -674,6 +691,30 @@ mod tests {
     fn stripes(app: &mut PhotocraftApp, step: usize, target: &str) {
         for x in (0..100).step_by(step) {
             app.run("paint.pencil", json!({"points": [[x, 0], [x, 60]], "size": 2, "color": "#606060", "target": target})).unwrap();
+        }
+    }
+
+    #[test]
+    fn clone_stamp_in_pattern_preview_wraps_a_dab_across_the_right_edge() {
+        for pattern_preview in [false, true] {
+            let mut app = app();
+            app.run("paint.pencil", json!({"points": [[10, 10]], "size": 24, "color": "#ff0000"})).unwrap();
+            app.ui.tool = Tool::CloneStamp;
+            app.ui.clone_source = Some([10.0, 10.0]);
+            app.ui.view.pattern_preview = pattern_preview;
+            let modifiers = egui::Modifiers::NONE;
+            tool_event(&mut app, ToolEvent::Down { x: 98.0, y: 30.0, pressure: 1.0 }, modifiers);
+            tool_event(&mut app, ToolEvent::Up { x: 98.0, y: 30.0 }, modifiers);
+            assert!(!app.ui.status_error, "{}", app.ui.status);
+            let surface = active(&app).surface().unwrap();
+            let center = surface.rgba(98, 30);
+            assert!(center[0] > 0.9 && center[1] < 0.1, "clone center: {center:?}");
+            let opposite = surface.rgba(1, 30);
+            if pattern_preview {
+                assert!(opposite[0] > 0.9 && opposite[1] < 0.1, "Pattern Preview must wrap the clone footprint: {opposite:?}");
+            } else {
+                assert!(opposite[0] > 0.9 && opposite[1] > 0.9, "ordinary cloning must not wrap: {opposite:?}");
+            }
         }
     }
 
@@ -776,6 +817,7 @@ mod tests {
         // A click cannot be a rectangle: it selects at the cursor instead of looking dead.
         let mut app = app();
         app.ui.tool = Tool::ObjectSelection;
+        app.ui.tool_options.object_finder = false;
         let m = egui::Modifiers::NONE;
         tool_event(&mut app, ToolEvent::Down { x: 50.0, y: 30.0, pressure: 1.0 }, m);
         tool_event(&mut app, ToolEvent::Up { x: 50.0, y: 30.0 }, m);
@@ -1097,6 +1139,46 @@ mod tests {
         let px = active(&app).surface().unwrap().rgba(30, 30);
         assert!(px.iter().zip(bg).all(|(a, b)| (a - b).abs() < 0.02), "{px:?} vs {bg:?}");
         assert!(!remove_pending_commit(&mut app), "nothing left to apply");
+    }
+
+    #[test]
+    fn every_waiting_remove_stroke_is_tinted_in_full() {
+        // #6555: each stroke used to be stamped only past the previous stroke's point count.
+        let mut app = app();
+        app.ui.tool = Tool::Remove;
+        app.ui.tool_options.remove_after_each_stroke = false;
+        let strokes: [&[[f64; 3]]; 3] = [
+            &[[10.0, 10.0, 1.0], [40.0, 10.0, 1.0], [70.0, 10.0, 1.0]],
+            &[[10.0, 30.0, 1.0], [40.0, 30.0, 1.0]],
+            &[[10.0, 50.0, 1.0], [20.0, 50.0, 1.0], [30.0, 50.0, 1.0], [50.0, 50.0, 1.0], [90.0, 50.0, 1.0]],
+        ];
+        for s in strokes {
+            remove_pending_add(&mut app, s);
+        }
+        assert_eq!(app.remove_pending.len(), 3);
+        let t = app.remove_trail.as_ref().expect("the waiting strokes are tinted");
+        let k = f64::from(t.scale());
+        for s in strokes {
+            for w in s.windows(2) {
+                for i in 0..=8 {
+                    let f = f64::from(i) / 8.0;
+                    let (x, y) = (w[0][0] + (w[1][0] - w[0][0]) * f, w[0][1] + (w[1][1] - w[0][1]) * f);
+                    assert_eq!(t.coverage((x / k) as usize, (y / k) as usize), 255, "({x}, {y}) on a waiting stroke is tinted");
+                }
+            }
+        }
+        // Enter, Esc, another tool and another document all drop the tint with the strokes.
+        assert!(remove_pending_commit(&mut app));
+        assert!(app.remove_trail.is_none());
+        remove_pending_add(&mut app, strokes[0]);
+        assert!(remove_pending_cancel(&mut app) && app.remove_trail.is_none());
+        remove_pending_add(&mut app, strokes[1]);
+        app.ui.tool = Tool::SpotHealing;
+        assert!(!remove_pending_live(&mut app) && app.remove_trail.is_none());
+        app.ui.tool = Tool::Remove;
+        remove_pending_add(&mut app, strokes[2]);
+        app.run("file.new", json!({"width": 100, "height": 60})).unwrap();
+        assert!(!remove_pending_live(&mut app) && app.remove_trail.is_none());
     }
 
     #[test]

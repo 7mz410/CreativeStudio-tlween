@@ -133,7 +133,8 @@ def rebrand_plist(path: Path) -> bool:
 
 
 def RUST_FILES():
-    return sorted((ROOT / 'crates/ui-egui/src').rglob('*.rs')) + sorted((ROOT / 'apps/photocraft/src').rglob('*.rs'))
+    # Creative Studio: the Help menu labels come from the engine's shell command table.
+    return sorted((ROOT / 'crates/ui-egui/src').rglob('*.rs')) + sorted((ROOT / 'apps/photocraft/src').rglob('*.rs')) + [ROOT / 'crates/engine/src/shell_commands.rs']
 
 
 def apply_rtl_rules() -> list:

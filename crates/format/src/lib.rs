@@ -48,6 +48,8 @@ pub use store::{ByteSource, DEFAULT_REVERIFY_BUDGET, PcraftWriter, SaveStats, re
 
 /// File extension of the native format.
 pub const EXTENSION: &str = "pcraft";
+/// tlween saves documents as `.tlween` (the same contents as `.pcraft`, which still opens).
+pub const STUDIO_EXTENSION: &str = "tlween";
 
 #[derive(Debug, thiserror::Error)]
 pub enum FormatError {

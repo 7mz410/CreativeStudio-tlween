@@ -119,7 +119,7 @@ pub fn list_images(dir: &str) -> Result<Vec<String>> {
 /// Extensions the batch commands pick up from a folder.
 #[cfg(not(target_arch = "wasm32"))]
 const OPENABLE: &[&str] = &[
-    "pdn", "ora", "kra", "krz", "psd", "psb", "pcraft", "png", "jpg", "jpeg", "tif", "tiff", "webp", "gif", "bmp", "tga", "exr", "hdr", "qoi", "ico", "pnm",
+    "pdn", "ora", "kra", "krz", "psd", "psb", "pcraft", "tlween", "png", "jpg", "jpeg", "tif", "tiff", "webp", "gif", "bmp", "tga", "exr", "hdr", "qoi", "ico", "pnm",
     "ppm", "pgm", "fits", "fit", "fts", "dpx", "heic", "heif", "hif", "dng", "cr2", "nef", "nrw", "arw", "pef", "svg", "svgz", "af", "afdesign", "afphoto",
     "afpub",
 ];
@@ -164,7 +164,7 @@ pub fn saves_in_place(path: &str) -> bool {
 /// .pcraft). A save to one becomes the document's file; any other format is a copy for automation
 /// saves, desktop and headless alike (#1547, #2579).
 pub fn layered_extension(ext: &str) -> bool {
-    matches!(ext, "psd" | "psb" | "pcraft" | "ora")
+    matches!(ext, "psd" | "psb" | "pcraft" | "tlween" | "ora")
 }
 
 /// Whether a file in format `ext` (lower-case) holds the whole of `doc`, so it can be the
@@ -174,7 +174,7 @@ pub fn layered_extension(ext: &str) -> bool {
 /// original is never overwritten with less than it had (#3806).
 pub fn holds(doc: &photocraft_doc::Document, ext: &str) -> bool {
     match ext {
-        "psd" | "psb" | "pcraft" => true,
+        "psd" | "psb" | "pcraft" | "tlween" => true,
         "ora" => photocraft_io::ora_losses(doc).is_empty(),
         _ => false,
     }

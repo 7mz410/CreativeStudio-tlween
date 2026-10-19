@@ -89,7 +89,10 @@
         </File>
 
         <!-- .pcraft: PhotoCraft's own format; PhotoCraft is its default app. -->
-        <ProgId Id="Photocraft.Document" Description="PhotoCraft Document" Icon="PhotocraftExe" IconIndex="0">
+        <ProgId Id="Photocraft.Document" Description="tlween Document" Icon="PhotocraftExe" IconIndex="0">
+          <Extension Id="tlween" ContentType="application/x-photocraft">
+            <Verb Id="open" Command="Open" TargetFile="PhotocraftExe" Argument="&quot;%1&quot;" />
+          </Extension>
           <Extension Id="pcraft" ContentType="application/x-photocraft">
             <Verb Id="open" Command="Open" TargetFile="PhotocraftExe" Argument="&quot;%1&quot;" />
           </Extension>
@@ -123,6 +126,7 @@
         <!-- "Open with" app list and the Run dialog (Win+R "photocraft"). -->
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe" Name="FriendlyAppName" Value="PhotoCraft" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\shell\open\command" Value="&quot;[#PhotocraftExe]&quot; &quot;%1&quot;" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".tlween" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".pcraft" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".psd" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".psb" Value="" Type="string" />

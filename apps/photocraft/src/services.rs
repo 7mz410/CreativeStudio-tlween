@@ -20,7 +20,7 @@ mod recovery_tests;
 /// Photoshop brushes (.abr), gradients (.grd), swatches (.aco, .ase) and keyboard shortcut sets
 /// (.kys), which go to the preset libraries and Edit › Keyboard Shortcuts.
 const OPEN_EXTS: &[&str] = &[
-    "pcraft", "pdn", "ora", "kra", "krz", "psd", "psb", "psdt", "png", "jpg", "jpeg", "tif", "tiff", "webp", "gif", "bmp", "tga", "ico", "qoi", "exr", "hdr",
+    "pcraft", "tlween", "pdn", "ora", "kra", "krz", "psd", "psb", "psdt", "png", "jpg", "jpeg", "tif", "tiff", "webp", "gif", "bmp", "tga", "ico", "qoi", "exr", "hdr",
     "pbm", "pgm", "ppm", "pam", "pfm", "pcx", "dds", "xpm", "fits", "fit", "fts", "dpx", "cin", "heic", "heif", "hif", "dng", "cr2", "cr3", "nef", "nrw",
     "arw", "pef", "orf", "rw2", "raf", "abr", "grd", "svg", "svgz", "aco", "ase", "kys", "af", "afdesign", "afphoto", "afpub",
 ];
@@ -40,8 +40,8 @@ fn open_filter_extensions(extensions: &[&str]) -> Vec<String> {
 /// the PhotoCraft-only filter. SVG is also included in All Formats for normal multi-format opens.
 fn open_filters() -> Vec<(&'static str, Vec<String>)> {
     vec![
+        ("tlween", open_filter_extensions(&["tlween", "pcraft"])),
         ("All Formats", open_filter_extensions(OPEN_EXTS)),
-        ("tlween", open_filter_extensions(&["pcraft"])),
         ("OpenRaster", open_filter_extensions(&["ora"])),
         ("Krita", open_filter_extensions(&["kra", "krz"])),
         ("SVG", open_filter_extensions(SVG_EXTS)),
@@ -52,9 +52,9 @@ fn open_filters() -> Vec<(&'static str, Vec<String>)> {
 /// extension comes first, so a .pcraft document saves as .pcraft by default and everything else
 /// keeps defaulting to PSD.
 const SAVE_FILTERS: &[(&str, &[&str])] = &[
+    ("tlween", &["tlween", "pcraft"]),
     ("PSD Document", &["psd", "psb"]),
     ("PDF", &["pdf"]),
-    ("tlween", &["pcraft"]),
     ("OpenRaster", &["ora"]),
     ("PNG", &["png"]),
     ("JPEG", &["jpg"]),
@@ -816,8 +816,8 @@ mod tests {
         let exts: Vec<&str> = asked.iter().filter_map(|s| s.rsplit_once('.').map(|(_, e)| e)).collect();
         // The extension each save above should suggest, in order.
         let want = [
-            "psd",                       // Save As untitled
-            "pcraft jpeg gif bmp psd",   // Save As opened .pcraft .jpeg .gif .bmp .dng
+            "tlween",                     // Save As untitled
+            "tlween jpeg gif bmp tlween",   // Save As opened .pcraft .jpeg .gif .bmp .dng
             "psd",                       // Save a Copy
             "png jpg webp tif tga",      // Export As
             "png jpg gif webp",          // Quick Export
@@ -830,14 +830,14 @@ mod tests {
             // The first type's first extension is the one Windows adds to the bare name.
             assert_eq!(save_filters(name)[0].1.first().map(String::as_str), Some(ext), "{name}: {:?}", save_filters(name)[0]);
         }
-        assert_eq!(save_filters("Untitled")[0].0, "PSD Document", "no extension keeps the default");
+        assert_eq!(save_filters("Untitled")[0].0, "tlween", "no extension keeps the default");
     }
 
     /// Every flat format Save As offers is one PhotoCraft writes, and ICO is among them (#4357).
     #[test]
     fn save_as_offers_only_writable_formats_including_ico() {
         // Layered formats, and PDF, are written by `photocraft-io`, not a codec.
-        let layered = ["psd", "psb", "pcraft", "ora", "pdf"];
+        let layered = ["psd", "psb", "pcraft", "tlween", "ora", "pdf"];
         for (name, exts) in SAVE_FILTERS {
             for ext in exts.iter().filter(|e| !layered.contains(e)) {
                 let format = photocraft_codecs::from_extension(ext).unwrap_or_else(|| panic!("{name}: .{ext} is no known format"));

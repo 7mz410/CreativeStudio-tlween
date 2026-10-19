@@ -6,6 +6,7 @@
     <comment>PhotoCraft document</comment>
     <icon name="ai.storyteller.photocraft"/>
     <glob pattern="*.pcraft"/>
+    <glob pattern="*.tlween"/>
   </mime-type>
   <mime-type type="image/x-psb">
     <comment>Large PSD document</comment>

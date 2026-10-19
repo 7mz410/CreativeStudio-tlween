@@ -44,7 +44,6 @@ RTL_RULES = [
     # Upstream's README moved to docs/UPSTREAM-README.md (ours is the fork's).
     ('crates/ui-egui/src/state.rs', '        let readme = include_str!("../../../README.md");', '        let readme = include_str!("../../../docs/UPSTREAM-README.md");'),
     ('Cargo.toml', '[workspace.dependencies]', '[patch.crates-io]\n# Creative Studio: egui with a right-to-left switch for the Arabic interface (studio/RTL.md).\negui = { path = "vendor/egui" }\n\n[workspace.dependencies]'),
-    ('crates/ui-egui/Cargo.toml', '[dependencies]\n', '[dependencies]\nunicode-bidi = "0.3.18"\n'),
     ('crates/ui-egui/src/i18n/mod.rs', 'mod catalog;\n', '/// Creative Studio: Arabic in visual order for egui.\npub(crate) mod bidi;\nmod catalog;\n'),
     ('crates/ui-egui/src/i18n/mod.rs', '        self.catalog.get_or_init(|| Catalog::parse(&self.text()))', '        // Creative Studio: right-to-left catalogs are stored in visual order (bidi.rs).\n        self.catalog.get_or_init(|| if bidi::RTL_CODES.contains(&self.code) { Catalog::parse(&bidi::visual_catalog(&self.text())) } else { Catalog::parse(&self.text()) })'),
     ('crates/ui-egui/src/lib.rs', '        let ctx = ui.ctx().clone();\n        i18n::set_current(i18n::Lang::from_pref(&self.session.prefs().interface.language));\n', '        let ctx = ui.ctx().clone();\n        i18n::set_current(i18n::Lang::from_pref(&self.session.prefs().interface.language));\n        // Creative Studio: Arabic lays the interface out right to left (vendor/egui). The switch is\n        // process-wide, so unit tests, which run in parallel, leave it off (tests/rtl.rs covers it).\n        #[cfg(not(test))]\n        egui::set_rtl(i18n::bidi::RTL_CODES.contains(&i18n::current().code()));\n'),
@@ -205,9 +204,133 @@ def apply_packaging_names() -> list:
     return changed
 
 
+# Creative Studio: documents save as `.tlween` (the same contents as `.pcraft`, which still opens).
+# Each pair is applied once: skipped when its new text is already there, so a second run changes
+# nothing. Only the save/open surface changes; `.pcraft` reading and internal ids stay upstream's.
+EXT_RULES = {
+    'crates/format/src/lib.rs': [
+        ('pub const EXTENSION: &str = "pcraft";\n',
+         'pub const EXTENSION: &str = "pcraft";\n'
+         '/// tlween saves documents as `.tlween` (the same contents as `.pcraft`, which still opens).\n'
+         'pub const STUDIO_EXTENSION: &str = "tlween";\n'),
+    ],
+    'crates/io/src/lib.rs': [
+        ('    if has_extension(name, photocraft_format::EXTENSION) || photocraft_format::is_pcraft(bytes) {',
+         '    if has_extension(name, photocraft_format::EXTENSION) || has_extension(name, photocraft_format::STUDIO_EXTENSION) || photocraft_format::is_pcraft(bytes) {'),
+        ('    if ext == photocraft_format::EXTENSION {\n        let doc = named_for_file(doc, name_or_ext);',
+         '    if ext == photocraft_format::EXTENSION || ext == photocraft_format::STUDIO_EXTENSION {\n        let doc = named_for_file(doc, name_or_ext);'),
+    ],
+    'crates/automation/src/files.rs': [
+        ('is_some_and(|extension| extension.eq_ignore_ascii_case(photocraft_format::EXTENSION)) {',
+         'is_some_and(|extension| extension.eq_ignore_ascii_case(photocraft_format::EXTENSION) || extension.eq_ignore_ascii_case(photocraft_format::STUDIO_EXTENSION)) {'),
+        ('    if ext == photocraft_format::EXTENSION {\n        let named = named_for_output(doc, &path.to_string_lossy());',
+         '    if ext == photocraft_format::EXTENSION || ext == photocraft_format::STUDIO_EXTENSION {\n        let named = named_for_output(doc, &path.to_string_lossy());'),
+        ('    if ext == photocraft_format::EXTENSION {\n        let named = named_for_output(doc, name);',
+         '    if ext == photocraft_format::EXTENSION || ext == photocraft_format::STUDIO_EXTENSION {\n        let named = named_for_output(doc, name);'),
+    ],
+    'crates/engine/src/file_cmds.rs': [
+        ('"psb", "pcraft", "png", "jpg"', '"psb", "pcraft", "tlween", "png", "jpg"'),
+        ('matches!(ext, "psd" | "psb" | "pcraft" | "ora")', 'matches!(ext, "psd" | "psb" | "pcraft" | "tlween" | "ora")'),
+        ('        "psd" | "psb" | "pcraft" => true,', '        "psd" | "psb" | "pcraft" | "tlween" => true,'),
+    ],
+    'crates/engine/src/print_cmds.rs': [
+        ('Some(f @ ("psd" | "psb" | "pcraft")) => f.to_string(),', 'Some(f @ ("psd" | "psb" | "pcraft" | "tlween")) => f.to_string(),'),
+        ('(pcraft|psd|psb)"', '(tlween|pcraft|psd|psb)"'),
+        ('        None => "pcraft".into(),', '        None => "tlween".into(),'),
+        ('"format":"pcraft|psd|psb"="pcraft"', '"format":"tlween|pcraft|psd|psb"="tlween"'),
+    ],
+    'crates/ui-egui/src/file_dialog/tests.rs': [
+        ('"/pics/layers.pcraft"', '"/pics/layers.tlween"'),
+        ('"/pics/My image.psd"', '"/pics/My image.tlween"'),
+        ('"My image.psd"', '"My image.tlween"'),
+        ('("/pics/My image.pcraft", true),', '("/pics/My image.tlween", true),'),
+        ('"/pics/transparent.psd"', '"/pics/transparent.tlween"'),
+        ('suggested.ends_with(".psd")', 'suggested.ends_with(".tlween")'),
+        ('assert_eq!(*written.borrow(), ["/pics/cat.psd"]);\n    assert_eq!(app.session.active().unwrap().path.as_deref(), Some("/pics/cat.psd"));',
+         'assert_eq!(*written.borrow(), ["/pics/cat.tlween"]);\n    assert_eq!(app.session.active().unwrap().path.as_deref(), Some("/pics/cat.tlween"));'),
+        ('suggested == "/pics/art.psd"), "Save As offers PSD");', 'suggested == "/pics/art.tlween"), "Save As offers tlween");'),
+        ('assert_eq!(*written.borrow(), ["/pics/cat.psd", "/pics/dog.png"]);', 'assert_eq!(*written.borrow(), ["/pics/cat.tlween", "/pics/dog.png"]);'),
+    ],
+    'crates/ui-egui/src/file_open/tests.rs': [
+        ('suggested: "Untitled-2.psd".into()', 'suggested: "Untitled-2.tlween".into()'),
+    ],
+    'crates/engine/src/print_cmds/tests.rs': [
+        ('assert!(docp.ends_with("Print Me/Print Me.pcraft"));', 'assert!(docp.ends_with("Print Me/Print Me.tlween"));'),
+        ('photocraft_io::import("Print Me.pcraft"', 'photocraft_io::import("Print Me.tlween"'),
+    ],
+    'crates/engine/src/video_cmds.rs': [
+        ('"exr" | "pcraft" | "psd")', '"exr" | "pcraft" | "tlween" | "psd")'),
+    ],
+    'crates/ui-egui/src/lib.rs': [
+        ('matches!(e.as_str(), photocraft_format::EXTENSION | "psd" | "psb" | "tif" | "tiff")',
+         'matches!(e.as_str(), photocraft_format::EXTENSION | photocraft_format::STUDIO_EXTENSION | "psd" | "psb" | "tif" | "tiff")'),
+        ('            Some(p) if writable => p.clone(),',
+         '            Some(p) if writable && std::path::Path::new(p).extension().is_some_and(|e| e.eq_ignore_ascii_case("pcraft")) => std::path::Path::new(p).with_extension("tlween").to_string_lossy().into_owned(),\n'
+         '            Some(p) if writable => p.clone(),'),
+        ('                    Some("pdn") => "pcraft",', '                    Some("pdn") => "tlween",'),
+        ('                    _ => "psd",\n                };', '                    _ => "tlween",\n                };'),
+    ],
+    'crates/ui-egui/src/control.rs': [
+        ('.is_some_and(|(_, ext)| ext.eq_ignore_ascii_case(photocraft_format::EXTENSION))',
+         '.is_some_and(|(_, ext)| ext.eq_ignore_ascii_case(photocraft_format::EXTENSION) || ext.eq_ignore_ascii_case(photocraft_format::STUDIO_EXTENSION))'),
+    ],
+    'apps/photocraft/src/services.rs': [
+        ('    "pcraft", "pdn", "ora", "kra"', '    "pcraft", "tlween", "pdn", "ora", "kra"'),
+        ('        ("All Formats", open_filter_extensions(OPEN_EXTS)),\n        ("tlween", open_filter_extensions(&["pcraft"])),',
+         '        ("tlween", open_filter_extensions(&["tlween", "pcraft"])),\n        ("All Formats", open_filter_extensions(OPEN_EXTS)),'),
+        ('"pcraft jpeg gif bmp psd",', '"tlween jpeg gif bmp tlween",'),
+        ('"psd",                       // Save As untitled', '"tlween",                     // Save As untitled'),
+        ('assert_eq!(save_filters("Untitled")[0].0, "PSD Document", "no extension keeps the default");', 'assert_eq!(save_filters("Untitled")[0].0, "tlween", "no extension keeps the default");'),
+        ('let layered = ["psd", "psb", "pcraft", "ora", "pdf"];', 'let layered = ["psd", "psb", "pcraft", "tlween", "ora", "pdf"];'),
+        ('    ("PSD Document", &["psd", "psb"]),\n    ("PDF", &["pdf"]),\n    ("tlween", &["pcraft"]),\n',
+         '    ("tlween", &["tlween", "pcraft"]),\n    ("PSD Document", &["psd", "psb"]),\n    ("PDF", &["pdf"]),\n'),
+    ],
+    'apps/photocraft-web/src/web.rs': [
+        ('    "pcraft", "pdn", "ora", "kra"', '    "pcraft", "tlween", "pdn", "ora", "kra"'),
+    ],
+    'packaging/macos/Info.plist.in': [
+        ('<string>PhotoCraft Document</string>', '<string>tlween Document</string>'),
+        ('<array><string>pcraft</string></array>', '<array><string>tlween</string><string>pcraft</string></array>'),
+    ],
+    'packaging/linux/ai.storyteller.photocraft.mime.xml': [
+        ('<glob pattern="*.pcraft"/>', '<glob pattern="*.pcraft"/>\n    <glob pattern="*.tlween"/>'),
+    ],
+    'packaging/windows/photocraft.wxs': [
+        ('Description="PhotoCraft Document" Icon="PhotocraftExe"', 'Description="tlween Document" Icon="PhotocraftExe"'),
+        ('          <Extension Id="pcraft" ContentType="application/x-photocraft">',
+         '          <Extension Id="tlween" ContentType="application/x-photocraft">\n'
+         '            <Verb Id="open" Command="Open" TargetFile="PhotocraftExe" Argument="&quot;%1&quot;" />\n'
+         '          </Extension>\n'
+         '          <Extension Id="pcraft" ContentType="application/x-photocraft">'),
+        (r'<RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".pcraft" Value="" Type="string" />',
+         r'<RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".tlween" Value="" Type="string" />'
+         '\n        '
+         r'<RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".pcraft" Value="" Type="string" />'),
+    ],
+}
+
+
+def apply_extension_rules() -> list:
+    changed = []
+    for rel, pairs in EXT_RULES.items():
+        path = ROOT / rel
+        src = path.read_text(encoding='utf-8')
+        out = src
+        for a, b in pairs:
+            if b in out or a not in out:
+                continue
+            out = out.replace(a, b)
+        if out != src:
+            path.write_text(out, encoding='utf-8')
+            changed.append(path)
+    return changed
+
+
 if __name__ == '__main__':
     main()
     for _p in apply_packaging_names():
+        print('rebranded', _p.relative_to(ROOT))
+    for _p in apply_extension_rules():
         print('rebranded', _p.relative_to(ROOT))
 
 

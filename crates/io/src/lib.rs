@@ -275,7 +275,7 @@ pub fn import_with_svg_group_depth_and_interrupt(
 
 fn import_stages(name: &str, bytes: &[u8], ctl: &photocraft_raster::Interrupt, max_group_depth: usize) -> Result<ImportResult, IoError> {
     // A declared native extension must reach its loader so malformed bundles retain format errors.
-    if has_extension(name, photocraft_format::EXTENSION) || photocraft_format::is_pcraft(bytes) {
+    if has_extension(name, photocraft_format::EXTENSION) || has_extension(name, photocraft_format::STUDIO_EXTENSION) || photocraft_format::is_pcraft(bytes) {
         return Ok(ImportResult { document: photocraft_format::load_from_bytes(bytes)?, warnings: Vec::new(), source_read_only: false, preview_only: false });
     }
     if is_psd(bytes) {
@@ -404,7 +404,7 @@ fn export_stages(doc: &Document, name_or_ext: &str, opts: &ExportOptions, ctl: &
     if ext == "pdf" {
         return pdf::export(doc);
     }
-    if ext == photocraft_format::EXTENSION {
+    if ext == photocraft_format::EXTENSION || ext == photocraft_format::STUDIO_EXTENSION {
         let doc = named_for_file(doc, name_or_ext);
         let thumbnail = Some(photocraft_compose::thumbnail(doc.as_ref(), 256));
         ctl.check().map_err(|_| IoError::Cancelled)?;

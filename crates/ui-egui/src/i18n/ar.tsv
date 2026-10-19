@@ -3938,3 +3938,165 @@ navigator	Zoom	التكبير
 	Remove after each stroke	الإزالة بعد كل ضربة
 	Apply the removal ({key})	تطبيق الإزالة ({key})
 	Strokes to remove: {n} (Enter applies, Esc cancels)	الضربات المراد إزالتها: {n} (Enter للتطبيق، Esc للإلغاء)
+	Channel Color	لون القناة
+	Color Indicates:	اللون يشير إلى:
+	Solidity:	الصلابة:
+	Ink Characteristics	خصائص الحبر
+	Paper Width	عرض الورقة
+	Paper Height	ارتفاع الورقة
+	{name} can't keep everything in this document	لا يمكن لـ {name} الاحتفاظ بكل شيء في هذا المستند
+	Choose a format that keeps it, such as Photoshop (PSD), or save a copy.	اختر صيغة تحتفظ به، مثل Photoshop (PSD)، أو احفظ نسخة.
+	Source Files	الملفات المصدر
+	Use:	استخدام:
+	Files	ملفات
+	Add Open Files	إضافة الملفات المفتوحة
+	Sort By Name	ترتيب حسب الاسم
+	Attempt to Automatically Align Source Images	محاولة محاذاة الصور المصدر تلقائياً
+	Create Smart Object after Loading Layers	إنشاء كائن ذكي بعد تحميل الطبقات
+	Add to Dictionary	إضافة إلى القاموس
+	No Spelling Suggestions	لا توجد اقتراحات إملائية
+	Set horizontal skew	تعيين الانحراف الأفقي
+	Set vertical skew	تعيين الانحراف الرأسي
+	Choose Stack Mode:	اختيار وضع التكديس:
+	No pin selected	لم يتم تحديد أي دبوس
+	Click the image to add a pin; drag a pin to move it, or its ring to change its blur. Delete removes the selected pin.	انقر على الصورة لإضافة دبوس؛ اسحب الدبوس لتحريكه، أو حلقته لتغيير تمويهه. Delete يزيل الدبوس المحدد.
+	Drag the handles on the outline to resize and turn it, the square to round its corners, and the dots inside to set where the blur starts.	اسحب المقابض على المخطط لتغيير حجمه وتدويره، والمربع لتدوير زواياه، والنقاط بالداخل لتحديد مكان بدء التمويه.
+	Drag the pin to move the band, or its ring to change its blur. Drag the solid lines to widen the sharp band, the dashed lines to set the transition, and the dots to turn it.	اسحب الدبوس لتحريك الشريط، أو حلقته لتغيير تمويهه. اسحب الخطوط المتصلة لتوسيع الشريط الحاد، والخطوط المتقطعة لضبط التلاشي، والنقاط لتدويره.
+	Drag the handles on the outline to resize and turn it; the ring sets the blur angle.	اسحب المقابض على المخطط لتغيير حجمه وتدويره؛ تضبط الحلقة زاوية التمويه.
+	Soft dark	داكن ناعم
+	Soft light	فاتح ناعم
+	Soft Dark Theme	سمة داكنة ناعمة
+	Soft Light Theme	سمة فاتحة ناعمة
+	Add Mask to Selection	إضافة القناع إلى التحديد
+	Subtract Mask from Selection	طرح القناع من التحديد
+	Intersect Mask with Selection	تقاطع القناع مع التحديد
+	Custom background color	لون خلفية مخصص
+	Save Settings…	حفظ الإعدادات…
+	Load Settings…	تحميل الإعدادات…
+	Save these settings as a Camera Raw .xmp file	حفظ هذه الإعدادات كملف Camera Raw .xmp
+	Load settings from a Camera Raw .xmp file	تحميل الإعدادات من ملف Camera Raw .xmp
+	Loaded Camera Raw settings from {file}	تم تحميل إعدادات Camera Raw من {file}
+	Loaded Camera Raw settings from {file} ({n} not supported)	تم تحميل إعدادات Camera Raw من {file} ({n} غير مدعوم)
+	Manage submitted jobs in the system print queue	إدارة المهام المرسلة في قائمة انتظار طباعة النظام
+	Add Shortcut	إضافة اختصار
+	Gradient Preset Options	خيارات الإعداد المسبق للتدرج
+	Import .GRD	استيراد .GRD
+	Choose a gradient file (.grd).	اختر ملف تدرج (.grd).
+	Clip thumbnails to layer bounds	قص الصور المصغرة حسب حدود الطبقة
+	Clip Thumbnails to Layer Bounds	قص الصور المصغرة حسب حدود الطبقة
+	Import Brushes… (.abr or image)	استيراد فُرش… (.abr أو صورة)
+	Import Brush from Image…	استيراد فرشاة من صورة…
+	Capture Brush Size in Preset	تضمين حجم الفرشاة في الإعداد المسبق
+	Include Tool Settings	تضمين إعدادات الأداة
+	Include Color	تضمين اللون
+	Enter a name for the brush preset	أدخل اسماً للإعداد المسبق للفرشاة
+	A brush preset with this name already exists	يوجد إعداد مسبق للفرشاة بهذا الاسم بالفعل
+	The document “{name}” does not have an embedded {mode} profile.	المستند “{name}” لا يحتوي على ملف تعريف {mode} مدمج.
+	The document “{name}” has an embedded color profile that does not match the current {mode} working space.	المستند “{name}” يحتوي على ملف تعريف ألوان مدمج لا يطابق مساحة عمل {mode} الحالية.
+	Working: {working}	مساحة العمل: {working}
+	Drag to pan · Scroll to zoom · Double-click to fit	اسحب للتحريك · مرر للتكبير والتصغير · انقر نقراً مزدوجاً للملاءمة
+	Redrawing	إعادة الرسم
+	Bundle Arrow-Key Nudges	تجميع الإزاحات بمفاتيح الأسهم
+	Nudge Bundle Pause (ms)	مهلة تجميع الإزاحة (ملي ثانية)
+	Sampling Brush Tool	أداة فرشاة أخذ العينات
+	Sampling Area Overlay	تراكب منطقة أخذ العينات
+	Show Sampling Area	إظهار منطقة أخذ العينات
+	Indicates	يشير إلى
+	Sampling Area	منطقة أخذ العينات
+	Excluded Area	المنطقة المستبعدة
+	Sampling Area Options	خيارات منطقة أخذ العينات
+	Rectangular	مستطيل
+	Fill Settings	إعدادات التعبئة
+	Rotation Adaptation	تكيف التدوير
+	Very High	عالي جداً
+	Full	كامل
+	Mirror	انعكاس
+	Output Settings	إعدادات الإخراج
+	Output To	إخراج إلى
+	Response curve	منحنى الاستجابة
+	Presentation	عرض تقديمي
+	Object Finder	باحث الكائنات
+	No object found there — drag a rectangle around it	لم يُعثر على كائن هناك — اسحب مستطيلاً حوله
+	Show home recent files	إظهار الملفات الأخيرة في الصفحة الرئيسية
+	Clear Brush Controls	مسح عناصر تحكم الفرشاة
+	Reset All Locked Settings	إعادة ضبط جميع الإعدادات المقفلة
+	Copy Texture to Other Tools	نسخ النقش إلى أدوات أخرى
+	Load Actions…	تحميل الإجراءات…
+	Save Actions…	حفظ الإجراءات…
+	{name} (Photoshop)	{name} (Photoshop)
+	{message} ({note})	{message} ({note})
+@plural	Loaded {n} action from {file}|Loaded {n} actions from {file}	لم يتم تحميل أي إجراء من {file}|تم تحميل إجراء واحد من {file}|تم تحميل إجراءين من {file}|تم تحميل {n} إجراءات من {file}|تم تحميل {n} إجراءً من {file}|تم تحميل {n} إجراء من {file}
+@plural	{n} step has no tlween equivalent yet|{n} steps have no tlween equivalent yet	لا توجد أي خطوة بلا مكافئ في تلوين بعد|خطوة واحدة ليس لها مكافئ في تلوين بعد|خطوتان ليس لهما مكافئ في تلوين بعد|{n} خطوات ليس لها مكافئ في تلوين بعد|{n} خطوة ليس لها مكافئ في تلوين بعد|{n} خطوة ليس لها مكافئ في تلوين بعد
+@plural	Saved {n} action to {file}|Saved {n} actions to {file}	لم يتم حفظ أي إجراء في {file}|تم حفظ إجراء واحد في {file}|تم حفظ إجراءين في {file}|تم حفظ {n} إجراءات في {file}|تم حفظ {n} إجراءً في {file}|تم حفظ {n} إجراء في {file}
+@plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	لم يتم استبعاد أي خطوة ليس لها مكافئ في Photoshop|تم استبعاد خطوة واحدة ليس لها مكافئ في Photoshop|تم استبعاد خطوتين ليس لهما مكافئ في Photoshop|تم استبعاد {n} خطوات ليس لها مكافئ في Photoshop|تم استبعاد {n} خطوة ليس لها مكافئ في Photoshop|تم استبعاد {n} خطوة ليس لها مكافئ في Photoshop
+	Starting serial	الرقم التسلسلي الأولي
+	Insert Stop…	إدراج إيقاف…
+	Save Set…	حفظ المجموعة…
+	Message:	الرسالة:
+	Allow Continue	السماح بالمتابعة
+	Show dialog during playback	إظهار مربع الحوار أثناء التشغيل
+	Select an action first	حدد إجراءً أولاً
+	Action playback stopped	تم إيقاف تشغيل الإجراء
+	Step {step} is waiting for its dialog	الخطوة {step} في انتظار مربع الحوار الخاص بها
+@plural	{n} action|{n} actions	لا إجراءات|إجراء واحد|إجراءان|{n} إجراءات|{n} إجراءً|{n} إجراء
+	Background (Default)	خلفية (افتراضي)
+	Include All Subfolders	تضمين جميع المجلدات الفرعية
+	Auto Add/Delete	إضافة/حذف تلقائي
+	Don't also tick Mirror Image in Print Settings…: the two flips cancel out.	لا تحدد أيضاً عكس الصورة في إعدادات الطباعة…: سيلغي الانعكاسان أحدهما الآخر.
+	Print Settings…	إعدادات الطباعة…
+	Remember to turn off the printer's own colour management in Print Settings…	تذكر إيقاف إدارة الألوان الخاصة بالطابعة في إعدادات الطباعة…
+	Sent to {printer}	أُرسل إلى {printer}
+	set in Print Settings…	محدد في إعدادات الطباعة…
+	ICO is limited to 256 × 256 pixels	صيغة ICO محدودة بـ 256 × 256 بكسل
+	Use the embedded profile ({profile})	استخدام ملف التعريف المدمج ({profile})
+	Convert to the working space ({profile})	تحويل إلى مساحة العمل ({profile})
+	Remember this choice for future images	تذكر هذا الخيار للصور المستقبلية
+	Turn the prompt back on with Ask On Mismatch in Edit › Color Settings.	أعد تشغيل المطالبة عبر السؤال عند عدم التطابق في تحرير › إعدادات الألوان.
+	Button Mode	وضع الأزرار
+	Button Mode On	تشغيل وضع الأزرار
+	Darken Interface	تعتيم الواجهة
+	Lighten Interface	تفتيح الواجهة
+	Technique	التقنية
+	Chisel Hard	نقش حاد
+	Chisel Soft	نقش ناعم
+	Open color-less EXR as ACEScg	فتح EXR عديم اللون كـ ACEScg
+	Edit Selected Guides	تحرير الأدلة المحددة
+	Clear Selected Guides	مسح الأدلة المحددة
+	Delete this set	حذف هذه المجموعة
+	New Set…	مجموعة جديدة…
+	tlween Defaults	إعدادات تلوين الافتراضية
+	Save a list of these shortcuts as a web page	حفظ قائمة بهذه الاختصارات كصفحة ويب
+	Save the changes to this set	حفظ التغييرات في هذه المجموعة
+	Save these shortcuts as a .kys file	حفظ هذه الاختصارات كملف .kys
+	Save these shortcuts as a new set	حفظ هذه الاختصارات كمجموعة جديدة
+	Set deleted.	تم حذف المجموعة.
+	Set saved.	تم حفظ المجموعة.
+	Set:	المجموعة:
+	Summarize…	تلخيص…
+	There are too many sets: delete one first.	يوجد عدد كبير جداً من المجموعات: احذف واحدة أولاً.
+	set name	اسم المجموعة
+	{set} (modified)	{set} (معدلة)
+	Accept and Go to Conflict	قبول والانتقال إلى التعارض
+	Changes undone.	تم التراجع عن التغييرات.
+	Choose a new shortcut for this command, or leave it without one.	اختر اختصاراً جديداً لهذا الأمر، أو اتركه بدونه.
+	Put this command's shortcuts back as they were	إعادة اختصارات هذا الأمر كما كانت
+	Take the shortcut from the other command and select it	أخذ الاختصار من الأمر الآخر وتحديده
+	Undo Changes	التراجع عن التغييرات
+	{shortcut} is reserved by the system and can't be assigned.	{shortcut} محجوز بواسطة النظام ولا يمكن تعيينه.
+	Low-Latency Drawing (vsync off, applies at next launch)	رسم منخفض زمن الانتقال (إيقاف vsync، يُطبّق عند التشغيل القادم)
+	Free Transform is still being applied; try again when it has finished.	لا يزال التحويل الحر قيد التطبيق؛ أعد المحاولة بعد الانتهاء.
+	The transform couldn't be applied.	تعذر تطبيق التحويل.
+	Its layers need {needed} of GPU memory; the budget leaves them {budget}.	تحتاج طبقاته إلى {needed} من ذاكرة GPU؛ المتاح لها {budget}.
+	Set GPU Memory in Preferences › Performance to what your graphics card can hold, at most 3/8 of its memory. Automatic follows Memory Usage, within a quarter of this computer's memory and 3/8 of the card's, and doesn't count the document against a card whose memory is known. The status bar shows GPU Memory Full while they don't fit.	اضبط ذاكرة GPU في التفضيلات › الأداء على ما تستوعبه بطاقة الرسوميات، بحد أقصى 3/8 من ذاكرتها. يتبع الوضع التلقائي استخدام الذاكرة، في حدود ربع ذاكرة هذا الكمبيوتر و3/8 من ذاكرة البطاقة، ولا يحتسب المستند إذا كانت ذاكرة البطاقة معروفة. يعرض شريط الحالة "ذاكرة GPU ممتلئة" طالما أنها لا تتسع لها.
+	GPU Memory Full	ذاكرة GPU ممتلئة
+	The layers need {needed} of GPU memory and may hold {budget}, so edits that redraw the whole document do it on the CPU. Click to set GPU Memory.	تحتاج الطبقات إلى {needed} من ذاكرة GPU وقد تستوعب {budget}، لذا فإن التعديلات التي تعيد رسم المستند كاملاً تتم عبر CPU. انقر لضبط ذاكرة GPU.
+	GPU memory budget: {budget}	ميزانية ذاكرة GPU: {budget}
+	This document's layers: {needed} of {budget} for layers	طبقات هذا المستند: {needed} من {budget} للطبقات
+	This document's layers need {needed} but may hold {budget}: whole-document redraws use the CPU	تحتاج طبقات هذا المستند إلى {needed} ولكن المتاح {budget}: إعادة رسم كامل المستند تستخدم CPU
+	GPU Memory (MB, 0 = Automatic)	ذاكرة GPU (ميغابايت، 0 = تلقائي)
+	{name} was changed by another app after it was opened or saved here.	تم تغيير {name} بواسطة تطبيق آخر بعد فتحه أو حفظه هنا.
+	Replace it with this document, or cancel and use File › Save As to keep both.	استبدله بهذا المستند، أو ألغِ واستخدم ملف › حفظ باسم للاحتفاظ بكليهما.
+	Decrease Brush Size	تصغير حجم الفرشاة
+	Increase Brush Size	تكبير حجم الفرشاة
+	Decrease Brush Hardness	تقليل صلابة الفرشاة
+	Increase Brush Hardness	زيادة صلابة الفرشاة

@@ -1,0 +1,162 @@
+	Channel Color
+	Color Indicates:
+	Solidity:
+	Ink Characteristics
+	Paper Width
+	Paper Height
+	{name} can't keep everything in this document
+	Choose a format that keeps it, such as Photoshop (PSD), or save a copy.
+	Source Files
+	Use:
+	Files
+	Add Open Files
+	Sort By Name
+	Attempt to Automatically Align Source Images
+	Create Smart Object after Loading Layers
+	Add to Dictionary
+	No Spelling Suggestions
+	Set horizontal skew
+	Set vertical skew
+	Choose Stack Mode:
+	No pin selected
+	Click the image to add a pin; drag a pin to move it, or its ring to change its blur. Delete removes the selected pin.
+	Drag the handles on the outline to resize and turn it, the square to round its corners, and the dots inside to set where the blur starts.
+	Drag the pin to move the band, or its ring to change its blur. Drag the solid lines to widen the sharp band, the dashed lines to set the transition, and the dots to turn it.
+	Drag the handles on the outline to resize and turn it; the ring sets the blur angle.
+	Soft dark
+	Soft light
+	Soft Dark Theme
+	Soft Light Theme
+	Add Mask to Selection
+	Subtract Mask from Selection
+	Intersect Mask with Selection
+	Custom background color
+	Save Settings…
+	Load Settings…
+	Save these settings as a Camera Raw .xmp file
+	Load settings from a Camera Raw .xmp file
+	Loaded Camera Raw settings from {file}
+	Loaded Camera Raw settings from {file} ({n} not supported)
+	Manage submitted jobs in the system print queue
+	Add Shortcut
+	Gradient Preset Options
+	Import .GRD
+	Choose a gradient file (.grd).
+	Clip thumbnails to layer bounds
+	Clip Thumbnails to Layer Bounds
+	Import Brushes… (.abr or image)
+	Import Brush from Image…
+	Capture Brush Size in Preset
+	Include Tool Settings
+	Include Color
+	Enter a name for the brush preset
+	A brush preset with this name already exists
+	The document “{name}” does not have an embedded {mode} profile.
+	The document “{name}” has an embedded color profile that does not match the current {mode} working space.
+	Working: {working}
+	Drag to pan · Scroll to zoom · Double-click to fit
+	Redrawing
+	Bundle Arrow-Key Nudges
+	Nudge Bundle Pause (ms)
+	Sampling Brush Tool
+	Sampling Area Overlay
+	Show Sampling Area
+	Indicates
+	Sampling Area
+	Excluded Area
+	Sampling Area Options
+	Rectangular
+	Fill Settings
+	Rotation Adaptation
+	Very High
+	Full
+	Mirror
+	Output Settings
+	Output To
+	Response curve
+	Presentation
+	Object Finder
+	No object found there — drag a rectangle around it
+	Show home recent files
+	Clear Brush Controls
+	Reset All Locked Settings
+	Copy Texture to Other Tools
+	Load Actions…
+	Save Actions…
+	{name} (Photoshop)
+	{message} ({note})
+@plural	Loaded {n} action from {file}|Loaded {n} actions from {file}
+@plural	{n} step has no tlween equivalent yet|{n} steps have no tlween equivalent yet
+@plural	Saved {n} action to {file}|Saved {n} actions to {file}
+@plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out
+	Starting serial
+	Insert Stop…
+	Save Set…
+	Message:
+	Allow Continue
+	Show dialog during playback
+	Select an action first
+	Action playback stopped
+	Step {step} is waiting for its dialog
+@plural	{n} action|{n} actions
+	Background (Default)
+	Include All Subfolders
+	Auto Add/Delete
+	Don't also tick Mirror Image in Print Settings…: the two flips cancel out.
+	Print Settings…
+	Remember to turn off the printer's own colour management in Print Settings…
+	Sent to {printer}
+	set in Print Settings…
+	ICO is limited to 256 × 256 pixels
+	Use the embedded profile ({profile})
+	Convert to the working space ({profile})
+	Remember this choice for future images
+	Turn the prompt back on with Ask On Mismatch in Edit › Color Settings.
+	Button Mode
+	Button Mode On
+	Darken Interface
+	Lighten Interface
+	Technique
+	Chisel Hard
+	Chisel Soft
+	Open color-less EXR as ACEScg
+	Edit Selected Guides
+	Clear Selected Guides
+	Delete this set
+	New Set…
+	tlween Defaults
+	Save a list of these shortcuts as a web page
+	Save the changes to this set
+	Save these shortcuts as a .kys file
+	Save these shortcuts as a new set
+	Set deleted.
+	Set saved.
+	Set:
+	Summarize…
+	There are too many sets: delete one first.
+	set name
+	{set} (modified)
+	Accept and Go to Conflict
+	Changes undone.
+	Choose a new shortcut for this command, or leave it without one.
+	Put this command's shortcuts back as they were
+	Take the shortcut from the other command and select it
+	Undo Changes
+	{shortcut} is reserved by the system and can't be assigned.
+	Low-Latency Drawing (vsync off, applies at next launch)
+	Free Transform is still being applied; try again when it has finished.
+	The transform couldn't be applied.
+	Its layers need {needed} of GPU memory; the budget leaves them {budget}.
+	Set GPU Memory in Preferences › Performance to what your graphics card can hold, at most 3/8 of its memory. Automatic follows Memory Usage, within a quarter of this computer's memory and 3/8 of the card's, and doesn't count the document against a card whose memory is known. The status bar shows GPU Memory Full while they don't fit.
+	GPU Memory Full
+	The layers need {needed} of GPU memory and may hold {budget}, so edits that redraw the whole document do it on the CPU. Click to set GPU Memory.
+	GPU memory budget: {budget}
+	This document's layers: {needed} of {budget} for layers
+	This document's layers need {needed} but may hold {budget}: whole-document redraws use the CPU
+	GPU Memory (MB, 0 = Automatic)
+	{name} was changed by another app after it was opened or saved here.
+	Replace it with this document, or cancel and use File › Save As to keep both.
+	Decrease Brush Size
+	Increase Brush Size
+	Decrease Brush Hardness
+	Increase Brush Hardness

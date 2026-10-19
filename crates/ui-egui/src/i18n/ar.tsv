@@ -4025,10 +4025,10 @@ navigator	Zoom	التكبير
 	Save Actions…	حفظ الإجراءات…
 	{name} (Photoshop)	{name} (Photoshop)
 	{message} ({note})	{message} ({note})
-@plural	Loaded {n} action from {file}|Loaded {n} actions from {file}	لم يتم تحميل أي إجراء من {file}|تم تحميل إجراء واحد من {file}|تم تحميل إجراءين من {file}|تم تحميل {n} إجراءات من {file}|تم تحميل {n} إجراءً من {file}|تم تحميل {n} إجراء من {file}
-@plural	{n} step has no tlween equivalent yet|{n} steps have no tlween equivalent yet	لا توجد أي خطوة بلا مكافئ في تلوين بعد|خطوة واحدة ليس لها مكافئ في تلوين بعد|خطوتان ليس لهما مكافئ في تلوين بعد|{n} خطوات ليس لها مكافئ في تلوين بعد|{n} خطوة ليس لها مكافئ في تلوين بعد|{n} خطوة ليس لها مكافئ في تلوين بعد
-@plural	Saved {n} action to {file}|Saved {n} actions to {file}	لم يتم حفظ أي إجراء في {file}|تم حفظ إجراء واحد في {file}|تم حفظ إجراءين في {file}|تم حفظ {n} إجراءات في {file}|تم حفظ {n} إجراءً في {file}|تم حفظ {n} إجراء في {file}
-@plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	لم يتم استبعاد أي خطوة ليس لها مكافئ في Photoshop|تم استبعاد خطوة واحدة ليس لها مكافئ في Photoshop|تم استبعاد خطوتين ليس لهما مكافئ في Photoshop|تم استبعاد {n} خطوات ليس لها مكافئ في Photoshop|تم استبعاد {n} خطوة ليس لها مكافئ في Photoshop|تم استبعاد {n} خطوة ليس لها مكافئ في Photoshop
+@plural	Loaded {n} action from {file}|Loaded {n} actions from {file}	لم يتم تحميل أي إجراء من {file} ({n})|تم تحميل إجراء واحد من {file} ({n})|تم تحميل إجراءين من {file} ({n})|تم تحميل {n} إجراءات من {file}|تم تحميل {n} إجراءً من {file}|تم تحميل {n} إجراء من {file}
+@plural	{n} step has no tlween equivalent yet|{n} steps have no tlween equivalent yet	لا توجد أي خطوة بلا مكافئ في تلوين بعد ({n})|خطوة واحدة ليس لها مكافئ في تلوين بعد ({n})|خطوتان ليس لهما مكافئ في تلوين بعد ({n})|{n} خطوات ليس لها مكافئ في تلوين بعد|{n} خطوة ليس لها مكافئ في تلوين بعد|{n} خطوة ليس لها مكافئ في تلوين بعد
+@plural	Saved {n} action to {file}|Saved {n} actions to {file}	لم يتم حفظ أي إجراء في {file} ({n})|تم حفظ إجراء واحد في {file} ({n})|تم حفظ إجراءين في {file} ({n})|تم حفظ {n} إجراءات في {file}|تم حفظ {n} إجراءً في {file}|تم حفظ {n} إجراء في {file}
+@plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	لم يتم استبعاد أي خطوة ليس لها مكافئ في Photoshop ({n})|تم استبعاد خطوة واحدة ليس لها مكافئ في Photoshop ({n})|تم استبعاد خطوتين ليس لهما مكافئ في Photoshop ({n})|تم استبعاد {n} خطوات ليس لها مكافئ في Photoshop|تم استبعاد {n} خطوة ليس لها مكافئ في Photoshop|تم استبعاد {n} خطوة ليس لها مكافئ في Photoshop
 	Starting serial	الرقم التسلسلي الأولي
 	Insert Stop…	إدراج إيقاف…
 	Save Set…	حفظ المجموعة…
@@ -4038,7 +4038,7 @@ navigator	Zoom	التكبير
 	Select an action first	حدد إجراءً أولاً
 	Action playback stopped	تم إيقاف تشغيل الإجراء
 	Step {step} is waiting for its dialog	الخطوة {step} في انتظار مربع الحوار الخاص بها
-@plural	{n} action|{n} actions	لا إجراءات|إجراء واحد|إجراءان|{n} إجراءات|{n} إجراءً|{n} إجراء
+@plural	{n} action|{n} actions	لا إجراءات ({n})|إجراء واحد ({n})|إجراءان ({n})|{n} إجراءات|{n} إجراءً|{n} إجراء
 	Background (Default)	خلفية (افتراضي)
 	Include All Subfolders	تضمين جميع المجلدات الفرعية
 	Auto Add/Delete	إضافة/حذف تلقائي

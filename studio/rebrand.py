@@ -307,6 +307,24 @@ EXT_RULES = {
          '\n        '
          r'<RegistryValue Root="HKLM" Key="Software\Classes\Applications\photocraft.exe\SupportedTypes" Name=".pcraft" Value="" Type="string" />'),
     ],
+    # Creative Studio: the .tlween document icon (assets/app-icon/tlween-document.*, from file icons/tlween.svg).
+    'packaging/macos/Info.plist.in': [
+        ('<key>UTTypeIconFile</key>\n      <string>PhotoCraft</string>\n      <key>UTTypeTagSpecification</key>\n      <dict>\n        <key>public.filename-extension</key>\n        <array><string>tlween</string>',
+         '<key>UTTypeIconFile</key>\n      <string>tlween-document</string>\n      <key>UTTypeTagSpecification</key>\n      <dict>\n        <key>public.filename-extension</key>\n        <array><string>tlween</string>'),
+        ('<key>CFBundleTypeIconFile</key>\n      <string>PhotoCraft</string>\n      <key>LSItemContentTypes</key>\n      <array><string>ai.storyteller.photocraft.document</string></array>',
+         '<key>CFBundleTypeIconFile</key>\n      <string>tlween-document</string>\n      <key>LSItemContentTypes</key>\n      <array><string>ai.storyteller.photocraft.document</string></array>'),
+    ],
+    'packaging/macos/package.sh': [
+        ('cp "$ROOT/assets/app-icon/photocraft.icns" "$APP/Contents/Resources/PhotoCraft.icns"\n',
+         'cp "$ROOT/assets/app-icon/photocraft.icns" "$APP/Contents/Resources/PhotoCraft.icns"\n'
+         'cp "$ROOT/assets/app-icon/tlween-document.icns" "$APP/Contents/Resources/tlween-document.icns"\n'),
+    ],
+    'ATTRIBUTION.md': [
+        ('| `crates/codecs/src/codecs/xpm/x11_colors.rs` |',
+         '| `assets/app-icon/tlween-document.svg` | tlween document icon | Hamza Abu Ayyash (Creative Studio) | Original work: the tlween document icon (`file icons/tlween.svg`) | MIT OR Apache-2.0 |\n'
+         '| `assets/app-icon/tlween-document.icns` | tlween document icon | Hamza Abu Ayyash (Creative Studio) | The tlween document icon (`assets/app-icon/tlween-document.svg`) rendered with rsvg-convert, packed with iconutil | MIT OR Apache-2.0 |\n'
+         '| `crates/codecs/src/codecs/xpm/x11_colors.rs` |'),
+    ],
 }
 
 

@@ -1,0 +1,8 @@
+asset:        tlween-document.svg
+title:        tlween document icon
+author:       Hamza Abu Ayyash (Creative Studio)
+source:       original work (the tlween document icon, ~/Documents/CreativeStudio/file icons/tlween.svg)
+license:      MIT OR Apache-2.0
+license-file: assets/app-icon/LICENSE.txt
+added:        2026-10-19 for the Creative Studio project
+notes:        Document icon of .tlween files (CFBundleTypeIconFile and UTTypeIconFile in packaging/macos/Info.plist.in).

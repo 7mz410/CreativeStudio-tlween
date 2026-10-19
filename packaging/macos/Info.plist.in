@@ -85,7 +85,7 @@
         <string>public.image</string>
       </array>
       <key>UTTypeIconFile</key>
-      <string>PhotoCraft</string>
+      <string>tlween-document</string>
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.filename-extension</key>
@@ -187,7 +187,7 @@
       <key>LSHandlerRank</key>
       <string>Owner</string>
       <key>CFBundleTypeIconFile</key>
-      <string>PhotoCraft</string>
+      <string>tlween-document</string>
       <key>LSItemContentTypes</key>
       <array><string>ai.storyteller.photocraft.document</string></array>
     </dict>

@@ -4100,3 +4100,51 @@ navigator	Zoom	التكبير
 	Increase Brush Size	تكبير حجم الفرشاة
 	Decrease Brush Hardness	تقليل صلابة الفرشاة
 	Increase Brush Hardness	زيادة صلابة الفرشاة
+# Upstream sync 2026-10-22
+	Add “copy” to Copied Layers and Groups	إضافة «نسخة» إلى الطبقات والمجموعات المنسوخة
+	Animation Options	خيارات الحركة
+	Applies immediately when saved. Memory is not reserved in advance.	يُطبَّق فور الحفظ. لا تُحجز الذاكرة مسبقًا.
+	Behind	خلف
+	Bicubic Automatic	تكعيبي ثنائي تلقائي
+	Bicubic Sharper	تكعيبي ثنائي أحدّ
+	Bicubic Smoother	تكعيبي ثنائي أنعم
+	Clean Brush	تنظيف الفرشاة
+	Clean the brush after each stroke	تنظيف الفرشاة بعد كل ضربة
+	Current Brush Load	حمولة الفرشاة الحالية
+	DDS Options	خيارات DDS
+	Entire Document	المستند بالكامل
+	Expand New Effects	توسيع التأثيرات الجديدة
+	Filter Options	خيارات الفلتر
+	Frequency:	التردد:
+	GPU adapter	محوّل GPU
+	Generate Mipmaps	توليد Mipmaps
+	Halftone Screen	شاشة نقاط الطباعة
+	In Front	أمام
+	Installed RAM: {ram} MB; this limit: {percent}%	الذاكرة المثبّتة: {ram} ميغابايت؛ هذا الحد: {percent}%
+	Layer Bounds	حدود الطبقة
+	Layers Panel Options	خيارات لوحة الطبقات
+	Limits each open document's pixels plus History. Oldest undo states are discarded when the limit is exceeded.	يحدّ من بكسلات كل مستند مفتوح مع سجله. تُحذف أقدم حالات التراجع عند تجاوز الحد.
+	Lines/Centimeter	خط/سنتيمتر
+	Lines/Inch	خط/إنش
+	Load Brush	تحميل الفرشاة
+	Load the brush after each stroke	تحميل الفرشاة بعد كل ضربة
+	Memory Usage	استخدام الذاكرة
+	New Artboard…	لوحة رسم جديدة…
+	New Group…	مجموعة جديدة…
+	New Snapshot…	لقطة جديدة…
+	Nothing to paste: tlween can't read the system clipboard here	لا شيء للصق: لا يستطيع تلوين قراءة حافظة النظام هنا
+	Paints from the History panel's source state	يرسم من حالة المصدر في لوحة السجل
+	Per-document RAM limit (MB)	حد الذاكرة لكل مستند (ميغابايت)
+	Prevent Auto-Nesting	منع التداخل التلقائي
+	Preview on canvas when reordering layers	المعاينة على اللوحة عند إعادة ترتيب الطبقات
+	Sets the source for the history brush	يحدد مصدر فرشاة السجل
+	Show Layers	إظهار الطبقات
+	Show file name in title	إظهار اسم الملف في العنوان
+	Show layer mask badges	إظهار شارات أقنعة الطبقات
+	There is no color table to save.	لا يوجد جدول ألوان لحفظه.
+	Thumbnail Contents	محتوى الصور المصغّرة
+	Thumbnail Size	حجم الصور المصغّرة
+	Use	استخدام
+	Use Default Masks on Fill Layers	استخدام الأقنعة الافتراضية في طبقات التعبئة
+	With GPU Memory set to Automatic, this also limits the GPU layer budget. That budget is capped at one quarter of installed RAM and, when known, three eighths of the graphics card's memory, with a 512 MB minimum. Raising this limit beyond those caps does not increase the GPU budget.	عند ضبط ذاكرة GPU على «تلقائي»، يحدّ هذا أيضًا من ميزانية طبقات GPU. هذه الميزانية لا تتجاوز ربع الذاكرة المثبّتة، ولا ثلاثة أثمان ذاكرة بطاقة الرسوميات عند معرفتها، وحدّها الأدنى 512 ميغابايت. رفع هذا الحد فوق ذلك لا يزيد ميزانية GPU.
+	History Options…	خيارات السجل…

@@ -91,7 +91,7 @@ mod tests {
     #[test]
     fn viewport_icon_blocks_eframe_default_when_runtime_icon_is_skipped() {
         use std::path::Path;
-        let bundled = Some(Path::new("/Applications/PhotoCraft.app/Contents/MacOS/photocraft"));
+        let bundled = Some(Path::new("/Applications/tlween.app/Contents/MacOS/photocraft"));
         if sets_runtime_icon(bundled) {
             let icon = viewport_icon(bundled);
             assert!(icon.width >= 256 && icon.width == icon.height);

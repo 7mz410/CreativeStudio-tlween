@@ -21,4 +21,5 @@ jobs:
       package: photocraft
       version_var: PHOTOCRAFT_VERSION
       bundle: tlween.app
+      mcpb_cli: photocraft-cli
       tag: ${{ github.ref_name }}

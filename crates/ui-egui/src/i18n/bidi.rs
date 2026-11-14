@@ -3,6 +3,7 @@
 //! already in visual order: the Unicode bidirectional algorithm splits each line into runs, and
 //! the words inside every right-to-left run are reversed. Letters inside a word keep their
 //! logical order for egui to shape.
+#![allow(dead_code)]
 
 use unicode_bidi::{BidiInfo, Level};
 

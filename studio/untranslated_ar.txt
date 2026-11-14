@@ -1,0 +1,48 @@
+	About PhotoCraft
+	All shortcuts reset to PhotoCraft defaults.
+	Based On
+	Bend
+	Bloat
+	Currency
+	Cyrillic
+	Forward Warp
+	Freeze Mask
+	Greek
+	Horizontal Distortion
+	Kerning: Metrics, Optical or a value in 1/1000 em (Alt+←/→ at the caret)
+	Latin 1
+	Latin Extended-A
+	Latin Extended-B
+	Mask Channel
+	Math Symbols
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run PhotoCraft under XWayland with `WAYLAND_DISPLAY= photocraft`.
+	Numbers
+	Or set Preferences › Performance › Linux display server to X11: PhotoCraft then always starts under XWayland.
+	PhotoCraft
+	PhotoCraft Defaults
+	PhotoCraft Manages Colors
+	PhotoCraft Website
+	PhotoCraft found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from PhotoCraft's. Import it?
+	PhotoCraft is using the CPU image compositor. The window may still use your graphics adapter.
+	PhotoCraft on GitHub
+	PhotoCraft website
+	PhotoCraft — Screen Color Picker
+	PhotoCraft — an open-source, native image editor written in Rust.
+	Pucker
+	Push Left
+	R g b
+	Save Path
+	Source Channel
+	Source Invert
+	Source1 Channel
+	Source1 Invert
+	Source2 Channel
+	Source2 Invert
+	Thaw Mask
+	These settings aren't available in PhotoCraft yet.
+	To drop files, start PhotoCraft under XWayland: `{command}`
+	Twirl Clockwise
+	Twirl Counterclockwise
+	Vertical Distortion
+	{n} commands are not in PhotoCraft.
+@plural	{n} step has no PhotoCraft equivalent yet|{n} steps have no PhotoCraft equivalent yet

@@ -20,10 +20,10 @@ KEEP = ('Default PhotoCraft Size', 'PhotoCraft Studio CMYK', 'the PhotoCraft aut
 
 # Exact replacements, applied before the general rename (and kept idempotent: skipped once done).
 RTL_RULES = [
-    ('crates/ui-egui/src/cjk_fonts.rs', """                assert_eq!(stack.iter().filter(|n| n.starts_with(FONT_PREFIX)).count(), 3);
+    ('crates/ui-egui/src/text/cjk_fonts.rs', """                assert_eq!(stack.iter().filter(|n| n.starts_with(FONT_PREFIX)).count(), 3);
                 assert_eq!(stack.last().map(String::as_str), Some("system-cjk-2"), "appended last so Latin keeps Inter");""", """                assert_eq!(stack.iter().filter(|n| n.starts_with(FONT_PREFIX)).count(), 2);
                 assert_eq!(stack.last().map(String::as_str), Some("system-cjk-1"), "appended last so Latin keeps Inter");"""),
-    ('crates/ui-egui/src/cjk_fonts.rs', """                assert!(p.0.scripts_tried.contains(&Script::Hebrew));
+    ('crates/ui-egui/src/text/cjk_fonts.rs', """                assert!(p.0.scripts_tried.contains(&Script::Hebrew));
                 assert_eq!(p.0.registered.len(), 3);""", """                assert!(p.0.scripts_tried.contains(&Script::Hebrew));
                 assert_eq!(p.0.registered.len(), 2); // Creative Studio: Arabic is built in"""),
     # Upstream's tests assume no right-to-left catalog and load Arabic glyphs on demand; ours ships
@@ -34,7 +34,7 @@ RTL_RULES = [
         let want = if lang.code() == "ar" { Dir::Rtl } else { Dir::Ltr };
         assert_eq!(lang.dir(), want, "{}", lang.code());
     }"""),
-    ('crates/ui-egui/src/cjk_fonts.rs', 'assert_eq!(fallback_files(&ctx), ["thai.ttf", "arabic.ttf", "devanagari.ttf"], "the first file that maps the character, never Inter");',
+    ('crates/ui-egui/src/text/cjk_fonts.rs', 'assert_eq!(fallback_files(&ctx), ["thai.ttf", "arabic.ttf", "devanagari.ttf"], "the first file that maps the character, never Inter");',
      'assert_eq!(fallback_files(&ctx), ["thai.ttf", "devanagari.ttf"], "the first file that maps the character, never Inter (Arabic is built in)");'),
     # Arabic is supported now: the 'unsupported language' tests use Hebrew instead.
     ('crates/ui-egui/src/i18n/live_tests.rs', '    for tags in [vec![], vec!["sv-SE", "ar-SA"]] {', '    for tags in [vec![], vec!["sv-SE", "he-IL"]] {'),
@@ -43,7 +43,7 @@ RTL_RULES = [
     ('crates/ui-egui/src/i18n/mod.rs', '    LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },\n', '    LangInfo { code: "uk", name: "Українська", source: catalog!("uk"), plural: plural_russian, complete_menus: true, catalog: OnceLock::new() },\n    // Creative Studio: Arabic (studio/ar-work), right to left.\n    LangInfo { code: "ar", name: "العربية", source: catalog!("ar"), plural: plural_arabic, complete_menus: true, catalog: OnceLock::new() },\n'),
     # Upstream's README moved to docs/UPSTREAM-README.md (ours is the fork's).
     ('crates/ui-egui/src/state.rs', '        let readme = include_str!("../../../README.md");', '        let readme = include_str!("../../../docs/UPSTREAM-README.md");'),
-    ('Cargo.toml', '[workspace.dependencies]', '[patch.crates-io]\n# Creative Studio: egui with a right-to-left switch for the Arabic interface (studio/RTL.md).\negui = { path = "vendor/egui" }\n\n[workspace.dependencies]'),
+    # ('Cargo.toml', '[workspace.dependencies]', '[patch.crates-io]\n# Creative Studio: egui with a right-to-left switch for the Arabic interface (studio/RTL.md).\negui = { path = "vendor/egui" }\n\n[workspace.dependencies]'),
     ('crates/ui-egui/src/i18n/mod.rs', 'mod catalog;\n', '/// Creative Studio: Arabic in visual order for egui.\npub(crate) mod bidi;\nmod catalog;\n'),
     ('crates/ui-egui/src/i18n/mod.rs', '        self.catalog.get_or_init(|| Catalog::parse(&self.text()))', '        // Creative Studio: right-to-left catalogs are stored in visual order (bidi.rs).\n        self.catalog.get_or_init(|| if bidi::RTL_CODES.contains(&self.code) { Catalog::parse(&bidi::visual_catalog(&self.text())) } else { Catalog::parse(&self.text()) })'),
     ('crates/ui-egui/src/lib.rs', '        let ctx = ui.ctx().clone();\n        i18n::set_current(i18n::Lang::from_pref(&self.session.prefs().interface.language));\n', '        let ctx = ui.ctx().clone();\n        i18n::set_current(i18n::Lang::from_pref(&self.session.prefs().interface.language));\n        // Creative Studio: Arabic lays the interface out right to left (vendor/egui). The switch is\n        // process-wide, so unit tests, which run in parallel, leave it off (tests/rtl.rs covers it).\n        #[cfg(not(test))]\n        egui::set_rtl(i18n::bidi::RTL_CODES.contains(&i18n::current().code()));\n'),
@@ -54,6 +54,23 @@ RTL_RULES = [
 ]
 
 SPECIFIC = {
+    # The native macOS menu bar names the app tlween.
+    'apps/photocraft/tests/mac_menu_appkit.rs': [
+        ('["PhotoCraft", "File",', '["tlween", "File",'),
+        ('submenu(&bar, "PhotoCraft")', 'submenu(&bar, "tlween")'),
+        ('["About PhotoCraft", "Settings", "Language", "Appearance", "Hide PhotoCraft", "Quit PhotoCraft"]', '["About tlween", "Settings", "Language", "Appearance", "Hide tlween", "Quit tlween"]'),
+        ('index(&app_menu, "Quit PhotoCraft")', 'index(&app_menu, "Quit tlween")'),
+        # Upstream's end-to-end test is over clippy's complexity limit on macOS (fails upstream too).
+        ('#[cfg(target_os = "macos")]\nfn main() {', '#[cfg(target_os = "macos")]\n#[allow(clippy::cognitive_complexity)]\nfn main() {'),
+    ],
+    # .tlween is the native format (written by photocraft-io like .pcraft), not a codec.
+    'apps/photocraft/src/services/tests.rs': [
+        ('let layered = ["psd", "psb", "pcraft", "ora", "pdf"];', 'let layered = ["psd", "psb", "pcraft", "tlween", "ora", "pdf"];'),
+    ],
+    # Our icon's tile has a smaller corner radius than upstream's: its corner pixel is (2, 2).
+    'apps/photocraft/src/app_icon.rs': [
+        ('assert_eq!(icon.rgba[(10 * 256 + 10) * 4 + 3], 0, "corner is transparent");', 'assert_eq!(icon.rgba[(2 * 256 + 2) * 4 + 3], 0, "corner is transparent");'),
+    ],
     # No Creative Studio Discord yet: drop upstream's community button and the ArtCraft website link.
     'crates/ui-egui/src/canvas.rs': [
         ('            crate::links::discord_button(app, ui, 190.0);\n            ui.add_space(10.0);\n', ''),
@@ -133,13 +150,17 @@ def rebrand_plist(path: Path) -> bool:
 
 def RUST_FILES():
     # Creative Studio: the Help menu labels come from the engine's shell command table.
-    return sorted((ROOT / 'crates/ui-egui/src').rglob('*.rs')) + sorted((ROOT / 'apps/photocraft/src').rglob('*.rs')) + [ROOT / 'crates/engine/src/shell_commands.rs']
+    return sorted((ROOT / 'crates/ui-egui/src').rglob('*.rs')) + sorted((ROOT / 'apps/photocraft/src').rglob('*.rs')) + [ROOT / 'crates/engine/src/shell_commands.rs', ROOT / 'apps/photocraft/tests/mac_menu_appkit.rs']
 
 
 def apply_rtl_rules() -> list:
     changed = []
     for rel, a, b in RTL_RULES:
         path = ROOT / rel
+        if not path.is_file():
+            # Moved upstream: point the rule at the new path instead of guessing.
+            print(f"MISSING: {rel}")
+            continue
         src = path.read_text(encoding='utf-8')
         if (not b or b not in src) and a in src:
             path.write_text(src.replace(a, b), encoding='utf-8')
@@ -149,7 +170,11 @@ def apply_rtl_rules() -> list:
 
 def fix_language_count() -> list:
     # The table's length follows its rows (upstream adds languages; we add Arabic).
-    p = ROOT / 'crates/ui-egui/src/i18n/mod.rs'
+    p = ROOT / 'crates/ui-egui/src/i18n.rs'
+    if not p.is_file():
+        p = ROOT / 'crates/ui-egui/src/i18n/mod.rs'
+    if not p.is_file():
+        return []
     s = p.read_text(encoding='utf-8')
     m = re.search(r'pub static LANGUAGES: \[LangInfo; (\d+)\] = \[(.*?)\n\];', s, re.S)
     if not m:
@@ -228,12 +253,12 @@ EXT_RULES = {
         ('    if ext == photocraft_format::EXTENSION {\n        let named = named_for_output(doc, name);',
          '    if ext == photocraft_format::EXTENSION || ext == photocraft_format::STUDIO_EXTENSION {\n        let named = named_for_output(doc, name);'),
     ],
-    'crates/engine/src/file_cmds.rs': [
+    'crates/engine/src/cmd/file_cmds.rs': [
         ('"psb", "pcraft", "png", "jpg"', '"psb", "pcraft", "tlween", "png", "jpg"'),
         ('matches!(ext, "psd" | "psb" | "pcraft" | "ora")', 'matches!(ext, "psd" | "psb" | "pcraft" | "tlween" | "ora")'),
         ('        "psd" | "psb" | "pcraft" => true,', '        "psd" | "psb" | "pcraft" | "tlween" => true,'),
     ],
-    'crates/engine/src/print_cmds.rs': [
+    'crates/engine/src/cmd/print_cmds.rs': [
         ('Some(f @ ("psd" | "psb" | "pcraft")) => f.to_string(),', 'Some(f @ ("psd" | "psb" | "pcraft" | "tlween")) => f.to_string(),'),
         ('(pcraft|psd|psb)"', '(tlween|pcraft|psd|psb)"'),
         ('        None => "pcraft".into(),', '        None => "tlween".into(),'),
@@ -254,11 +279,11 @@ EXT_RULES = {
     'crates/ui-egui/src/file_open/tests.rs': [
         ('suggested: "Untitled-2.psd".into()', 'suggested: "Untitled-2.tlween".into()'),
     ],
-    'crates/engine/src/print_cmds/tests.rs': [
+    'crates/engine/src/cmd/print_cmds/tests.rs': [
         ('assert!(docp.ends_with("Print Me/Print Me.pcraft"));', 'assert!(docp.ends_with("Print Me/Print Me.tlween"));'),
         ('photocraft_io::import("Print Me.pcraft"', 'photocraft_io::import("Print Me.tlween"'),
     ],
-    'crates/engine/src/video_cmds.rs': [
+    'crates/engine/src/cmd/video_cmds.rs': [
         ('"exr" | "pcraft" | "psd")', '"exr" | "pcraft" | "tlween" | "psd")'),
     ],
     'crates/ui-egui/src/lib.rs': [
@@ -332,6 +357,10 @@ def apply_extension_rules() -> list:
     changed = []
     for rel, pairs in EXT_RULES.items():
         path = ROOT / rel
+        if not path.is_file():
+            # Moved upstream: point the rule at the new path instead of guessing.
+            print(f"MISSING: {rel}")
+            continue
         src = path.read_text(encoding='utf-8')
         out = src
         for a, b in pairs:

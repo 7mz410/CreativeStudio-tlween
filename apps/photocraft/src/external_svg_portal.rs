@@ -155,7 +155,8 @@ mod tests {
         let (_stop, stopped) = mpsc::channel();
         assert!(open_on(&client, &owned, &stopped).unwrap_err().contains("regular file"));
         std::fs::remove_file(&owned.file).unwrap();
-        rustix::fs::mkfifoat(rustix::fs::CWD, &owned.file, rustix::fs::Mode::RUSR | rustix::fs::Mode::WUSR).unwrap();
+        // Creative Studio: rustix has no mkfifoat on macOS; the mkfifo tool makes the same FIFO.
+        assert!(std::process::Command::new("mkfifo").arg("-m").arg("600").arg(&owned.file).status().unwrap().success());
         assert!(open_on(&client, &owned, &stopped).unwrap_err().contains("regular file"));
     }
     #[test]

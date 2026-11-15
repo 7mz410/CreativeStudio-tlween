@@ -1385,7 +1385,8 @@ mod native {
             assert!(owned.read(&stamp).is_err());
             assert!(owned.overwrite(b"<svg/>").is_err());
             std::fs::remove_file(&owned.file).unwrap();
-            rustix::fs::mkfifoat(rustix::fs::CWD, &owned.file, rustix::fs::Mode::RUSR | rustix::fs::Mode::WUSR).unwrap();
+            // Creative Studio: rustix has no mkfifoat on macOS; the mkfifo tool makes the same FIFO.
+            assert!(std::process::Command::new("mkfifo").arg("-m").arg("600").arg(&owned.file).status().unwrap().success());
             assert!(owned.stamp().is_err());
             let began = Instant::now();
             assert!(owned.read(&stamp).is_err());
